@@ -38,7 +38,7 @@ int main() {
         }
     };
 
-    // Deterministic sanity cases
+    // Set cases
     run_case(5, 3);        // expect 4
     run_case(5, 5);        // expect 0
     run_case(3, 5);        // expect 0
