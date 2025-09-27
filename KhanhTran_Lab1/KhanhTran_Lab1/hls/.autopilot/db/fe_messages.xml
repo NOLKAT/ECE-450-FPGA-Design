@@ -1,0 +1,15 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="compute_c.cpp:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="compute_c" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="compute_c.cpp:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="compute_c" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=0 max=46341 avg=20000" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="compute" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=compute" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="compute_c.cpp:22:0" msg_body="Inlining function 'compute_c(int, int, int&amp;)' into 'compute(int, int, int&amp;)'">
+        <args Callee="compute_c(int, int, int&amp;)" Callee-DebugLoc="File compute_c.cpp Line 1 Column 0" Caller="compute(int, int, int&amp;)" Caller-DebugLoc="File compute_c.cpp Line 22 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

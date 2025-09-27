@@ -1,0 +1,9 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../tb_fir16.cpp in debug mode
+   Compiling ../../../../fir16_unroll16.cpp in debug mode
+   Compiling ../../../../fir_16_unroll4.cpp in debug mode
+   Compiling ../../../../fir16.cpp in debug mode
+   Generating csim.exe
+INFO: [SIM 1] CSim file generation done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

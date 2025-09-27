@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"mux_2to1": {
+			"proto_instances": {
+			}
+		}
+	}
+}

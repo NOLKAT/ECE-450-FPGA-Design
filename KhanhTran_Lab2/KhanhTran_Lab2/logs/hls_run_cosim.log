@@ -1,0 +1,123 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2'.
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=fir16.cpp' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/fir16.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=fir16.h' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/fir16.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=fir_16_unroll4.cpp' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/fir_16_unroll4.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=fir16_unroll16.cpp' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/fir16_unroll16.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=tb_fir16.cpp' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/tb_fir16.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=fir16' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(13)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7a35tcpg236-1' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying config ini 'cosim.wave_debug=1' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(14)
+INFO: [HLS 200-1465] Applying config ini 'csim.code_analyzer=1' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2/vitis-comp.json
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "D:/Xilinx_2025/2025.1/Vitis/win64/tools/vcxx/libexec/clang++"
+   Compiling fir16.cpp_pre.cpp.tb.cpp
+   Compiling tb_fir16.cpp_pre.cpp.tb.cpp
+   Compiling fir16_unroll16.cpp_pre.cpp.tb.cpp
+   Compiling fir_16_unroll4.cpp_pre.cpp.tb.cpp
+   Compiling apatb_fir16.cpp
+   Compiling apatb_fir16_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+TB targeting: fir16
+[IMPULSE] PASS
+[PRBS] PASS
+OVERALL: PASS
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+pdir_merged readonly
+pdir_merged writeonly
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+
+C:\Users\ankha\Desktop\FPGA_Design\KhanhTran_Lab2\KhanhTran_Lab2\hls\sim\verilog>set PATH= 
+
+C:\Users\ankha\Desktop\FPGA_Design\KhanhTran_Lab2\KhanhTran_Lab2\hls\sim\verilog>call D:/Xilinx_2025/2025.1/Vivado/bin/xelab xil_defaultlib.apatb_fir16_top xil_defaultlib.glbl -Oenable_linking_all_libraries -prj fir16.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_1_20 -L floating_point_v7_0_25 --lib "ieee_proposed=./ieee_proposed" -L uvm -relax -i ./svr -i ./axivip -i ./svtb -i ./file_agent -i ./fir16_subsystem  -s fir16 -debug all 
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx_2025/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_fir16_top xil_defaultlib.glbl -Oenable_linking_all_libraries -prj fir16.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_20 -L floating_point_v7_0_25 --lib ieee_proposed=./ieee_proposed -L uvm -relax -i ./svr -i ./axivip -i ./svtb -i ./file_agent -i ./fir16_subsystem -s fir16 -debug all 
+Multi-threading is on. Using 10 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2/hls/sim/verilog/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2/hls/sim/verilog/AESL_automem_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_x
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2/hls/sim/verilog/AESL_automem_y.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_y
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2/hls/sim/verilog/fir16.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_fir16_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2/hls/sim/verilog/fir16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir16
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2/hls/sim/verilog/fir16_flow_control_loop_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fir16_flow_control_loop_pipe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2/hls/sim/verilog/file_agent/file_agent_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2/hls/sim/verilog/fir16_subsystem/fir16_subsystem_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2/hls/sim/verilog/svtb/misc_interface.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2/hls/sim/verilog/svtb/sv_module_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sv_module_top
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 4356. Module uvm_pkg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 4356. Module uvm_pkg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4468] File : /proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv, Line : 25994, RANDC variable size more than 8 bits. This will be treated as a RAND variable instead.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_sv_module_top_sv
+Compiling package uvm.uvm_pkg
+Compiling package std.std
+Compiling package xil_defaultlib.fir16_subsystem_pkg
+Compiling package xil_defaultlib.file_agent_pkg
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.fir16_flow_control_loop_pipe
+Compiling module xil_defaultlib.fir16
+Compiling module xil_defaultlib.misc_interface_default
+Compiling module xil_defaultlib.sv_module_top
+Compiling module xil_defaultlib.AESL_automem_x
+Compiling module xil_defaultlib.AESL_automem_y
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_fir16_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot fir16
+
+****** xsim v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Fri Sep 26 22:03:14 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+start_gui
+INFO: [Common 17-206] Exiting xsim at Fri Sep 26 22:06:17 2025...
+INFO: [COSIM 212-316] Starting C post checking ...
+TB targeting: fir16
+[IMPULSE] PASS
+[PRBS] PASS
+OVERALL: PASS
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 2 seconds. Total elapsed time: 236.348 seconds; peak allocated memory: 213.605 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 4m 1s

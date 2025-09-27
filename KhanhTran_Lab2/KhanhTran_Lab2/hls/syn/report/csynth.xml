@@ -1,0 +1,489 @@
+<profile>
+    <ReportVersion>
+        <Version>2025.1</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>artix7</ProductFamily>
+        <Part>xc7a35t-cpg236-1</Part>
+        <TopModelName>fir16</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>loop auto-rewind stp (delay=0 cycles)</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>6.399</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>260</Best-caseLatency>
+            <Average-caseLatency>260</Average-caseLatency>
+            <Worst-caseLatency>260</Worst-caseLatency>
+            <Best-caseRealTimeLatency>2.600 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>2.600 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>2.600 us</Worst-caseRealTimeLatency>
+            <Interval-min>256</Interval-min>
+            <Interval-max>256</Interval-max>
+            <PerformancePragma>-</PerformancePragma>
+        </SummaryOfOverallLatency>
+        <SummaryOfLoopLatency>
+            <Loop_i>
+                <Slack>7.30</Slack>
+                <TripCount>256</TripCount>
+                <isPerfectNested>0</isPerfectNested>
+                <Latency>258</Latency>
+                <AbsoluteTimeLatency>2580</AbsoluteTimeLatency>
+                <PipelineII>1</PipelineII>
+                <PipelineDepth>4</PipelineDepth>
+                <PerformancePragma>-</PerformancePragma>
+                <InstanceList/>
+            </Loop_i>
+        </SummaryOfLoopLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>fir16.cpp:8</SourceLocation>
+            <SummaryOfLoopViolations>
+                <Loop_i>
+                    <Name>Loop_i</Name>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>fir16.cpp:18</SourceLocation>
+                </Loop_i>
+            </SummaryOfLoopViolations>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <FF>408</FF>
+            <LUT>498</LUT>
+            <BRAM_18K>0</BRAM_18K>
+            <DSP>0</DSP>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>100</BRAM_18K>
+            <DSP>90</DSP>
+            <FF>41600</FF>
+            <LUT>20800</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>fir16</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst</name>
+            <Object>fir16</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>fir16</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>fir16</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>fir16</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>fir16</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>x_address0</name>
+            <Object>x</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>x_ce0</name>
+            <Object>x</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>x_q0</name>
+            <Object>x</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>16</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>y_address0</name>
+            <Object>y</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>8</Bits>
+            <Attribute>address</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>y_ce0</name>
+            <Object>y</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>y_we0</name>
+            <Object>y</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>y_d0</name>
+            <Object>y</Object>
+            <Type>array</Type>
+            <Scope/>
+            <IOProtocol>ap_memory</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>24</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="2">
+            <ModuleName>fir16</ModuleName>
+            <BindInstances>tmp_fu_312_p2 tmp2_fu_318_p2 tmp41_fu_354_p2 tmp6_fu_372_p2 add_ln35_2_fu_412_p2 add_ln35_3_fu_510_p2 i_fu_221_p2 icmp_ln18_fu_227_p2</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>fir16</Name>
+            <Loops>
+                <Loop_i/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.399</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>260</Best-caseLatency>
+                    <Average-caseLatency>260</Average-caseLatency>
+                    <Worst-caseLatency>260</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>2.600 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>2.600 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>2.600 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>256</PipelineInitiationInterval>
+                    <PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <Loop_i>
+                        <Name>Loop_i</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>256</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>258</Latency>
+                        <AbsoluteTimeLatency>2.580 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>4</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </Loop_i>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>fir16.cpp:8</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <Loop_i>
+                            <Name>Loop_i</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>fir16.cpp:18</SourceLocation>
+                        </Loop_i>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>408</FF>
+                    <AVAIL_FF>41600</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>498</LUT>
+                    <AVAIL_LUT>20800</AVAIL_LUT>
+                    <UTIL_LUT>2</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>100</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>90</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Loop_i" OPTYPE="sub" PRAGMA="" RTLNAME="tmp_fu_312_p2" SOURCE="fir16.cpp:35" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Loop_i" OPTYPE="add" PRAGMA="" RTLNAME="tmp2_fu_318_p2" SOURCE="fir16.cpp:35" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Loop_i" OPTYPE="add" PRAGMA="" RTLNAME="tmp41_fu_354_p2" SOURCE="" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp41" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Loop_i" OPTYPE="add" PRAGMA="" RTLNAME="tmp6_fu_372_p2" SOURCE="fir16.cpp:35" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp6" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Loop_i" OPTYPE="add" PRAGMA="" RTLNAME="add_ln35_2_fu_412_p2" SOURCE="fir16.cpp:35" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln35_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Loop_i" OPTYPE="add" PRAGMA="" RTLNAME="add_ln35_3_fu_510_p2" SOURCE="fir16.cpp:35" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln35_3" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="Loop_i" OPTYPE="add" PRAGMA="" RTLNAME="i_fu_221_p2" SOURCE="fir16.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="i" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="Loop_i" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln18_fu_227_p2" SOURCE="fir16.cpp:18" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln18" VISIBLE="false"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands>
+        <config_csim code_analyzer="1"/>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="x" index="0" direction="in" srcType="ap_int&lt;16&gt; const *" srcSize="16">
+            <hwRefs>
+                <hwRef type="port" interface="x_address0" name="x_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="x_ce0" name="x_ce0" usage="control" direction="out"/>
+                <hwRef type="port" interface="x_q0" name="x_q0" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="y" index="1" direction="out" srcType="ap_int&lt;24&gt;*" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="y_address0" name="y_address0" usage="address" direction="out"/>
+                <hwRef type="port" interface="y_ce0" name="y_ce0" usage="control" direction="out"/>
+                <hwRef type="port" interface="y_we0" name="y_we0" usage="control" direction="out"/>
+                <hwRef type="port" interface="y_d0" name="y_d0" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="x_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="x_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>x_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="x"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="x_q0" type="data" busTypeName="data" protocol="ap_memory" mode="slave" dataWidth="16">
+            <portMaps>
+                <portMap portMapName="x_q0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>x_q0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="x"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="y_address0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="8">
+            <portMaps>
+                <portMap portMapName="y_address0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>y_address0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="y"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="y_d0" type="data" busTypeName="data" protocol="ap_memory" mode="master" dataWidth="24">
+            <portMaps>
+                <portMap portMapName="y_d0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>y_d0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_memory" register_option="0" argName="y"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="AP_MEMORY">
+                <table>
+                    <keys size="3">Port, Direction, Bitwidth</keys>
+                    <column name="x_address0">out, 8</column>
+                    <column name="x_q0">in, 16</column>
+                    <column name="y_address0">out, 8</column>
+                    <column name="y_d0">out, 24</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst">reset, ap_rst</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="x">in, ap_int&lt;16&gt; const *</column>
+                    <column name="y">out, ap_int&lt;24&gt;*</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="4">Argument, HW Interface, HW Type, HW Usage</keys>
+                    <column name="x">x_address0, port, offset</column>
+                    <column name="x">x_ce0, port, </column>
+                    <column name="x">x_q0, port, </column>
+                    <column name="y">y_address0, port, offset</column>
+                    <column name="y">y_ce0, port, </column>
+                    <column name="y">y_we0, port, </column>
+                    <column name="y">y_d0, port, </column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="inline" location="fir16.cpp:5" status="valid" parentFunction="fir16" variable="" isDirective="0" options="off"/>
+        <Pragma type="array_partition" location="fir16.cpp:9" status="valid" parentFunction="fir16" variable="shift_reg" isDirective="0" options="variable=shift_reg complete dim=1"/>
+        <Pragma type="loop_tripcount" location="fir16.cpp:13" status="valid" parentFunction="fir16" variable="" isDirective="0" options="min=16 max=16"/>
+        <Pragma type="loop_tripcount" location="fir16.cpp:19" status="valid" parentFunction="fir16" variable="" isDirective="0" options="min=256 max=256"/>
+        <Pragma type="loop_tripcount" location="fir16.cpp:23" status="valid" parentFunction="fir16" variable="" isDirective="0" options="min=15 max=15"/>
+        <Pragma type="loop_tripcount" location="fir16.cpp:31" status="valid" parentFunction="fir16" variable="" isDirective="0" options="min=16 max=16"/>
+        <Pragma type="inline" location="fir16_unroll16.cpp:6" status="valid" parentFunction="fir16_unroll16" variable="" isDirective="0" options="off"/>
+        <Pragma type="array_partition" location="fir16_unroll16.cpp:9" status="valid" parentFunction="fir16_unroll16" variable="shift_reg" isDirective="0" options="variable=shift_reg complete dim=1"/>
+        <Pragma type="array_partition" location="fir16_unroll16.cpp:10" status="valid" parentFunction="fir16_unroll16" variable="COEFF" isDirective="0" options="variable=COEFF complete dim=1"/>
+        <Pragma type="loop_tripcount" location="fir16_unroll16.cpp:14" status="valid" parentFunction="fir16_unroll16" variable="" isDirective="0" options="min=16 max=16"/>
+        <Pragma type="pipeline" location="fir16_unroll16.cpp:20" status="valid" parentFunction="fir16_unroll16" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="loop_tripcount" location="fir16_unroll16.cpp:21" status="valid" parentFunction="fir16_unroll16" variable="" isDirective="0" options="min=256 max=256"/>
+        <Pragma type="unroll" location="fir16_unroll16.cpp:25" status="valid" parentFunction="fir16_unroll16" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="fir16_unroll16.cpp:33" status="valid" parentFunction="fir16_unroll16" variable="" isDirective="0" options=""/>
+        <Pragma type="inline" location="fir_16_unroll4.cpp:6" status="valid" parentFunction="fir16_unroll4" variable="" isDirective="0" options="off"/>
+        <Pragma type="array_partition" location="fir_16_unroll4.cpp:9" status="valid" parentFunction="fir16_unroll4" variable="shift_reg" isDirective="0" options="variable=shift_reg complete dim=1"/>
+        <Pragma type="array_partition" location="fir_16_unroll4.cpp:10" status="valid" parentFunction="fir16_unroll4" variable="COEFF" isDirective="0" options="variable=COEFF complete dim=1"/>
+        <Pragma type="loop_tripcount" location="fir_16_unroll4.cpp:14" status="valid" parentFunction="fir16_unroll4" variable="" isDirective="0" options="min=16 max=16"/>
+        <Pragma type="pipeline" location="fir_16_unroll4.cpp:20" status="valid" parentFunction="fir16_unroll4" variable="" isDirective="0" options=""/>
+        <Pragma type="loop_tripcount" location="fir_16_unroll4.cpp:21" status="valid" parentFunction="fir16_unroll4" variable="" isDirective="0" options="min=256 max=256"/>
+        <Pragma type="unroll" location="fir_16_unroll4.cpp:25" status="valid" parentFunction="fir16_unroll4" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="fir_16_unroll4.cpp:33" status="valid" parentFunction="fir16_unroll4" variable="" isDirective="0" options="factor=4"/>
+    </PragmaReport>
+</profile>
+

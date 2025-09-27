@@ -1,0 +1,67 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: compute_c.cpp, Line: 23, Column: 5 }
+Function:        _Z7computeiiRi
+Args:            
+  - Callee:          'compute_c(int, int, int&)'
+    DebugLoc:        { File: compute_c.cpp, Line: 1, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'compute(int, int, int&)'
+    DebugLoc:        { File: compute_c.cpp, Line: 22, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: compute_c.cpp, Line: 23, Column: 5 }
+Function:        _Z7computeiiRi
+Args:            
+  - Callee:          'compute_c(int, int, int&)'
+    DebugLoc:        { File: compute_c.cpp, Line: 1, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'compute(int, int, int&)'
+    DebugLoc:        { File: compute_c.cpp, Line: 22, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_compute_ir
+Args:            
+  - Callee:          'compute(int, int, int&)'
+    DebugLoc:        { File: compute_c.cpp, Line: 22, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_compute_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: compute_c.cpp, Line: 22, Column: 0 }
+Function:        _Z7computeiiRi
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'compute_c(int, int, int&)'
+    DebugLoc:        { File: compute_c.cpp, Line: 1, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'compute(int, int, int&)'
+    DebugLoc:        { File: compute_c.cpp, Line: 22, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: compute_c.cpp, Line: 14, Column: 5 }
+Function:        _Z7computeiiRi
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        loop_i
+  - String:          ' '
+  - LoopLoc:         'compute_c.cpp:14:5'
+  - String:          ' '
+  - Function:        'compute(int, int, int&)'
+    DebugLoc:        { File: compute_c.cpp, Line: 22, Column: 0 }
+  - String:          ' '
+...

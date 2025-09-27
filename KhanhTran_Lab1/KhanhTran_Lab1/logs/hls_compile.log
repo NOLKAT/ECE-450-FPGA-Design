@@ -1,0 +1,127 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/KhanhTran_Lab1 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/KhanhTran_Lab1/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/KhanhTran_Lab1'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=compute_c.cpp' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/hls_config.cfg(15)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/compute_c.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=tb_compute.cpp' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/tb_compute.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=compute' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7a35tcpg236-1' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [HLS 200-1465] Applying config ini 'cosim.setup=1' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/hls_config.cfg(13)
+INFO: [HLS 200-1465] Applying config ini 'cosim.wave_debug=0' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/hls_config.cfg(14)
+INFO: [HLS 200-1465] Applying config ini 'csim.clean=0' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying config ini 'csim.code_analyzer=0' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying config ini 'csim.setup=0' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'sim.O=0' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/hls_config.cfg(8)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/KhanhTran_Lab1/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.257 seconds; current allocated memory: 145.242 MB.
+INFO: [HLS 200-10] Analyzing design file 'compute_c.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.742 seconds; current allocated memory: 147.133 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 35 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/KhanhTran_Lab1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 30 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/KhanhTran_Lab1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 21 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/KhanhTran_Lab1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 20 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/KhanhTran_Lab1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 20 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/KhanhTran_Lab1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 19 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/KhanhTran_Lab1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 19 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/KhanhTran_Lab1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 19 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/KhanhTran_Lab1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 19 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/KhanhTran_Lab1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 21 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/KhanhTran_Lab1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 21 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/KhanhTran_Lab1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 20 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/KhanhTran_Lab1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 19 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/KhanhTran_Lab1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 19 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/KhanhTran_Lab1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 25 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/KhanhTran_Lab1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 30 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/KhanhTran_Lab1/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-178] Inlining function 'compute_c(int, int, int&)' into 'compute(int, int, int&)' (compute_c.cpp:22:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 7.879 seconds; current allocated memory: 149.551 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.003 seconds; current allocated memory: 149.551 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.008 seconds; current allocated memory: 153.621 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.005 seconds; current allocated memory: 154.773 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.018 seconds; current allocated memory: 175.887 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.018 seconds; current allocated memory: 178.680 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'compute' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compute_Pipeline_loop_i' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_i'.
+WARNING: [HLS 200-886] Cannot meet target clock period in 'mul' operation 64 bit ('mul_ln14', compute_c.cpp:14->compute_c.cpp:23) (combination delay: 12.370 ns) to honor II constraint (II=1) in region 'loop 'loop_i''.
+Resolution: For help on HLS 200-886 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-886.html
+WARNING: [HLS 200-887] Cannot meet target clock period from basic block for.cond.i to 'store' operation 0 bit ('temp_1_write_ln11', compute_c.cpp:11->compute_c.cpp:23) of variable 'add_ln14', compute_c.cpp:14->compute_c.cpp:23 on local variable 'temp', compute_c.cpp:11->compute_c.cpp:23 (combination delay: 19.15 ns) to honor II or Latency constraint in region 'loop_i'.
+Resolution: For help on HLS 200-887 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-887.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'loop_i'
+WARNING: [HLS 200-871] Estimated clock period (17.540 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+Resolution: For help on HLS 200-871 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'compute_Pipeline_loop_i' consists of the following:
+	'load' operation 64 bit ('i', compute_c.cpp:14->compute_c.cpp:23) on local variable 'temp', compute_c.cpp:11->compute_c.cpp:23 [11]  (0.000 ns)
+	'mul' operation 64 bit ('mul_ln14', compute_c.cpp:14->compute_c.cpp:23) [12]  (12.370 ns)
+	'icmp' operation 1 bit ('icmp_ln14', compute_c.cpp:14->compute_c.cpp:23) [13]  (3.560 ns)
+	'store' operation 0 bit ('temp_1_write_ln11', compute_c.cpp:11->compute_c.cpp:23) of variable 'add_ln14', compute_c.cpp:14->compute_c.cpp:23 on local variable 'temp', compute_c.cpp:11->compute_c.cpp:23 [21]  (1.610 ns)
+
+Resolution: For help on HLS 200-1016 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.055 seconds; current allocated memory: 182.387 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.012 seconds; current allocated memory: 183.492 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'compute' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-871] Estimated clock period (17.540 ns) exceeds the target (target clock period: 10.000 ns, clock uncertainty: 2.700 ns, effective delay budget: 7.300 ns).
+Resolution: For help on HLS 200-871 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-871.html
+WARNING: [HLS 200-1016] The critical path in module 'compute' consists of the following:
+	'call' operation 0 bit ('_ln4', compute_c.cpp:4->compute_c.cpp:23) to 'compute_Pipeline_loop_i' [23]  (17.540 ns)
+
+Resolution: For help on HLS 200-1016 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1016.html
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.017 seconds; current allocated memory: 183.680 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 183.789 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compute_Pipeline_loop_i' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'compute_Pipeline_loop_i' pipeline 'loop_i' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_64s_64s_64_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compute_Pipeline_loop_i'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 185.645 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'compute' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'compute/a' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'compute/b' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'compute/c' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'compute' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_64_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'compute'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.054 seconds; current allocated memory: 186.512 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 189.133 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.381 seconds; current allocated memory: 191.328 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for compute.
+INFO: [VLOG 209-307] Generating Verilog RTL for compute.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 57.01 MHz
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 13.857 seconds; peak allocated memory: 191.379 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 17s

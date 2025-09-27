@@ -1,0 +1,116 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2/hls/.autopilot/db\fir16.pp.0.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_fir16.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.5
+    DebugLoc:        { File: ./fir16.h, Line: 15, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_fir16.pp.0.cpp
+    DebugLoc:        { File: 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2/hls/.autopilot/db\fir16.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_fir16_ir
+Args:            
+  - Callee:          'fir16(ap_int<16> const*, ap_int<24>*)'
+    DebugLoc:        { File: fir16.cpp, Line: 4, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_fir16_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: fir16.cpp, Line: 8, Column: 11 }
+Function:        _Z5fir16PK6ap_intILi16EEPS_ILi24EE
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          shift_reg
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Init
+  - String:          '> at '
+  - LoopLoc:         'fir16.cpp:12:8'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Loop_i
+  - String:          '> at '
+  - LoopLoc:         'fir16.cpp:18:13'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fir16.cpp, Line: 22, Column: 9 }
+Function:        _Z5fir16PK6ap_intILi16EEPS_ILi24EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        Shift
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: fir16.cpp, Line: 30, Column: 14 }
+Function:        _Z5fir16PK6ap_intILi16EEPS_ILi24EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        MAC
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fir16.cpp, Line: 4, Column: 0 }
+Function:        _Z5fir16PK6ap_intILi16EEPS_ILi24EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Shift
+  - String:          ''' ('
+  - LoopLoc:         'fir16.cpp:22:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          fir16
+  - String:          ''' completely with a factor of '
+  - Factor:          '15'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: fir16.cpp, Line: 4, Column: 0 }
+Function:        _Z5fir16PK6ap_intILi16EEPS_ILi24EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        MAC
+  - String:          ''' ('
+  - LoopLoc:         'fir16.cpp:30:14'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          fir16
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...

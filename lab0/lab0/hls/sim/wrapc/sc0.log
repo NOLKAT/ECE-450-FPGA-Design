@@ -1,0 +1,6 @@
+   Build using "D:/Xilinx_2025/2025.1/Vitis/win64/tools/vcxx/libexec/clang++"
+   Compiling Tb_mux.cpp_pre.cpp.tb.cpp
+   Compiling Mux_2to1.cpp_pre.cpp.tb.cpp
+   Compiling apatb_mux_2to1.cpp
+   Compiling apatb_mux_2to1_ir.ll
+   Generating cosim.tv.exe

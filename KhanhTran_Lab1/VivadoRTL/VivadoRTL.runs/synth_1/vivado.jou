@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Wed Sep 10 20:04:48 2025
+# Process ID         : 31256
+# Current directory  : C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/VivadoRTL/VivadoRTL.runs/synth_1
+# Command line       : vivado.exe -log compute.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source compute.tcl
+# Log file           : C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/VivadoRTL/VivadoRTL.runs/synth_1/compute.vds
+# Journal file       : C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/VivadoRTL/VivadoRTL.runs/synth_1\vivado.jou
+# Running On         : katnlot
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 5 7600X 6-Core Processor             
+# CPU Frequency      : 4691 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 67768 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 72063 MB
+# Available Virtual  : 41537 MB
+#-----------------------------------------------------------
+source compute.tcl -notrace

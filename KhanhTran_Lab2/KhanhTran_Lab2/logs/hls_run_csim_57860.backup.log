@@ -1,0 +1,112 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=fir16.cpp' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/fir16.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=fir16.h' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/fir16.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=fir_16_unroll4.cpp' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/fir_16_unroll4.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=fir16_unroll16.cpp' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/fir16_unroll16.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=tb_fir16.cpp' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/tb_fir16.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=fir16' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7a35tcpg236-1' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [HLS 200-1465] Applying config ini 'csim.argv=-DDUT_NAME=fir16' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(14)
+INFO: [HLS 200-1465] Applying config ini 'csim.code_analyzer=1' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(5)
+INFO: [HLS 200-2174] Applying component config ini file C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2/hls-debug.cfg
+INFO: [HLS 200-1465] Applying config ini 'csim.O=0' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2/hls-debug.cfg(3)
+INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
+INFO: [HLS 200-1465] Applying config ini 'csim.clean=1' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2/hls-debug.cfg(4)
+INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
+INFO: [HLS 200-1465] Applying config ini 'csim.setup=1' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2/hls-debug.cfg(2)
+INFO: [HLS 200-1907] Replacing 'config_csim -O=0' with 'config_sim -O=0' in current solution file
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2/vitis-comp.json
+INFO: [SIM 211-200] Skipping execution of Code Analyzer due to 'setup' option, executing classic HLS C simulation
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../tb_fir16.cpp in debug mode
+   Compiling ../../../../fir16_unroll16.cpp in debug mode
+   Compiling ../../../../fir_16_unroll4.cpp in debug mode
+   Compiling ../../../../fir16.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../tb_fir16.cpp:2:
+In file included from ../../../../fir16.h:2:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/ap_int.h:10:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/etc/ap_common.h:677:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/etc/ap_private.h:68:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/hls_half.h:26:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/etc/hls_half_fpo.h:19:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/hls_fpo.h:140:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:150:
+D:/Xilinx_2025/2025.1/Vitis/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+D:/Xilinx_2025/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../fir16_unroll16.cpp:1:
+In file included from ../../../../fir16.h:2:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/ap_int.h:10:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/etc/ap_common.h:677:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/etc/ap_private.h:68:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/hls_half.h:26:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/etc/hls_half_fpo.h:19:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/hls_fpo.h:140:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:150:
+D:/Xilinx_2025/2025.1/Vitis/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+D:/Xilinx_2025/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../fir_16_unroll4.cpp:1:
+In file included from ../../../../fir16.h:2:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/ap_int.h:10:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/etc/ap_common.h:677:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/etc/ap_private.h:68:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/hls_half.h:26:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/etc/hls_half_fpo.h:19:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/hls_fpo.h:140:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:150:
+D:/Xilinx_2025/2025.1/Vitis/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+D:/Xilinx_2025/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../fir16.cpp:1:
+In file included from ../../../../fir16.h:2:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/ap_int.h:10:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/etc/ap_common.h:677:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/etc/ap_private.h:68:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/hls_half.h:26:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/etc/hls_half_fpo.h:19:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/hls_fpo.h:140:
+In file included from D:/Xilinx_2025/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:150:
+D:/Xilinx_2025/2025.1/Vitis/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+D:/Xilinx_2025/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+INFO: [HLS 200-2035] Skipping execution of C Simulation due to 'setup' option
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 7.766 seconds; peak allocated memory: 143.695 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 11s

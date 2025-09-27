@@ -1,0 +1,29 @@
+<pragmas>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>& ap_int_base<32, true>::operator+=<64, true>(ap_int_base<64, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="D:/Xilinx_2025/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h" line="534" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<24, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="fir16.cpp" line="5" pragmaType="inline" parentfunction="fir16" off="1" region="0" recursive="0"/>
+<pragma file="fir16.cpp" line="19" pragmaType="loop_tripcount" parentfunction="fir16" min="256" max="256" avg="256"/>
+<pragma file="fir16.cpp" line="23" pragmaType="loop_tripcount" parentfunction="fir16" min="15" max="15" avg="15"/>
+<pragma file="fir16.cpp" line="31" pragmaType="loop_tripcount" parentfunction="fir16" min="16" max="16" avg="16"/>
+<pragma file="fir16.cpp" line="13" pragmaType="loop_tripcount" parentfunction="fir16" min="16" max="16" avg="16"/>
+<pragma file="fir16.cpp" line="9" pragmaType="array_partition" parentfunction="fir16" dim="1" factor="0" mode="complete" dynamic="0" variable="shift_reg"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<24>::ap_int<32>(ap_int<32> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<16>::ap_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<64>::ap_int<64, true>(ap_int_base<64, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="D:/Xilinx_2025/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h" line="534" pragmaType="inline" parentfunction="ssdm_int<64, true>::ssdm_int(long)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::RType<32, true>::mult operator*<32, true, 32, true>(ap_int_base<32, true> const&, ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="D:/Xilinx_2025/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h" line="534" pragmaType="inline" parentfunction="ssdm_int<16, true>::ssdm_int(short)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<32>::ap_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<32>::ap_int<16>(ap_int<16> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<16, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base<16, true>(ap_int_base<16, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="D:/Xilinx_2025/2025.1/Vitis/common/technology/autopilot\etc/ap_common.h" line="534" pragmaType="inline" parentfunction="_ZN8ssdm_intILi24ELb1EEC2EDq24_i" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+</pragmas>

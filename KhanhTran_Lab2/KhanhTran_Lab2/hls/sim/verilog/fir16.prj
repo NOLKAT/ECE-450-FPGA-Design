@@ -1,0 +1,12 @@
+sv xil_defaultlib "glbl.v"
+sv xil_defaultlib "AESL_automem_x.v"
+sv xil_defaultlib "AESL_automem_y.v"
+sv xil_defaultlib "fir16.autotb.v"
+sv xil_defaultlib "fir16.v"
+sv xil_defaultlib "fir16_flow_control_loop_pipe.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+sv xil_defaultlib "./file_agent/file_agent_pkg.sv"     
+sv xil_defaultlib "./fir16_subsystem/fir16_subsystem_pkg.sv"           
+sv xil_defaultlib "./svtb/misc_interface.sv"    
+sv xil_defaultlib "./svtb/sv_module_top.sv"   
+

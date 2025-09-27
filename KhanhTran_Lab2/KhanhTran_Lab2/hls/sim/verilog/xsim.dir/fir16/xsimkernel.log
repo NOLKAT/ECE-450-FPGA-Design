@@ -1,0 +1,7 @@
+Running: xsim.dir/fir16/xsimk.exe -simmode gui -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=fir16_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -wdb fir16.wdb -simrunnum 0 -socket 64024
+Design successfully loaded
+Design Loading Memory Usage: 16936 KB (Peak: 16936 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 27404 KB (Peak: 27404 KB)
+Simulation CPU Usage: 437 ms

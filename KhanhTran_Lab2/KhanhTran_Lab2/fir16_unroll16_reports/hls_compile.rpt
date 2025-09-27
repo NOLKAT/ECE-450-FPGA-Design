@@ -1,0 +1,129 @@
+
+
+================================================================
+== Synthesis Summary Report of 'fir16_unroll16'
+================================================================
++ General Information: 
+    * Date:           Fri Sep 26 21:43:28 2025
+    * Version:        2025.1 (Build 6135595 on May 21 2025)
+    * Project:        KhanhTran_Lab2
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: artix7
+    * Target device:  xc7a35t-cpg236-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------+------+------+---------+-----------+----------+---------+------+----------+------+----+----------+----------+-----+
+    |      Modules     | Issue|      |       Latency       | Iteration|         | Trip |          |      |    |          |          |     |
+    |      & Loops     | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM | DSP|    FF    |    LUT   | URAM|
+    +------------------+------+------+---------+-----------+----------+---------+------+----------+------+----+----------+----------+-----+
+    |+ fir16_unroll16  |     -|  0.90|      261|  2.610e+03|         -|      256|     -|    rewind|     -|   -|  463 (1%)|  497 (2%)|    -|
+    | o Loop_i         |     -|  7.30|      259|  2.590e+03|         5|        1|   256|       yes|     -|   -|         -|         -|    -|
+    +------------------+------+------+---------+-----------+----------+---------+------+----------+------+----+----------+----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_MEMORY
++------------+-----------+----------+
+| Port       | Direction | Bitwidth |
++------------+-----------+----------+
+| x_address0 | out       | 8        |
+| x_q0       | in        | 16       |
+| y_address0 | out       | 8        |
+| y_d0       | out       | 24       |
++------------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+--------------------+
+| Argument | Direction | Datatype           |
++----------+-----------+--------------------+
+| x        | in        | ap_int<16> const * |
+| y        | out       | ap_int<24>*        |
++----------+-----------+--------------------+
+
+* SW-to-HW Mapping
++----------+--------------+---------+----------+
+| Argument | HW Interface | HW Type | HW Usage |
++----------+--------------+---------+----------+
+| x        | x_address0   | port    | offset   |
+| x        | x_ce0        | port    |          |
+| x        | x_q0         | port    |          |
+| y        | y_address0   | port    | offset   |
+| y        | y_ce0        | port    |          |
+| y        | y_we0        | port    |          |
+| y        | y_d0         | port    |          |
++----------+--------------+---------+----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++------------------------+-----+--------+------------+-------+--------+---------+
+| Name                   | DSP | Pragma | Variable   | Op    | Impl   | Latency |
++------------------------+-----+--------+------------+-------+--------+---------+
+| + fir16_unroll16       | 0   |        |            |       |        |         |
+|   tmp_fu_312_p2        |     |        | tmp        | add   | fabric | 0       |
+|   p_neg28_fu_474_p2    |     |        | p_neg28    | sub   | fabric | 0       |
+|   tmp23_fu_326_p2      |     |        | tmp23      | add   | fabric | 0       |
+|   tmp4_fu_344_p2       |     |        | tmp4       | add   | fabric | 0       |
+|   tmp6_fu_372_p2       |     |        | tmp6       | sub   | fabric | 0       |
+|   add_ln37_2_fu_384_p2 |     |        | add_ln37_2 | add   | fabric | 0       |
+|   i_fu_221_p2          |     |        | i          | add   | fabric | 0       |
+|   icmp_ln19_fu_227_p2  |     |        | icmp_ln19  | seteq | auto   | 0       |
++------------------------+-----+--------+------------+-------+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+-----------------------------------+---------------------------------------------------+
+| Type            | Options                           | Location                                          |
++-----------------+-----------------------------------+---------------------------------------------------+
+| INLINE          | off                               | fir16.cpp:5 in fir16                              |
+| ARRAY_PARTITION | variable=shift_reg complete dim=1 | fir16.cpp:9 in fir16, shift_reg                   |
+| LOOP_TRIPCOUNT  | min=16 max=16                     | fir16.cpp:13 in fir16                             |
+| LOOP_TRIPCOUNT  | min=256 max=256                   | fir16.cpp:19 in fir16                             |
+| LOOP_TRIPCOUNT  | min=15 max=15                     | fir16.cpp:23 in fir16                             |
+| LOOP_TRIPCOUNT  | min=16 max=16                     | fir16.cpp:31 in fir16                             |
+| INLINE          | off                               | fir16_unroll16.cpp:6 in fir16_unroll16            |
+| ARRAY_PARTITION | variable=shift_reg complete dim=1 | fir16_unroll16.cpp:9 in fir16_unroll16, shift_reg |
+| ARRAY_PARTITION | variable=COEFF complete dim=1     | fir16_unroll16.cpp:10 in fir16_unroll16, COEFF    |
+| LOOP_TRIPCOUNT  | min=16 max=16                     | fir16_unroll16.cpp:14 in fir16_unroll16           |
+| PIPELINE        | ii=1                              | fir16_unroll16.cpp:20 in fir16_unroll16           |
+| LOOP_TRIPCOUNT  | min=256 max=256                   | fir16_unroll16.cpp:21 in fir16_unroll16           |
+| UNROLL          |                                   | fir16_unroll16.cpp:25 in fir16_unroll16           |
+| UNROLL          |                                   | fir16_unroll16.cpp:33 in fir16_unroll16           |
+| INLINE          | off                               | fir_16_unroll4.cpp:6 in fir16_unroll4             |
+| ARRAY_PARTITION | variable=shift_reg complete dim=1 | fir_16_unroll4.cpp:9 in fir16_unroll4, shift_reg  |
+| ARRAY_PARTITION | variable=COEFF complete dim=1     | fir_16_unroll4.cpp:10 in fir16_unroll4, COEFF     |
+| LOOP_TRIPCOUNT  | min=16 max=16                     | fir_16_unroll4.cpp:14 in fir16_unroll4            |
+| PIPELINE        |                                   | fir_16_unroll4.cpp:20 in fir16_unroll4            |
+| LOOP_TRIPCOUNT  | min=256 max=256                   | fir_16_unroll4.cpp:21 in fir16_unroll4            |
+| UNROLL          |                                   | fir_16_unroll4.cpp:25 in fir16_unroll4            |
+| UNROLL          | factor=4                          | fir_16_unroll4.cpp:33 in fir16_unroll4            |
++-----------------+-----------------------------------+---------------------------------------------------+
+
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="auto" LATENCY="0" OPTYPE="mul" PRAGMA="" RTLNAME="mul_64s_64s_64_1_1_U1" SOURCE="compute_c.cpp:14" VARIABLE="mul_ln14" MODULE="compute_Pipeline_loop_i" LOOP="loop_i" BUNDLEDNAME="" DSP="10" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op setgt" ID="" IMPL="auto" LATENCY="0" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln14_fu_74_p2" SOURCE="compute_c.cpp:14" VARIABLE="icmp_ln14" MODULE="compute_Pipeline_loop_i" LOOP="loop_i" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln14_fu_79_p2" SOURCE="compute_c.cpp:14" VARIABLE="add_ln14" MODULE="compute_Pipeline_loop_i" LOOP="loop_i" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="auto" LATENCY="1" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_64_2_1_U5" SOURCE="compute_c.cpp:2" VARIABLE="aa" MODULE="compute" LOOP="" BUNDLEDNAME="" DSP="4" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="auto" LATENCY="1" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_64_2_1_U6" SOURCE="compute_c.cpp:3" VARIABLE="bb" MODULE="compute" LOOP="" BUNDLEDNAME="" DSP="4" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op sub" ID="" IMPL="fabric" LATENCY="0" OPTYPE="sub" PRAGMA="" RTLNAME="result_fu_91_p2" SOURCE="compute_c.cpp:4" VARIABLE="result" MODULE="compute" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op setlt" ID="" IMPL="auto" LATENCY="0" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln6_fu_99_p2" SOURCE="compute_c.cpp:6" VARIABLE="icmp_ln6" MODULE="compute" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0" USAGE="" STORAGESUBTYPE="" STORAGESIZE=""/>
+</BindInfo>

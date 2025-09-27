@@ -1,0 +1,41 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/KhanhTran_Lab1 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/KhanhTran_Lab1/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/KhanhTran_Lab1'.
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=lab1.cpp' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/lab1.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=tb_compute.cpp' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/tb_compute.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=compute_c' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/hls_config.cfg(13)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7a35tcpg236-1' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying config ini 'cosim.setup=1' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/hls_config.cfg(14)
+INFO: [HLS 200-1465] Applying config ini 'cosim.wave_debug=0' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/hls_config.cfg(15)
+INFO: [HLS 200-1465] Applying config ini 'csim.clean=1' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying config ini 'csim.code_analyzer=0' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying config ini 'csim.setup=1' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'sim.O=1' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/hls_config.cfg(9)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab1/KhanhTran_Lab1/vitis-comp.json
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "D:/Xilinx_2025/2025.1/Vitis/win64/tools/vcxx/libexec/clang++"
+   Compiling apatb_compute_c.cpp
+   Compiling lab1.cpp_pre.cpp.tb.cpp
+   Compiling tb_compute.cpp_pre.cpp.tb.cpp
+   Compiling apatb_compute_c_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+FAIL  a=46340 b=0  got c=289398  exp=46340
+PASSED 204 / 205 tests
+ERROR: [COSIM 212-359] Aborting co-simulation: C TB simulation failed, nonzero return value '1'.
+ERROR: [COSIM 212-320] C TB testing failed, stop generating test vectors. Please check C TB or re-run cosim.
+ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: 
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 6.593 seconds; peak allocated memory: 209.727 MB.

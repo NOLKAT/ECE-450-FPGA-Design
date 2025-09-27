@@ -1,0 +1,156 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\ankha\\Desktop\\FPGA_Design\\lab0\\lab0\\lab0.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "09/08/25 21:21:35",
+ "timestampMillis": "1757380895943",
+ "buildStep": {
+  "cmdId": "52ede96b-948f-40fd-86c3-99a177023fa5",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\ankha\\Desktop\\FPGA_Design\\lab0\\lab0\\logs\\lab0.steps.log",
+  "commandLine": "D:/Xilinx_2025/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\Users\\ankha\\Desktop\\FPGA_Design\\lab0\\hls_config.cfg --work_dir lab0 ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\Users\\ankha\\Desktop\\FPGA_Design\\lab0\\hls_config.cfg",
+   "--work_dir",
+   "lab0"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\lab0"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/08/25 21:21:35",
+ "timestampMillis": "1757380895943",
+ "status": {
+  "cmdId": "52ede96b-948f-40fd-86c3-99a177023fa5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "09/08/25 21:21:40",
+ "timestampMillis": "1757380900567",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "mux_2to1",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\ankha\\Desktop\\FPGA_Design\\lab0\\Mux_2to1.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "09/08/25 21:21:40",
+ "timestampMillis": "1757380900568",
+ "buildStep": {
+  "cmdId": "b7f752aa-1939-463c-892d-18caf4cc2a5a",
+  "name": "",
+  "logFile": "C:/Users\\ankha\\Desktop\\FPGA_Design\\lab0\\lab0\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\lab0"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/08/25 21:21:40",
+ "timestampMillis": "1757380900569",
+ "status": {
+  "cmdId": "b7f752aa-1939-463c-892d-18caf4cc2a5a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/08/25 21:21:44",
+ "timestampMillis": "1757380904732",
+ "status": {
+  "cmdId": "b7f752aa-1939-463c-892d-18caf4cc2a5a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/08/25 21:21:44",
+ "timestampMillis": "1757380904808",
+ "status": {
+  "cmdId": "52ede96b-948f-40fd-86c3-99a177023fa5",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/08/25 21:21:44",
+ "timestampMillis": "1757380904809",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/08/25 21:21:44",
+ "timestampMillis": "1757380904809",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

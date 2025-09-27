@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "KhanhTran_Lab2",
+      "type": "gdb",
+      "request": "launch",
+      "target": "${workspaceFolder}\\KhanhTran_Lab2\\KhanhTran_Lab2\\hls\\csim\\build\\csim.exe",
+      "arguments": "-DDUT_NAME=fir16",
+      "cwd": "${workspaceFolder}\\KhanhTran_Lab2\\KhanhTran_Lab2\\hls\\csim\\build",
+      "gdbpath": "${env:XILINX_HLS}\\tps\\win64\\msys64\\mingw64\\bin\\gdb.exe",
+      "debugger_args": [
+        "--init-command=${env:XILINX_HLS}\\tps\\win64\\msys64\\mingw64\\bin\\gdbinit"
+      ],
+      "valuesFormatting": "prettyPrinters",
+      "env": {
+        "PATH": "D:\\Xilinx_2025\\2025.1\\Vitis\\win64\\tools\\fpo_v7_1;D:\\Xilinx_2025\\2025.1\\Vitis\\win64\\tools\\fft_v9_1;D:\\Xilinx_2025\\2025.1\\Vitis\\win64\\tools\\fir_v7_0;D:\\Xilinx_2025\\2025.1\\Vitis\\win64\\tools\\dds_v6_0;D:\\Xilinx_2025\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt\\bin;${env:PATH}"
+      }
+    }
+  ]
+}

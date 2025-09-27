@@ -1,0 +1,4 @@
+Running: xsim.dir/mux_2to1/xsimk.exe -simmode gui -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=mux_2to1_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -wdb mux_2to1.wdb -simrunnum 0 -socket 49910
+Design successfully loaded
+Design Loading Memory Usage: 18500 KB (Peak: 18500 KB)
+Design Loading CPU Usage: 62 ms

@@ -1,0 +1,11 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch CLANG as the compiler.
+   Compiling ../../../../tb_fir16.cpp in debug mode
+   Compiling ../../../../fir16.cpp in debug mode
+   Generating csim.exe
+[IMPULSE] PASS
+[RAMP] PASS
+[PRBS] PASS
+OVERALL: PASS — FIR outputs match golden for all tests.
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -1,0 +1,540 @@
+{
+    "top_level_hw_fn_id": 353,
+    "functions": {
+        "200": {
+            "fn_id": 200,
+            "mangled_name": "_GLOBAL__sub_I_tb_fir16.cpp",
+            "fully_qualified_name": "_GLOBAL__sub_I_tb_fir16",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab2\\tb_fir16.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "201": {
+            "fn_id": 201,
+            "mangled_name": "__cxx_global_var_init",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab2\\tb_fir16.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "202": {
+            "fn_id": 202,
+            "mangled_name": "__cxx_global_var_init.1",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab2\\tb_fir16.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "203": {
+            "fn_id": 203,
+            "mangled_name": "_ZN6ap_intILi16EEC1Ei",
+            "fully_qualified_name": "ap_int<16>::ap_int",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "d:\\xilinx_2025\\2025.1\\win64\\tools\\vcxx\\data\\include\\ap_int.h",
+                "line": 135,
+                "column": 0
+            }
+        },
+        "204": {
+            "fn_id": 204,
+            "mangled_name": "_ZN6ap_intILi16EEC2Ei",
+            "fully_qualified_name": "ap_int<16>::ap_int",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "d:\\xilinx_2025\\2025.1\\win64\\tools\\vcxx\\data\\include\\ap_int.h",
+                "line": 135,
+                "column": 0
+            }
+        },
+        "205": {
+            "fn_id": 205,
+            "mangled_name": "_ZN11ap_int_baseILi16ELb1EEC2Ei",
+            "fully_qualified_name": "ap_int_base<16, true>::ap_int_base",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "d:\\xilinx_2025\\2025.1\\win64\\tools\\vcxx\\data\\include\\etc\\ap_int_base.h",
+                "line": 226,
+                "column": 0
+            }
+        },
+        "206": {
+            "fn_id": 206,
+            "mangled_name": "_ZN11ap_int_baseILi16ELb1EE18checkOverflowBaseCIiEEvT_",
+            "fully_qualified_name": "ap_int_base<16, true>::checkOverflowBaseC<int>",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "d:\\xilinx_2025\\2025.1\\win64\\tools\\vcxx\\data\\include\\etc\\ap_int_base.h",
+                "line": 723,
+                "column": 0
+            }
+        },
+        "207": {
+            "fn_id": 207,
+            "mangled_name": "_ZN10ap_privateILi16ELb1ELb1EEC1Ei",
+            "fully_qualified_name": "ap_private<16, true, true>::ap_private",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "d:\\xilinx_2025\\2025.1\\win64\\tools\\vcxx\\data\\include\\etc\\ap_private.h",
+                "line": 1703,
+                "column": 0
+            }
+        },
+        "208": {
+            "fn_id": 208,
+            "mangled_name": "_ZN12ssdm_int_simILi16ELb1EEC2E10ap_privateILi16ELb1ELb1EE",
+            "fully_qualified_name": "ssdm_int_sim<16, true>::ssdm_int_sim",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "d:\\xilinx_2025\\2025.1\\win64\\tools\\vcxx\\data\\include\\etc\\ap_common.h",
+                "line": 661,
+                "column": 0
+            }
+        },
+        "209": {
+            "fn_id": 209,
+            "mangled_name": "_ZN10ap_privateILi16ELb1ELb1EEaSEi",
+            "fully_qualified_name": "ap_private<16, true, true>::operator=",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "d:\\xilinx_2025\\2025.1\\win64\\tools\\vcxx\\data\\include\\etc\\ap_private.h",
+                "line": 1541,
+                "column": 0
+            }
+        },
+        "210": {
+            "fn_id": 210,
+            "mangled_name": "_ZN10ap_privateILi16ELb1ELb1EE10set_canaryEv",
+            "fully_qualified_name": "ap_private<16, true, true>::set_canary",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "d:\\xilinx_2025\\2025.1\\win64\\tools\\vcxx\\data\\include\\etc\\ap_private.h",
+                "line": 1405,
+                "column": 0
+            }
+        },
+        "211": {
+            "fn_id": 211,
+            "mangled_name": "_ZN10ap_privateILi16ELb1ELb1EE15clearUnusedBitsEv",
+            "fully_qualified_name": "ap_private<16, true, true>::clearUnusedBits",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "d:\\xilinx_2025\\2025.1\\win64\\tools\\vcxx\\data\\include\\etc\\ap_private.h",
+                "line": 2231,
+                "column": 0
+            }
+        },
+        "212": {
+            "fn_id": 212,
+            "mangled_name": "_ZN10ap_privateILi16ELb1ELb1EE12check_canaryEv",
+            "fully_qualified_name": "ap_private<16, true, true>::check_canary",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "d:\\xilinx_2025\\2025.1\\win64\\tools\\vcxx\\data\\include\\etc\\ap_private.h",
+                "line": 1404,
+                "column": 0
+            }
+        },
+        "213": {
+            "fn_id": 213,
+            "mangled_name": "_ZN10ap_privateILi16ELb1ELb1EEC2Ei",
+            "fully_qualified_name": "ap_private<16, true, true>::ap_private",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "d:\\xilinx_2025\\2025.1\\win64\\tools\\vcxx\\data\\include\\etc\\ap_private.h",
+                "line": 1703,
+                "column": 0
+            }
+        },
+        "215": {
+            "fn_id": 215,
+            "mangled_name": "__dtor__ZStL8__ioinit",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "D:\\Xilinx_2025\\2025.1\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "330": {
+            "fn_id": 330,
+            "mangled_name": "_GLOBAL__sub_I_fir16.cpp",
+            "fully_qualified_name": "_GLOBAL__sub_I_fir16",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab2\\fir16.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "331": {
+            "fn_id": 331,
+            "mangled_name": "__cxx_global_var_init.2",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab2\\fir16.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "332": {
+            "fn_id": 332,
+            "mangled_name": "__cxx_global_var_init.1.3",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab2\\fir16.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "333": {
+            "fn_id": 333,
+            "mangled_name": "__dtor__ZStL8__ioinit.6",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "D:\\Xilinx_2025\\2025.1\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "334": {
+            "fn_id": 334,
+            "mangled_name": "_GLOBAL__sub_I_fir16_unroll16.cpp",
+            "fully_qualified_name": "_GLOBAL__sub_I_fir16_unroll16",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab2\\fir16_unroll16.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "335": {
+            "fn_id": 335,
+            "mangled_name": "__cxx_global_var_init.8",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab2\\fir16_unroll16.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "336": {
+            "fn_id": 336,
+            "mangled_name": "__cxx_global_var_init.1.9",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab2\\fir16_unroll16.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "337": {
+            "fn_id": 337,
+            "mangled_name": "__dtor__ZStL8__ioinit.12",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "D:\\Xilinx_2025\\2025.1\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "339": {
+            "fn_id": 339,
+            "mangled_name": "_GLOBAL__sub_I_fir_16_unroll4.cpp",
+            "fully_qualified_name": "_GLOBAL__sub_I_fir_16_unroll4",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab2\\fir_16_unroll4.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "340": {
+            "fn_id": 340,
+            "mangled_name": "__cxx_global_var_init.14",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab2\\fir_16_unroll4.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "341": {
+            "fn_id": 341,
+            "mangled_name": "__cxx_global_var_init.1.15",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab2\\fir_16_unroll4.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "342": {
+            "fn_id": 342,
+            "mangled_name": "__dtor__ZStL8__ioinit.18",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "D:\\Xilinx_2025\\2025.1\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "344": {
+            "fn_id": 344,
+            "mangled_name": "_GLOBAL__sub_I_fir16.cpp.20",
+            "fully_qualified_name": "_GLOBAL__sub_I_fir16",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab2\\fir16.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "345": {
+            "fn_id": 345,
+            "mangled_name": "_GLOBAL__sub_I_fir_16_unroll4.cpp.21",
+            "fully_qualified_name": "_GLOBAL__sub_I_fir_16_unroll4",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab2\\fir_16_unroll4.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "346": {
+            "fn_id": 346,
+            "mangled_name": "_GLOBAL__sub_I_fir16_unroll16.cpp.22",
+            "fully_qualified_name": "_GLOBAL__sub_I_fir16_unroll16",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab2\\fir16_unroll16.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "347": {
+            "fn_id": 347,
+            "mangled_name": "__cxx_global_var_init.7",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab2\\fir16_unroll16.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "348": {
+            "fn_id": 348,
+            "mangled_name": "__dtor__ZStL8__ioinit.9",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "D:\\Xilinx_2025\\2025.1\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "349": {
+            "fn_id": 349,
+            "mangled_name": "__cxx_global_var_init.2.23",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab2\\fir_16_unroll4.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "350": {
+            "fn_id": 350,
+            "mangled_name": "__dtor__ZStL8__ioinit.4",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "D:\\Xilinx_2025\\2025.1\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "351": {
+            "fn_id": 351,
+            "mangled_name": "__cxx_global_var_init.24",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab2\\fir16.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "352": {
+            "fn_id": 352,
+            "mangled_name": "__dtor__ZStL8__ioinit.26",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "D:\\Xilinx_2025\\2025.1\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "353": {
+            "fn_id": 353,
+            "mangled_name": "_Z5fir16PK6ap_intILi16EEPS_ILi24EE",
+            "fully_qualified_name": "fir16",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab2\\fir16.cpp",
+                "line": 4,
+                "column": 1
+            }
+        }
+    },
+    "loops": {
+        "27": {
+            "fn_id": 353,
+            "lp_id": 27,
+            "label": "Loop_i"
+        },
+        "28": {
+            "fn_id": 353,
+            "lp_id": 28,
+            "label": "Shift"
+        },
+        "29": {
+            "fn_id": 353,
+            "lp_id": 29,
+            "label": "MAC"
+        },
+        "30": {
+            "fn_id": 353,
+            "lp_id": 30,
+            "label": "Init"
+        }
+    },
+    "used_types": [
+        {
+            "type_name": "Init",
+            "dwarf_tag": "class",
+            "count": 7
+        },
+        {
+            "type_name": "ap_int",
+            "dwarf_tag": "struct",
+            "count": 9
+        },
+        {
+            "type_name": "ap_int_base",
+            "dwarf_tag": "struct",
+            "count": 2
+        },
+        {
+            "type_name": "ap_private",
+            "dwarf_tag": "class",
+            "count": 6
+        },
+        {
+            "type_name": "int",
+            "dwarf_tag": "base",
+            "count": 4
+        },
+        {
+            "type_name": "ssdm_int_sim",
+            "dwarf_tag": "struct",
+            "count": 1
+        }
+    ]
+}

@@ -1,0 +1,308 @@
+09/26/25 20:46:48: Running xcd server. This server was built by gradle.
+09/26/25 20:46:48: Server was asked to start on port: '49359'
+09/26/25 20:46:48: Server is using token UUID: '7209eb74-9b3b-11f0-98f8-bcc746a5061b'
+09/26/25 20:46:48: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/26/25 20:46:48: Attempting to start server on port '49359'
+09/26/25 20:46:48: Running Dispatch Server
+09/26/25 20:46:48: Version 2.2.0
+09/26/25 20:46:48: Dispatch Server: Accepted socket connection from client
+09/26/25 20:46:48: Starting Socket connection
+09/26/25 20:46:48: EXCHANGE_TOKEN received, server token: 7209eb74-9b3b-11f0-98f8-bcc746a5061b, passed token: 7209eb74-9b3b-11f0-98f8-bcc746a5061b
+09/26/25 20:46:48: SESSION_MGR: creating session with session uuid: 'fcdf7f6c-c6ff-45d3-a94a-b30f297aace1' and name 'Code Analyzer'
+09/26/25 20:46:48: KERNEL_SVC: creating session with uuid: 'fcdf7f6c-c6ff-45d3-a94a-b30f297aace1' and name 'Code Analyzer'
+09/26/25 20:46:48: GUIDANCE_SMGR: creating guidance session with uuid: 'fcdf7f6c-c6ff-45d3-a94a-b30f297aace1' and name 'Code Analyzer'
+09/26/25 20:47:00: SESSION_MGR: closing session for UUID 'fcdf7f6c-c6ff-45d3-a94a-b30f297aace1' with name ''
+09/26/25 20:47:00: KERNEL_SVC: closing session for UUID 'fcdf7f6c-c6ff-45d3-a94a-b30f297aace1' with name ''
+09/26/25 20:47:00: GUIDANCE_SMGR: closing session for UUID 'fcdf7f6c-c6ff-45d3-a94a-b30f297aace1' with name ''
+09/26/25 20:47:00: STOP_SERVER received, server token: 7209eb74-9b3b-11f0-98f8-bcc746a5061b, passed token: 7209eb74-9b3b-11f0-98f8-bcc746a5061b
+09/26/25 20:47:00: Socket received request to stop server.
+09/26/25 20:47:00: Dispatch Server: do_await_stop
+09/26/25 20:47:00: SERVER: destructor for server bound to port 49359
+09/26/25 20:47:00: Server exiting with status 0.
+09/26/25 20:47:00: Closing log file.
+09/26/25 21:14:18: Running xcd server. This server was built by gradle.
+09/26/25 21:14:18: Server was asked to start on port: '56158'
+09/26/25 21:14:18: Server is using token UUID: '49d67df8-9b3f-11f0-949f-bcc746a5061b'
+09/26/25 21:14:18: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/26/25 21:14:18: Attempting to start server on port '56158'
+09/26/25 21:14:18: Running Dispatch Server
+09/26/25 21:14:18: Version 2.2.0
+09/26/25 21:14:18: Dispatch Server: Accepted socket connection from client
+09/26/25 21:14:18: Starting Socket connection
+09/26/25 21:14:18: EXCHANGE_TOKEN received, server token: 49d67df8-9b3f-11f0-949f-bcc746a5061b, passed token: 49d67df8-9b3f-11f0-949f-bcc746a5061b
+09/26/25 21:14:18: SESSION_MGR: creating session with session uuid: 'd9d5fb68-3414-4632-8e3d-df776020f3ec' and name 'Code Analyzer'
+09/26/25 21:14:18: KERNEL_SVC: creating session with uuid: 'd9d5fb68-3414-4632-8e3d-df776020f3ec' and name 'Code Analyzer'
+09/26/25 21:14:18: GUIDANCE_SMGR: creating guidance session with uuid: 'd9d5fb68-3414-4632-8e3d-df776020f3ec' and name 'Code Analyzer'
+09/26/25 21:14:25: SESSION_MGR: closing session for UUID 'd9d5fb68-3414-4632-8e3d-df776020f3ec' with name ''
+09/26/25 21:14:25: KERNEL_SVC: closing session for UUID 'd9d5fb68-3414-4632-8e3d-df776020f3ec' with name ''
+09/26/25 21:14:25: GUIDANCE_SMGR: closing session for UUID 'd9d5fb68-3414-4632-8e3d-df776020f3ec' with name ''
+09/26/25 21:14:25: STOP_SERVER received, server token: 49d67df8-9b3f-11f0-949f-bcc746a5061b, passed token: 49d67df8-9b3f-11f0-949f-bcc746a5061b
+09/26/25 21:14:25: Socket received request to stop server.
+09/26/25 21:14:25: Dispatch Server: do_await_stop
+09/26/25 21:14:25: SERVER: destructor for server bound to port 56158
+09/26/25 21:14:25: Server exiting with status 0.
+09/26/25 21:14:25: Closing log file.
+09/26/25 21:15:45: Running xcd server. This server was built by gradle.
+09/26/25 21:15:45: Server was asked to start on port: '60977'
+09/26/25 21:15:45: Server is using token UUID: '7dcda39a-9b3f-11f0-8468-bcc746a5061b'
+09/26/25 21:15:45: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/26/25 21:15:45: Attempting to start server on port '60977'
+09/26/25 21:15:45: Running Dispatch Server
+09/26/25 21:15:45: Version 2.2.0
+09/26/25 21:15:45: Dispatch Server: Accepted socket connection from client
+09/26/25 21:15:45: Starting Socket connection
+09/26/25 21:15:45: EXCHANGE_TOKEN received, server token: 7dcda39a-9b3f-11f0-8468-bcc746a5061b, passed token: 7dcda39a-9b3f-11f0-8468-bcc746a5061b
+09/26/25 21:15:45: SESSION_MGR: creating session with session uuid: '9543f32b-8ff1-4c24-9fbb-ca4bdcee42fe' and name 'Code Analyzer'
+09/26/25 21:15:45: KERNEL_SVC: creating session with uuid: '9543f32b-8ff1-4c24-9fbb-ca4bdcee42fe' and name 'Code Analyzer'
+09/26/25 21:15:45: GUIDANCE_SMGR: creating guidance session with uuid: '9543f32b-8ff1-4c24-9fbb-ca4bdcee42fe' and name 'Code Analyzer'
+09/26/25 21:15:47: SESSION_MGR: closing session for UUID '9543f32b-8ff1-4c24-9fbb-ca4bdcee42fe' with name ''
+09/26/25 21:15:47: KERNEL_SVC: closing session for UUID '9543f32b-8ff1-4c24-9fbb-ca4bdcee42fe' with name ''
+09/26/25 21:15:47: GUIDANCE_SMGR: closing session for UUID '9543f32b-8ff1-4c24-9fbb-ca4bdcee42fe' with name ''
+09/26/25 21:15:47: STOP_SERVER received, server token: 7dcda39a-9b3f-11f0-8468-bcc746a5061b, passed token: 7dcda39a-9b3f-11f0-8468-bcc746a5061b
+09/26/25 21:15:47: Socket received request to stop server.
+09/26/25 21:15:47: Dispatch Server: do_await_stop
+09/26/25 21:15:47: SERVER: destructor for server bound to port 60977
+09/26/25 21:15:47: Server exiting with status 0.
+09/26/25 21:15:47: Closing log file.
+09/26/25 21:16:26: Running xcd server. This server was built by gradle.
+09/26/25 21:16:26: Server was asked to start on port: '61051'
+09/26/25 21:16:26: Server is using token UUID: '95d1f1e7-9b3f-11f0-938d-bcc746a5061b'
+09/26/25 21:16:26: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/26/25 21:16:26: Attempting to start server on port '61051'
+09/26/25 21:16:26: Running Dispatch Server
+09/26/25 21:16:26: Version 2.2.0
+09/26/25 21:16:26: Dispatch Server: Accepted socket connection from client
+09/26/25 21:16:26: Starting Socket connection
+09/26/25 21:16:26: EXCHANGE_TOKEN received, server token: 95d1f1e7-9b3f-11f0-938d-bcc746a5061b, passed token: 95d1f1e7-9b3f-11f0-938d-bcc746a5061b
+09/26/25 21:16:26: SESSION_MGR: creating session with session uuid: 'c927b368-e614-4e8b-882f-4ce5127b3741' and name 'Code Analyzer'
+09/26/25 21:16:26: KERNEL_SVC: creating session with uuid: 'c927b368-e614-4e8b-882f-4ce5127b3741' and name 'Code Analyzer'
+09/26/25 21:16:26: GUIDANCE_SMGR: creating guidance session with uuid: 'c927b368-e614-4e8b-882f-4ce5127b3741' and name 'Code Analyzer'
+09/26/25 21:16:35: SESSION_MGR: closing session for UUID 'c927b368-e614-4e8b-882f-4ce5127b3741' with name ''
+09/26/25 21:16:35: KERNEL_SVC: closing session for UUID 'c927b368-e614-4e8b-882f-4ce5127b3741' with name ''
+09/26/25 21:16:35: GUIDANCE_SMGR: closing session for UUID 'c927b368-e614-4e8b-882f-4ce5127b3741' with name ''
+09/26/25 21:16:35: STOP_SERVER received, server token: 95d1f1e7-9b3f-11f0-938d-bcc746a5061b, passed token: 95d1f1e7-9b3f-11f0-938d-bcc746a5061b
+09/26/25 21:16:35: Socket received request to stop server.
+09/26/25 21:16:35: Dispatch Server: do_await_stop
+09/26/25 21:16:35: SERVER: destructor for server bound to port 61051
+09/26/25 21:16:35: Server exiting with status 0.
+09/26/25 21:16:35: Closing log file.
+09/26/25 21:18:48: Running xcd server. This server was built by gradle.
+09/26/25 21:18:48: Server was asked to start on port: '59429'
+09/26/25 21:18:48: Server is using token UUID: 'eab1e72d-9b3f-11f0-9cba-bcc746a5061b'
+09/26/25 21:18:48: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/26/25 21:18:48: Attempting to start server on port '59429'
+09/26/25 21:18:48: Running Dispatch Server
+09/26/25 21:18:48: Version 2.2.0
+09/26/25 21:18:48: Dispatch Server: Accepted socket connection from client
+09/26/25 21:18:48: Starting Socket connection
+09/26/25 21:18:48: EXCHANGE_TOKEN received, server token: eab1e72d-9b3f-11f0-9cba-bcc746a5061b, passed token: eab1e72d-9b3f-11f0-9cba-bcc746a5061b
+09/26/25 21:18:48: SESSION_MGR: creating session with session uuid: 'a26013ac-99cc-4ac3-ae84-b27b36d9480e' and name 'Code Analyzer'
+09/26/25 21:18:48: KERNEL_SVC: creating session with uuid: 'a26013ac-99cc-4ac3-ae84-b27b36d9480e' and name 'Code Analyzer'
+09/26/25 21:18:48: GUIDANCE_SMGR: creating guidance session with uuid: 'a26013ac-99cc-4ac3-ae84-b27b36d9480e' and name 'Code Analyzer'
+09/26/25 21:18:59: SESSION_MGR: closing session for UUID 'a26013ac-99cc-4ac3-ae84-b27b36d9480e' with name ''
+09/26/25 21:18:59: KERNEL_SVC: closing session for UUID 'a26013ac-99cc-4ac3-ae84-b27b36d9480e' with name ''
+09/26/25 21:18:59: GUIDANCE_SMGR: closing session for UUID 'a26013ac-99cc-4ac3-ae84-b27b36d9480e' with name ''
+09/26/25 21:18:59: STOP_SERVER received, server token: eab1e72d-9b3f-11f0-9cba-bcc746a5061b, passed token: eab1e72d-9b3f-11f0-9cba-bcc746a5061b
+09/26/25 21:18:59: Socket received request to stop server.
+09/26/25 21:18:59: Dispatch Server: do_await_stop
+09/26/25 21:18:59: SERVER: destructor for server bound to port 59429
+09/26/25 21:18:59: Server exiting with status 0.
+09/26/25 21:18:59: Closing log file.
+09/26/25 21:21:01: Running xcd server. This server was built by gradle.
+09/26/25 21:21:01: Server was asked to start on port: '52294'
+09/26/25 21:21:01: Server is using token UUID: '3a5fb32c-9b40-11f0-a605-bcc746a5061b'
+09/26/25 21:21:01: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/26/25 21:21:01: Attempting to start server on port '52294'
+09/26/25 21:21:01: Running Dispatch Server
+09/26/25 21:21:01: Version 2.2.0
+09/26/25 21:21:02: Dispatch Server: Accepted socket connection from client
+09/26/25 21:21:02: Starting Socket connection
+09/26/25 21:21:02: EXCHANGE_TOKEN received, server token: 3a5fb32c-9b40-11f0-a605-bcc746a5061b, passed token: 3a5fb32c-9b40-11f0-a605-bcc746a5061b
+09/26/25 21:21:02: SESSION_MGR: creating session with session uuid: '2985ff6e-921f-4713-b212-774ef6143d32' and name 'Code Analyzer'
+09/26/25 21:21:02: KERNEL_SVC: creating session with uuid: '2985ff6e-921f-4713-b212-774ef6143d32' and name 'Code Analyzer'
+09/26/25 21:21:02: GUIDANCE_SMGR: creating guidance session with uuid: '2985ff6e-921f-4713-b212-774ef6143d32' and name 'Code Analyzer'
+09/26/25 21:21:14: SESSION_MGR: closing session for UUID '2985ff6e-921f-4713-b212-774ef6143d32' with name ''
+09/26/25 21:21:14: KERNEL_SVC: closing session for UUID '2985ff6e-921f-4713-b212-774ef6143d32' with name ''
+09/26/25 21:21:14: GUIDANCE_SMGR: closing session for UUID '2985ff6e-921f-4713-b212-774ef6143d32' with name ''
+09/26/25 21:21:14: STOP_SERVER received, server token: 3a5fb32c-9b40-11f0-a605-bcc746a5061b, passed token: 3a5fb32c-9b40-11f0-a605-bcc746a5061b
+09/26/25 21:21:14: Socket received request to stop server.
+09/26/25 21:21:14: Dispatch Server: do_await_stop
+09/26/25 21:21:14: SERVER: destructor for server bound to port 52294
+09/26/25 21:21:14: Server exiting with status 0.
+09/26/25 21:21:14: Closing log file.
+09/26/25 21:25:33: Running xcd server. This server was built by gradle.
+09/26/25 21:25:33: Server was asked to start on port: '49312'
+09/26/25 21:25:33: Server is using token UUID: 'dc6a9c3c-9b40-11f0-a34c-bcc746a5061b'
+09/26/25 21:25:33: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/26/25 21:25:33: Attempting to start server on port '49312'
+09/26/25 21:25:33: Running Dispatch Server
+09/26/25 21:25:33: Version 2.2.0
+09/26/25 21:25:33: Dispatch Server: Accepted socket connection from client
+09/26/25 21:25:33: Starting Socket connection
+09/26/25 21:25:33: EXCHANGE_TOKEN received, server token: dc6a9c3c-9b40-11f0-a34c-bcc746a5061b, passed token: dc6a9c3c-9b40-11f0-a34c-bcc746a5061b
+09/26/25 21:25:33: SESSION_MGR: creating session with session uuid: '6e904a06-0e92-47b9-a3a4-72f531258217' and name 'Code Analyzer'
+09/26/25 21:25:33: KERNEL_SVC: creating session with uuid: '6e904a06-0e92-47b9-a3a4-72f531258217' and name 'Code Analyzer'
+09/26/25 21:25:33: GUIDANCE_SMGR: creating guidance session with uuid: '6e904a06-0e92-47b9-a3a4-72f531258217' and name 'Code Analyzer'
+09/26/25 21:25:43: SESSION_MGR: closing session for UUID '6e904a06-0e92-47b9-a3a4-72f531258217' with name ''
+09/26/25 21:25:43: KERNEL_SVC: closing session for UUID '6e904a06-0e92-47b9-a3a4-72f531258217' with name ''
+09/26/25 21:25:43: GUIDANCE_SMGR: closing session for UUID '6e904a06-0e92-47b9-a3a4-72f531258217' with name ''
+09/26/25 21:25:43: STOP_SERVER received, server token: dc6a9c3c-9b40-11f0-a34c-bcc746a5061b, passed token: dc6a9c3c-9b40-11f0-a34c-bcc746a5061b
+09/26/25 21:25:43: Socket received request to stop server.
+09/26/25 21:25:43: Dispatch Server: do_await_stop
+09/26/25 21:25:43: SERVER: destructor for server bound to port 49312
+09/26/25 21:25:43: Server exiting with status 0.
+09/26/25 21:25:43: Closing log file.
+09/26/25 21:30:52: Running xcd server. This server was built by gradle.
+09/26/25 21:30:52: Server was asked to start on port: '56620'
+09/26/25 21:30:52: Server is using token UUID: '9a6bcbf2-9b41-11f0-9332-bcc746a5061b'
+09/26/25 21:30:52: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/26/25 21:30:52: Attempting to start server on port '56620'
+09/26/25 21:30:52: Running Dispatch Server
+09/26/25 21:30:52: Version 2.2.0
+09/26/25 21:30:52: Dispatch Server: Accepted socket connection from client
+09/26/25 21:30:52: Starting Socket connection
+09/26/25 21:30:52: EXCHANGE_TOKEN received, server token: 9a6bcbf2-9b41-11f0-9332-bcc746a5061b, passed token: 9a6bcbf2-9b41-11f0-9332-bcc746a5061b
+09/26/25 21:30:52: SESSION_MGR: creating session with session uuid: '9ef0d2c7-ed0e-4176-b7e7-90cee8182975' and name 'Code Analyzer'
+09/26/25 21:30:52: KERNEL_SVC: creating session with uuid: '9ef0d2c7-ed0e-4176-b7e7-90cee8182975' and name 'Code Analyzer'
+09/26/25 21:30:52: GUIDANCE_SMGR: creating guidance session with uuid: '9ef0d2c7-ed0e-4176-b7e7-90cee8182975' and name 'Code Analyzer'
+09/26/25 21:30:54: SESSION_MGR: closing session for UUID '9ef0d2c7-ed0e-4176-b7e7-90cee8182975' with name ''
+09/26/25 21:30:54: KERNEL_SVC: closing session for UUID '9ef0d2c7-ed0e-4176-b7e7-90cee8182975' with name ''
+09/26/25 21:30:54: GUIDANCE_SMGR: closing session for UUID '9ef0d2c7-ed0e-4176-b7e7-90cee8182975' with name ''
+09/26/25 21:30:54: STOP_SERVER received, server token: 9a6bcbf2-9b41-11f0-9332-bcc746a5061b, passed token: 9a6bcbf2-9b41-11f0-9332-bcc746a5061b
+09/26/25 21:30:54: Socket received request to stop server.
+09/26/25 21:30:54: Dispatch Server: do_await_stop
+09/26/25 21:30:54: SERVER: destructor for server bound to port 56620
+09/26/25 21:30:54: Server exiting with status 0.
+09/26/25 21:30:54: Closing log file.
+09/26/25 21:31:46: Running xcd server. This server was built by gradle.
+09/26/25 21:31:46: Server was asked to start on port: '52755'
+09/26/25 21:31:46: Server is using token UUID: 'ba5fb0bc-9b41-11f0-b271-bcc746a5061b'
+09/26/25 21:31:46: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/26/25 21:31:46: Attempting to start server on port '52755'
+09/26/25 21:31:46: Running Dispatch Server
+09/26/25 21:31:46: Version 2.2.0
+09/26/25 21:31:46: Dispatch Server: Accepted socket connection from client
+09/26/25 21:31:46: Starting Socket connection
+09/26/25 21:31:46: EXCHANGE_TOKEN received, server token: ba5fb0bc-9b41-11f0-b271-bcc746a5061b, passed token: ba5fb0bc-9b41-11f0-b271-bcc746a5061b
+09/26/25 21:31:46: SESSION_MGR: creating session with session uuid: 'a2ba77e5-af84-4447-a7ef-4f8c6398017d' and name 'Code Analyzer'
+09/26/25 21:31:46: KERNEL_SVC: creating session with uuid: 'a2ba77e5-af84-4447-a7ef-4f8c6398017d' and name 'Code Analyzer'
+09/26/25 21:31:46: GUIDANCE_SMGR: creating guidance session with uuid: 'a2ba77e5-af84-4447-a7ef-4f8c6398017d' and name 'Code Analyzer'
+09/26/25 21:31:48: SESSION_MGR: closing session for UUID 'a2ba77e5-af84-4447-a7ef-4f8c6398017d' with name ''
+09/26/25 21:31:48: KERNEL_SVC: closing session for UUID 'a2ba77e5-af84-4447-a7ef-4f8c6398017d' with name ''
+09/26/25 21:31:48: GUIDANCE_SMGR: closing session for UUID 'a2ba77e5-af84-4447-a7ef-4f8c6398017d' with name ''
+09/26/25 21:31:48: STOP_SERVER received, server token: ba5fb0bc-9b41-11f0-b271-bcc746a5061b, passed token: ba5fb0bc-9b41-11f0-b271-bcc746a5061b
+09/26/25 21:31:48: Socket received request to stop server.
+09/26/25 21:31:48: Dispatch Server: do_await_stop
+09/26/25 21:31:48: SERVER: destructor for server bound to port 52755
+09/26/25 21:31:48: Server exiting with status 0.
+09/26/25 21:31:48: Closing log file.
+09/26/25 21:32:04: Running xcd server. This server was built by gradle.
+09/26/25 21:32:04: Server was asked to start on port: '55937'
+09/26/25 21:32:04: Server is using token UUID: 'c57199b9-9b41-11f0-a480-bcc746a5061b'
+09/26/25 21:32:04: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/26/25 21:32:04: Attempting to start server on port '55937'
+09/26/25 21:32:04: Running Dispatch Server
+09/26/25 21:32:04: Version 2.2.0
+09/26/25 21:32:04: Dispatch Server: Accepted socket connection from client
+09/26/25 21:32:04: Starting Socket connection
+09/26/25 21:32:04: EXCHANGE_TOKEN received, server token: c57199b9-9b41-11f0-a480-bcc746a5061b, passed token: c57199b9-9b41-11f0-a480-bcc746a5061b
+09/26/25 21:32:04: SESSION_MGR: creating session with session uuid: 'f5c3c826-a6fe-41ca-a5b8-3f1a3976f19a' and name 'Code Analyzer'
+09/26/25 21:32:04: KERNEL_SVC: creating session with uuid: 'f5c3c826-a6fe-41ca-a5b8-3f1a3976f19a' and name 'Code Analyzer'
+09/26/25 21:32:04: GUIDANCE_SMGR: creating guidance session with uuid: 'f5c3c826-a6fe-41ca-a5b8-3f1a3976f19a' and name 'Code Analyzer'
+09/26/25 21:32:08: SESSION_MGR: closing session for UUID 'f5c3c826-a6fe-41ca-a5b8-3f1a3976f19a' with name ''
+09/26/25 21:32:08: KERNEL_SVC: closing session for UUID 'f5c3c826-a6fe-41ca-a5b8-3f1a3976f19a' with name ''
+09/26/25 21:32:08: GUIDANCE_SMGR: closing session for UUID 'f5c3c826-a6fe-41ca-a5b8-3f1a3976f19a' with name ''
+09/26/25 21:32:08: STOP_SERVER received, server token: c57199b9-9b41-11f0-a480-bcc746a5061b, passed token: c57199b9-9b41-11f0-a480-bcc746a5061b
+09/26/25 21:32:08: Socket received request to stop server.
+09/26/25 21:32:08: Dispatch Server: do_await_stop
+09/26/25 21:32:08: SERVER: destructor for server bound to port 55937
+09/26/25 21:32:08: Server exiting with status 0.
+09/26/25 21:32:08: Closing log file.
+09/26/25 21:38:03: Running xcd server. This server was built by gradle.
+09/26/25 21:38:03: Server was asked to start on port: '50376'
+09/26/25 21:38:03: Server is using token UUID: '9b47fa67-9b42-11f0-95dc-bcc746a5061b'
+09/26/25 21:38:03: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/26/25 21:38:03: Attempting to start server on port '50376'
+09/26/25 21:38:03: Running Dispatch Server
+09/26/25 21:38:03: Version 2.2.0
+09/26/25 21:38:03: Dispatch Server: Accepted socket connection from client
+09/26/25 21:38:03: Starting Socket connection
+09/26/25 21:38:03: EXCHANGE_TOKEN received, server token: 9b47fa67-9b42-11f0-95dc-bcc746a5061b, passed token: 9b47fa67-9b42-11f0-95dc-bcc746a5061b
+09/26/25 21:38:03: SESSION_MGR: creating session with session uuid: '68a3b390-6533-48a4-99c3-a3b51da416e6' and name 'Code Analyzer'
+09/26/25 21:38:03: KERNEL_SVC: creating session with uuid: '68a3b390-6533-48a4-99c3-a3b51da416e6' and name 'Code Analyzer'
+09/26/25 21:38:03: GUIDANCE_SMGR: creating guidance session with uuid: '68a3b390-6533-48a4-99c3-a3b51da416e6' and name 'Code Analyzer'
+09/26/25 21:38:12: SESSION_MGR: closing session for UUID '68a3b390-6533-48a4-99c3-a3b51da416e6' with name ''
+09/26/25 21:38:12: KERNEL_SVC: closing session for UUID '68a3b390-6533-48a4-99c3-a3b51da416e6' with name ''
+09/26/25 21:38:12: GUIDANCE_SMGR: closing session for UUID '68a3b390-6533-48a4-99c3-a3b51da416e6' with name ''
+09/26/25 21:38:12: STOP_SERVER received, server token: 9b47fa67-9b42-11f0-95dc-bcc746a5061b, passed token: 9b47fa67-9b42-11f0-95dc-bcc746a5061b
+09/26/25 21:38:12: Socket received request to stop server.
+09/26/25 21:38:12: Dispatch Server: do_await_stop
+09/26/25 21:38:12: SERVER: destructor for server bound to port 50376
+09/26/25 21:38:12: Server exiting with status 0.
+09/26/25 21:38:12: Closing log file.
+09/26/25 21:42:34: Running xcd server. This server was built by gradle.
+09/26/25 21:42:34: Server was asked to start on port: '54733'
+09/26/25 21:42:34: Server is using token UUID: '3ca0d595-9b43-11f0-87ee-bcc746a5061b'
+09/26/25 21:42:34: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/26/25 21:42:34: Attempting to start server on port '54733'
+09/26/25 21:42:34: Running Dispatch Server
+09/26/25 21:42:34: Version 2.2.0
+09/26/25 21:42:34: Dispatch Server: Accepted socket connection from client
+09/26/25 21:42:34: Starting Socket connection
+09/26/25 21:42:34: EXCHANGE_TOKEN received, server token: 3ca0d595-9b43-11f0-87ee-bcc746a5061b, passed token: 3ca0d595-9b43-11f0-87ee-bcc746a5061b
+09/26/25 21:42:34: SESSION_MGR: creating session with session uuid: '0cf76729-da96-4125-b9b1-3139cb1c93ec' and name 'Code Analyzer'
+09/26/25 21:42:34: KERNEL_SVC: creating session with uuid: '0cf76729-da96-4125-b9b1-3139cb1c93ec' and name 'Code Analyzer'
+09/26/25 21:42:34: GUIDANCE_SMGR: creating guidance session with uuid: '0cf76729-da96-4125-b9b1-3139cb1c93ec' and name 'Code Analyzer'
+09/26/25 21:42:44: SESSION_MGR: closing session for UUID '0cf76729-da96-4125-b9b1-3139cb1c93ec' with name ''
+09/26/25 21:42:44: KERNEL_SVC: closing session for UUID '0cf76729-da96-4125-b9b1-3139cb1c93ec' with name ''
+09/26/25 21:42:44: GUIDANCE_SMGR: closing session for UUID '0cf76729-da96-4125-b9b1-3139cb1c93ec' with name ''
+09/26/25 21:42:44: STOP_SERVER received, server token: 3ca0d595-9b43-11f0-87ee-bcc746a5061b, passed token: 3ca0d595-9b43-11f0-87ee-bcc746a5061b
+09/26/25 21:42:44: Socket received request to stop server.
+09/26/25 21:42:44: Dispatch Server: do_await_stop
+09/26/25 21:42:44: SERVER: destructor for server bound to port 54733
+09/26/25 21:42:44: Server exiting with status 0.
+09/26/25 21:42:44: Closing log file.
+09/26/25 21:58:42: Running xcd server. This server was built by gradle.
+09/26/25 21:58:42: Server was asked to start on port: '60725'
+09/26/25 21:58:42: Server is using token UUID: '7d92340a-9b45-11f0-a485-bcc746a5061b'
+09/26/25 21:58:42: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/26/25 21:58:42: Attempting to start server on port '60725'
+09/26/25 21:58:42: Running Dispatch Server
+09/26/25 21:58:42: Version 2.2.0
+09/26/25 21:58:42: Dispatch Server: Accepted socket connection from client
+09/26/25 21:58:42: Starting Socket connection
+09/26/25 21:58:42: EXCHANGE_TOKEN received, server token: 7d92340a-9b45-11f0-a485-bcc746a5061b, passed token: 7d92340a-9b45-11f0-a485-bcc746a5061b
+09/26/25 21:58:42: SESSION_MGR: creating session with session uuid: 'd7cefcae-9ba6-4256-a095-d08bb49ec081' and name 'Code Analyzer'
+09/26/25 21:58:42: KERNEL_SVC: creating session with uuid: 'd7cefcae-9ba6-4256-a095-d08bb49ec081' and name 'Code Analyzer'
+09/26/25 21:58:42: GUIDANCE_SMGR: creating guidance session with uuid: 'd7cefcae-9ba6-4256-a095-d08bb49ec081' and name 'Code Analyzer'
+09/26/25 21:58:51: SESSION_MGR: closing session for UUID 'd7cefcae-9ba6-4256-a095-d08bb49ec081' with name ''
+09/26/25 21:58:51: KERNEL_SVC: closing session for UUID 'd7cefcae-9ba6-4256-a095-d08bb49ec081' with name ''
+09/26/25 21:58:51: GUIDANCE_SMGR: closing session for UUID 'd7cefcae-9ba6-4256-a095-d08bb49ec081' with name ''
+09/26/25 21:58:51: STOP_SERVER received, server token: 7d92340a-9b45-11f0-a485-bcc746a5061b, passed token: 7d92340a-9b45-11f0-a485-bcc746a5061b
+09/26/25 21:58:51: Socket received request to stop server.
+09/26/25 21:58:51: Dispatch Server: do_await_stop
+09/26/25 21:58:51: SERVER: destructor for server bound to port 60725
+09/26/25 21:58:51: Server exiting with status 0.
+09/26/25 21:58:51: Closing log file.
+09/26/25 22:06:37: Running xcd server. This server was built by gradle.
+09/26/25 22:06:37: Server was asked to start on port: '60408'
+09/26/25 22:06:37: Server is using token UUID: '98f3428a-9b46-11f0-9f40-bcc746a5061b'
+09/26/25 22:06:37: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+09/26/25 22:06:37: Attempting to start server on port '60408'
+09/26/25 22:06:37: Running Dispatch Server
+09/26/25 22:06:37: Version 2.2.0
+09/26/25 22:06:37: Dispatch Server: Accepted socket connection from client
+09/26/25 22:06:37: Starting Socket connection
+09/26/25 22:06:37: EXCHANGE_TOKEN received, server token: 98f3428a-9b46-11f0-9f40-bcc746a5061b, passed token: 98f3428a-9b46-11f0-9f40-bcc746a5061b
+09/26/25 22:06:37: SESSION_MGR: creating session with session uuid: '55877964-ab99-4a6d-9294-972e40e3511b' and name 'Code Analyzer'
+09/26/25 22:06:37: KERNEL_SVC: creating session with uuid: '55877964-ab99-4a6d-9294-972e40e3511b' and name 'Code Analyzer'
+09/26/25 22:06:37: GUIDANCE_SMGR: creating guidance session with uuid: '55877964-ab99-4a6d-9294-972e40e3511b' and name 'Code Analyzer'
+09/26/25 22:06:37: SESSION_MGR: closing session for UUID '55877964-ab99-4a6d-9294-972e40e3511b' with name ''
+09/26/25 22:06:37: KERNEL_SVC: closing session for UUID '55877964-ab99-4a6d-9294-972e40e3511b' with name ''
+09/26/25 22:06:37: GUIDANCE_SMGR: closing session for UUID '55877964-ab99-4a6d-9294-972e40e3511b' with name ''
+09/26/25 22:06:37: STOP_SERVER received, server token: 98f3428a-9b46-11f0-9f40-bcc746a5061b, passed token: 98f3428a-9b46-11f0-9f40-bcc746a5061b
+09/26/25 22:06:37: Socket received request to stop server.
+09/26/25 22:06:37: Dispatch Server: do_await_stop
+09/26/25 22:06:37: SERVER: destructor for server bound to port 60408
+09/26/25 22:06:37: Server exiting with status 0.
+09/26/25 22:06:37: Closing log file.

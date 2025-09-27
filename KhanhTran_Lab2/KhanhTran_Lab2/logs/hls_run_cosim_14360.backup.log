@@ -1,0 +1,47 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2'.
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=fir16.cpp' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/fir16.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=fir16.h' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/fir16.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=fir_16_unroll4.cpp' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/fir_16_unroll4.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=fir16_unroll16.cpp' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/fir16_unroll16.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=tb_fir16.cpp' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/tb_fir16.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=fir16_unroll4' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7a35tcpg236-1' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying config ini 'cosim.argv=-DDUT_NAME=fir16_unroll4' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(14)
+INFO: [HLS 200-1465] Applying config ini 'csim.code_analyzer=1' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab2/KhanhTran_Lab2/vitis-comp.json
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "D:/Xilinx_2025/2025.1/Vitis/win64/tools/vcxx/libexec/clang++"
+   Compiling fir16.cpp_pre.cpp.tb.cpp
+   Compiling tb_fir16.cpp_pre.cpp.tb.cpp
+   Compiling apatb_fir16_unroll4.cpp
+   Compiling fir16_unroll16.cpp_pre.cpp.tb.cpp
+   Compiling fir_16_unroll4.cpp_pre.cpp.tb.cpp
+   Compiling apatb_fir16_unroll4_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+TB targeting: fir16
+[IMPULSE] PASS
+[PRBS] PASS
+OVERALL: PASS
+ERROR: [COSIM 212-330] Aborting co-simulation: top function 'fir16_unroll4' is not invoked in the test bench.
+ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+ERROR: 
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 13.005 seconds; peak allocated memory: 215.672 MB.

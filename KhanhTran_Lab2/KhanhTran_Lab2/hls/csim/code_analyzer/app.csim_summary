@@ -1,0 +1,80 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab2\\KhanhTran_Lab2\\hls\\csim\\code_analyzer\\app.csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Fri Sep 26 22:06:37 2025",
+ "timestampMillis": "1758938797477",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Fri Sep 26 22:06:37 2025",
+ "timestampMillis": "1758938797478",
+ "buildStep": {
+  "cmdId": "998ef590-9b46-11f0-a776-bcc746a5061b",
+  "name": "vitis_c++",
+  "logFile": "",
+  "commandLine": "vitis_c++ code_analyzer",
+  "args": [
+   "code_analyzer"
+  ],
+  "iniFiles": [],
+  "cwd": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 26 22:06:37 2025",
+ "timestampMillis": "1758938797478",
+ "status": {
+  "cmdId": "998ef590-9b46-11f0-a776-bcc746a5061b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Sep 26 22:06:37 2025",
+ "timestampMillis": "1758938797965",
+ "status": {
+  "cmdId": "998ef590-9b46-11f0-a776-bcc746a5061b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Sep 26 22:06:37 2025",
+ "timestampMillis": "1758938797965",
+ "report": {
+  "path": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab2",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "VCXX_CODE_ANALYZER",
+  "cmdId": "998ef590-9b46-11f0-a776-bcc746a5061b"
+ }
+}
+</ENTRY>

@@ -1,0 +1,11 @@
+sv xil_defaultlib "glbl.v"
+sv xil_defaultlib "mux_2to1.autotb.v"
+sv xil_defaultlib "mux_2to1.v"
+sv xil_defaultlib "dataflow_monitor.sv"
+sv xil_defaultlib "./file_agent/file_agent_pkg.sv"     
+sv xil_defaultlib "./svr/svr_pkg.sv"    
+sv xil_defaultlib "./svr/svr_if.sv"   
+sv xil_defaultlib "./mux_2to1_subsystem/mux_2to1_subsystem_pkg.sv"           
+sv xil_defaultlib "./svtb/misc_interface.sv"    
+sv xil_defaultlib "./svtb/sv_module_top.sv"   
+

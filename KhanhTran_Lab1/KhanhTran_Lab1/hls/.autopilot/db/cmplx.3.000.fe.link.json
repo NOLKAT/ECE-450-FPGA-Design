@@ -1,0 +1,29 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "compute_c.cpp",
+    "fileloc": 22,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "compute",
+    "total_instructions": 35
+  },
+  "1": {
+    "basicblocks": 12,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 5,
+    "file": "compute_c.cpp",
+    "fileloc": 1,
+    "instructions": 33,
+    "memory_accesses": 0,
+    "name": "compute_c",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 33
+  }
+}

@@ -1,0 +1,4 @@
+<pragmas>
+<pragma file="compute_c.cpp" line="15" pragmaType="pipeline" parentfunction="compute_c" off="0" ii="1" rewind="0" style=""/>
+<pragma file="compute_c.cpp" line="16" pragmaType="loop_tripcount" parentfunction="compute_c" min="0" max="46341" avg="20000"/>
+</pragmas>

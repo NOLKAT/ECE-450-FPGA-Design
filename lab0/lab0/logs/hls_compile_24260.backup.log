@@ -1,0 +1,119 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file C:/Users/ankha/Desktop/FPGA_Design/lab0/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=Mux_2to1.cpp' from C:/Users/ankha/Desktop/FPGA_Design/lab0/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ankha/Desktop/FPGA_Design/lab0/Mux_2to1.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=Tb_mux.cpp' from C:/Users/ankha/Desktop/FPGA_Design/lab0/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/ankha/Desktop/FPGA_Design/lab0/Tb_mux.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=mux_2to1' from C:/Users/ankha/Desktop/FPGA_Design/lab0/hls_config.cfg(13)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from C:/Users/ankha/Desktop/FPGA_Design/lab0/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7a35tcpg236-1' from C:/Users/ankha/Desktop/FPGA_Design/lab0/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [HLS 200-1465] Applying config ini 'csim.clean=1' from C:/Users/ankha/Desktop/FPGA_Design/lab0/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying config ini 'csim.code_analyzer=0' from C:/Users/ankha/Desktop/FPGA_Design/lab0/hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying config ini 'csim.setup=1' from C:/Users/ankha/Desktop/FPGA_Design/lab0/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/Users/ankha/Desktop/FPGA_Design/lab0/hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'sim.O=1' from C:/Users/ankha/Desktop/FPGA_Design/lab0/hls_config.cfg(8)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.439 seconds; current allocated memory: 144.305 MB.
+INFO: [HLS 200-10] Analyzing design file 'Mux_2to1.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.888 seconds; current allocated memory: 146.770 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 26 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 22 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 19 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 19 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 19 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 11 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 11 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 11 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 11 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 11 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 11 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 11 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 11 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 11 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 12 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 13 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 7.483 seconds; current allocated memory: 148.723 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 148.723 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.168 seconds; current allocated memory: 151.973 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.029 seconds; current allocated memory: 153.000 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.049 seconds; current allocated memory: 173.129 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.056 seconds; current allocated memory: 173.141 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'mux_2to1' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'mux_2to1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.171 seconds; current allocated memory: 173.141 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.041 seconds; current allocated memory: 173.141 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'mux_2to1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'mux_2to1/a' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mux_2to1/b' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mux_2to1/sel' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'mux_2to1/y' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'y' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on function 'mux_2to1' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'mux_2to1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.047 seconds; current allocated memory: 173.141 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.187 seconds; current allocated memory: 174.219 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.349 seconds; current allocated memory: 175.578 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for mux_2to1.
+INFO: [VLOG 209-307] Generating Verilog RTL for mux_2to1.
+INFO: [HLS 200-789] **** Estimated Fmax: 1007.05 MHz
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Mon Sep  8 00:11:23 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/hls/hls_data.json outdir=C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/hls/impl/ip srcdir=C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/hls ippack_options_dict= ippack_options_dict=
+INFO: Copied 1 ipmisc file(s) to C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/hls/impl/ip/misc
+INFO: Copied 1 verilog file(s) to C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/hls/impl/ip/hdl/verilog
+INFO: Copied 1 vhdl file(s) to C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/hls/impl/ip/hdl/vhdl
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+WARNING: [Common 17-1496] Vivado tclapp support version doesn't have install/uninstall hooks. Please update support using ::tclapp::update_support command.
+INFO: Import ports from HDL: C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/hls/impl/ip/hdl/vhdl/mux_2to1.vhd (mux_2to1)
+INFO: Add data interface a
+INFO: Add data interface b
+INFO: Add data interface sel
+INFO: Add data interface y
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx_2025/2025.1/Vivado/data/ip'.
+INFO: Add reset interface ap_rst
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/hls/impl/ip/component.xml
+INFO: Created IP archive C:/Users/ankha/Desktop/FPGA_Design/lab0/lab0/hls/impl/ip/xilinx_com_hls_mux_2to1_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Mon Sep  8 00:11:35 2025...
+INFO: [HLS 200-802] Generated output file lab0/mux_2to1.zip
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 2 seconds. Total elapsed time: 28.616 seconds; peak allocated memory: 179.855 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 32s

@@ -1,0 +1,5 @@
+
+Family       : artix7
+Device       : xc7a35t
+Package      : -cpg236
+Speed Grade  : -1

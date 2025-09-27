@@ -1,0 +1,87 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir16_unroll16.cpp:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir16_unroll16" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir16_unroll16.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir16_unroll16" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=shift_reg complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir16_unroll16.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir16_unroll16" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=COEFF complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir16_unroll16.cpp:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir16_unroll16" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=16 max=16" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir16_unroll16.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir16_unroll16" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir16_unroll16.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir16_unroll16" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=256 max=256" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir16_unroll16.cpp:25:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir16_unroll16" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir16_unroll16.cpp:33:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir16_unroll16" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir_16_unroll4.cpp:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir16_unroll4" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir_16_unroll4.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir16_unroll4" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=shift_reg complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir_16_unroll4.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir16_unroll4" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=COEFF complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir_16_unroll4.cpp:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir16_unroll4" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=16 max=16" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir_16_unroll4.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir16_unroll4" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir_16_unroll4.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir16_unroll4" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=256 max=256" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir_16_unroll4.cpp:25:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir16_unroll4" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir_16_unroll4.cpp:33:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir16_unroll4" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=4" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="fir16" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=fir16" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir16.cpp:5:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir16" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir16.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir16" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=shift_reg complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir16.cpp:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir16" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=16 max=16" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir16.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir16" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=256 max=256" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir16.cpp:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir16" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=15 max=15" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="fir16.cpp:31:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir16" ARG_PragmaIsValid="1" ARG_PragmaOptions="min=16 max=16" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="fir16.cpp:8:11" msg_body="Applying array_partition to 'shift_reg': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="shift_reg"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="fir16.cpp:22:9" msg_body="Loop 'Shift' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="Shift"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="fir16.cpp:30:14" msg_body="Loop 'MAC' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="MAC"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="fir16.cpp:4:0" msg_body="Unrolling loop 'Shift' (fir16.cpp:22:9) in function 'fir16' completely with a factor of 15">
+        <args Factor="15" LoopLoc="fir16.cpp:22:9" LoopName="Shift"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="fir16.cpp:4:0" msg_body="Unrolling loop 'MAC' (fir16.cpp:30:14) in function 'fir16' completely with a factor of 16">
+        <args Factor="16" LoopLoc="fir16.cpp:30:14" LoopName="MAC"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

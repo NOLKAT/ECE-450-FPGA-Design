@@ -1,0 +1,11 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_mux_2to1_ir
+Args:            
+  - Callee:          'mux_2to1(ap_uint<1>, ap_uint<1>, ap_uint<1>, ap_uint<1>&)'
+    DebugLoc:        { File: Mux_2to1.cpp, Line: 5, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_mux_2to1_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...

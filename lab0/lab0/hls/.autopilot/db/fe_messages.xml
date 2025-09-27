@@ -1,0 +1,21 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="mux_2to1" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=mux_2to1" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Mux_2to1.cpp:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mux_2to1" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=a" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Mux_2to1.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mux_2to1" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=b" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Mux_2to1.cpp:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mux_2to1" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=sel" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Mux_2to1.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mux_2to1" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=y" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="Mux_2to1.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mux_2to1" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_none port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

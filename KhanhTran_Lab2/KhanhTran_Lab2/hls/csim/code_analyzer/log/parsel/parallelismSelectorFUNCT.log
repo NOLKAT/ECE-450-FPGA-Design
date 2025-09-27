@@ -1,0 +1,1 @@
+parallelismSelector::WARNG: WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\Users\ankha\Desktop\FPGA_Design\KhanhTran_Lab2\fir16.cpp:9:1)
