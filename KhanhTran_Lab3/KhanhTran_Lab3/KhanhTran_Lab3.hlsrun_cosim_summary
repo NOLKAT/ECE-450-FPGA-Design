@@ -1,0 +1,226 @@
+<ENTRY>
+{
+ "thisFile": "C:/Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3\\KhanhTran_Lab3\\KhanhTran_Lab3.hlsrun_cosim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "10/24/25 15:40:11",
+ "timestampMillis": "1761334811185",
+ "buildStep": {
+  "cmdId": "a15a18a0-03ae-45e3-accd-1a3814332f7a",
+  "name": "vitis-run",
+  "logFile": "C:/Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3\\KhanhTran_Lab3\\logs\\KhanhTran_Lab3.steps.log",
+  "commandLine": "D:/Xilinx_2025/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --cosim --config C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3\\hls_config.cfg --work_dir KhanhTran_Lab3 ",
+  "args": [
+   "--mode",
+   "hls",
+   "--cosim",
+   "--config",
+   "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3\\hls_config.cfg",
+   "--work_dir",
+   "KhanhTran_Lab3"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/24/25 15:40:11",
+ "timestampMillis": "1761334811185",
+ "status": {
+  "cmdId": "a15a18a0-03ae-45e3-accd-1a3814332f7a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "10/24/25 15:40:13",
+ "timestampMillis": "1761334813852",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_RTL_COSIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "sobel_rgb_axis",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3\\sobel.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "10/24/25 15:40:13",
+ "timestampMillis": "1761334813853",
+ "buildStep": {
+  "cmdId": "33f2f1ed-de39-4779-aafa-e389293c9d85",
+  "name": "",
+  "logFile": "C:/Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3\\KhanhTran_Lab3\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/24/25 15:40:13",
+ "timestampMillis": "1761334813854",
+ "status": {
+  "cmdId": "33f2f1ed-de39-4779-aafa-e389293c9d85",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/24/25 15:40:13",
+ "timestampMillis": "1761334813854",
+ "report": {
+  "path": "C:/Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3\\KhanhTran_Lab3\\hls\\sim\\report\\sobel_rgb_axis_cosim.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_COSIMULATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/24/25 15:40:13",
+ "timestampMillis": "1761334813854",
+ "report": {
+  "path": "C:/Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3\\KhanhTran_Lab3\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/24/25 15:40:13",
+ "timestampMillis": "1761334813854",
+ "report": {
+  "path": "C:/Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3\\KhanhTran_Lab3\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH_COSIM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/24/25 15:40:13",
+ "timestampMillis": "1761334813855",
+ "report": {
+  "path": "C:/Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3\\KhanhTran_Lab3\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_TIMELINE_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/24/25 15:40:13",
+ "timestampMillis": "1761334813855",
+ "report": {
+  "path": "C:/Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3\\KhanhTran_Lab3\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_WAVE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/24/25 15:52:35",
+ "timestampMillis": "1761335555106",
+ "status": {
+  "cmdId": "33f2f1ed-de39-4779-aafa-e389293c9d85",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/24/25 15:52:35",
+ "timestampMillis": "1761335555220",
+ "status": {
+  "cmdId": "a15a18a0-03ae-45e3-accd-1a3814332f7a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/24/25 15:52:35",
+ "timestampMillis": "1761335555221",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/24/25 15:52:35",
+ "timestampMillis": "1761335555221",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

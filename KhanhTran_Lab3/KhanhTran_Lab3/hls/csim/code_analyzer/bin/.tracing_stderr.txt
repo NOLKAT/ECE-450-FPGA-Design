@@ -1,0 +1,2 @@
+Cannot open: lena_512.ppm
+WARN: Could not load 'lena_512.ppm'. Using synthetic 512x512 pattern.

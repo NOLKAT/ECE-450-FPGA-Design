@@ -1,0 +1,22 @@
+{
+  "0": {
+    "basicblocks": 19,
+    "calls": "",
+    "control_depth": 4,
+    "def_use_depth": 17,
+    "file": "sobel.cpp",
+    "fileloc": 21,
+    "instructions": 293,
+    "loads": {
+      "G": 2,
+      "L": 5
+    },
+    "memory_accesses": 20,
+    "name": "sobel_rgb_axis",
+    "stores": {
+      "G": 4,
+      "L": 25
+    },
+    "total_instructions": 293
+  }
+}

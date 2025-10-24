@@ -1,0 +1,561 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Fri Oct 24 12:09:46 2025
+# Process ID         : 16692
+# Current directory  : C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/Lab3/Lab3.runs/synth_1
+# Command line       : vivado.exe -log sobel_rgb_axis.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sobel_rgb_axis.tcl
+# Log file           : C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/Lab3/Lab3.runs/synth_1/sobel_rgb_axis.vds
+# Journal file       : C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/Lab3/Lab3.runs/synth_1\vivado.jou
+# Running On         : katnlot
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 5 7600X 6-Core Processor             
+# CPU Frequency      : 4691 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 67768 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 72063 MB
+# Available Virtual  : 40706 MB
+#-----------------------------------------------------------
+source sobel_rgb_axis.tcl -notrace
+Command: synth_design -top sobel_rgb_axis -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 38172
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 998.141 ; gain = 499.805
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'sobel_rgb_axis' [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_rgb_axis_line0_RAM_2P_BRAM_1R1W' [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_line0_RAM_2P_BRAM_1R1W.v:7]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 10 - type: integer 
+	Parameter AddressRange bound to: 1024 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './sobel_rgb_axis_line0_RAM_2P_BRAM_1R1W.dat' is read successfully [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_line0_RAM_2P_BRAM_1R1W.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_rgb_axis_line0_RAM_2P_BRAM_1R1W' (0#1) [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_line0_RAM_2P_BRAM_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'sobel_rgb_axis_line1_RAM_2P_BRAM_1R1W' [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_line1_RAM_2P_BRAM_1R1W.v:7]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter AddressWidth bound to: 10 - type: integer 
+	Parameter AddressRange bound to: 1024 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './sobel_rgb_axis_line1_RAM_2P_BRAM_1R1W.dat' is read successfully [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_line1_RAM_2P_BRAM_1R1W.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_rgb_axis_line1_RAM_2P_BRAM_1R1W' (0#1) [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_line1_RAM_2P_BRAM_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'sobel_rgb_axis_sobel_rgb_axis_Pipeline_init_cols' [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_sobel_rgb_axis_Pipeline_init_cols.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_rgb_axis_flow_control_loop_pipe_sequential_init' [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_rgb_axis_flow_control_loop_pipe_sequential_init' (0#1) [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_rgb_axis_sobel_rgb_axis_Pipeline_init_cols' (0#1) [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_sobel_rgb_axis_Pipeline_init_cols.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_rgb_axis_sobel_rgb_axis_Pipeline_row_loop_col_loop' [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_sobel_rgb_axis_Pipeline_row_loop_col_loop.v:9]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6157] synthesizing module 'sobel_rgb_axis_mul_8ns_9ns_16_1_1' [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_mul_8ns_9ns_16_1_1.v:5]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 9 - type: integer 
+	Parameter dout_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sobel_rgb_axis_mul_8ns_9ns_16_1_1' (0#1) [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_mul_8ns_9ns_16_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1' [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1.v:45]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 7 - type: integer 
+	Parameter din2_WIDTH bound to: 16 - type: integer 
+	Parameter dout_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1_DSP48_0' [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1_DSP48_0' (0#1) [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1' (0#1) [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1.v:45]
+INFO: [Synth 8-6157] synthesizing module 'sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1' [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1.v:45]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 4 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 5 - type: integer 
+	Parameter din2_WIDTH bound to: 8 - type: integer 
+	Parameter dout_WIDTH bound to: 13 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1_DSP48_0' [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1_DSP48_0' (0#1) [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1' (0#1) [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_rgb_axis_sobel_rgb_axis_Pipeline_row_loop_col_loop' (0#1) [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_sobel_rgb_axis_Pipeline_row_loop_col_loop.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_rgb_axis_CTRL_s_axi' [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_CTRL_s_axi.v:9]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_CTRL_s_axi.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_rgb_axis_CTRL_s_axi' (0#1) [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_CTRL_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'sobel_rgb_axis_mul_31ns_11ns_41_2_1' [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_mul_31ns_11ns_41_2_1.v:5]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 31 - type: integer 
+	Parameter din1_WIDTH bound to: 11 - type: integer 
+	Parameter dout_WIDTH bound to: 41 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sobel_rgb_axis_mul_31ns_11ns_41_2_1' (0#1) [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_mul_31ns_11ns_41_2_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'sobel_rgb_axis_regslice_both' [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_regslice_both.v:8]
+	Parameter DataWidth bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sobel_rgb_axis_regslice_both' (0#1) [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sobel_rgb_axis_regslice_both__parameterized0' [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_regslice_both.v:8]
+	Parameter DataWidth bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sobel_rgb_axis_regslice_both__parameterized0' (0#1) [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'sobel_rgb_axis_regslice_both__parameterized1' [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_regslice_both.v:8]
+	Parameter DataWidth bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sobel_rgb_axis_regslice_both__parameterized1' (0#1) [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'sobel_rgb_axis' (0#1) [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis.v:9]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_CTRL_s_axi.v:276]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-7129] Port reset in module sobel_rgb_axis_mul_31ns_11ns_41_2_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AWADDR[1] in module sobel_rgb_axis_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AWADDR[0] in module sobel_rgb_axis_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1_DSP48_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1_DSP48_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_axis_TUSER[0] in module sobel_rgb_axis_sobel_rgb_axis_Pipeline_row_loop_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_axis_TLAST[0] in module sobel_rgb_axis_sobel_rgb_axis_Pipeline_row_loop_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module sobel_rgb_axis_line1_RAM_2P_BRAM_1R1W is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module sobel_rgb_axis_line0_RAM_2P_BRAM_1R1W is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1119.234 ; gain = 620.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1119.234 ; gain = 620.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1119.234 ; gain = 620.898
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'x_2_reg_129_reg' and it is trimmed from '11' to '10' bits. [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_sobel_rgb_axis_Pipeline_init_cols.v:147]
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'sobel_rgb_axis_CTRL_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'sobel_rgb_axis_CTRL_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sobel_rgb_axis_regslice_both'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sobel_rgb_axis_regslice_both__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sobel_rgb_axis_regslice_both__parameterized1'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'sobel_rgb_axis_CTRL_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'sobel_rgb_axis_CTRL_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'sobel_rgb_axis_regslice_both'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'sobel_rgb_axis_regslice_both__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                    ZERO |                               01 |                               10
+                     ONE |                               11 |                               11
+                     TWO |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'sobel_rgb_axis_regslice_both__parameterized1'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1126.574 ; gain = 628.238
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   31 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 3     
+	   5 Input   11 Bit       Adders := 2     
+	   4 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 3     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               41 Bit    Registers := 2     
+	               32 Bit    Registers := 7     
+	               31 Bit    Registers := 1     
+	               24 Bit    Registers := 5     
+	               18 Bit    Registers := 2     
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 7     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 17    
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 22    
+	                2 Bit    Registers := 15    
+	                1 Bit    Registers := 119   
++---Multipliers : 
+	              12x32  Multipliers := 1     
++---RAMs : 
+	               8K Bit	(1024 X 8 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 4     
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 5     
+	   2 Input    8 Bit        Muxes := 5     
+	   2 Input    6 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 11    
+	   2 Input    2 Bit        Muxes := 141   
+	   4 Input    2 Bit        Muxes := 56    
+	   2 Input    1 Bit        Muxes := 75    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_7ns_16ns_16_4_1_U5/sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '16' bits. [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_5ns_8ns_13_4_1_U6/sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1_DSP48_0_U/p_reg_reg' and it is trimmed from '44' to '13' bits. [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1.v:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_5ns_8ns_13_4_1_U6/sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '13' bits. [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1.v:31]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_5ns_8ns_13_4_1_U6/sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '25' to '13' bits. [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1.v:30]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_7ns_16ns_16_4_1_U5/sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1_DSP48_0_U/m_reg_reg' and it is trimmed from '43' to '16' bits. [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1.v:31]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mac_muladd_8ns_7ns_16ns_16_4_1_U5/sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1_DSP48_0_U/a_reg_reg' and it is trimmed from '25' to '16' bits. [C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/syn/verilog/sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1.v:30]
+DSP Report: Generating DSP mac_muladd_8ns_7ns_16ns_16_4_1_U5/sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1_DSP48_0_U/m_reg_reg, operation Mode is: (A2*(B:0x4d)')'.
+DSP Report: register mac_muladd_8ns_7ns_16ns_16_4_1_U5/sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mac_muladd_8ns_7ns_16ns_16_4_1_U5/sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register mac_muladd_8ns_7ns_16ns_16_4_1_U5/sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1_DSP48_0_U/a_reg_reg is absorbed into DSP mac_muladd_8ns_7ns_16ns_16_4_1_U5/sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: register mac_muladd_8ns_7ns_16ns_16_4_1_U5/sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_8ns_7ns_16ns_16_4_1_U5/sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: operator mac_muladd_8ns_7ns_16ns_16_4_1_U5/sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1_DSP48_0_U/m is absorbed into DSP mac_muladd_8ns_7ns_16ns_16_4_1_U5/sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1_DSP48_0_U/m_reg_reg.
+DSP Report: Generating DSP mac_muladd_8ns_5ns_8ns_13_4_1_U6/sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1_DSP48_0_U/p_reg_reg, operation Mode is: (C:0x80)+((A:0x1d)'*B2)'.
+DSP Report: register mac_muladd_8ns_5ns_8ns_13_4_1_U6/sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_8ns_5ns_8ns_13_4_1_U6/sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_8ns_5ns_8ns_13_4_1_U6/sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1_DSP48_0_U/b_reg_reg is absorbed into DSP mac_muladd_8ns_5ns_8ns_13_4_1_U6/sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_8ns_5ns_8ns_13_4_1_U6/sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1_DSP48_0_U/p_reg_reg is absorbed into DSP mac_muladd_8ns_5ns_8ns_13_4_1_U6/sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: register mac_muladd_8ns_5ns_8ns_13_4_1_U6/sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1_DSP48_0_U/m_reg_reg is absorbed into DSP mac_muladd_8ns_5ns_8ns_13_4_1_U6/sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_8ns_5ns_8ns_13_4_1_U6/sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1_DSP48_0_U/p is absorbed into DSP mac_muladd_8ns_5ns_8ns_13_4_1_U6/sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: operator mac_muladd_8ns_5ns_8ns_13_4_1_U6/sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1_DSP48_0_U/m is absorbed into DSP mac_muladd_8ns_5ns_8ns_13_4_1_U6/sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1_DSP48_0_U/p_reg_reg.
+DSP Report: Generating DSP mul_31ns_11ns_41_2_1_U30/tmp_product, operation Mode is: A2*B2.
+DSP Report: register mul_31ns_11ns_41_2_1_U30/tmp_product is absorbed into DSP mul_31ns_11ns_41_2_1_U30/tmp_product.
+DSP Report: register mul_31ns_11ns_41_2_1_U30/tmp_product is absorbed into DSP mul_31ns_11ns_41_2_1_U30/tmp_product.
+DSP Report: operator mul_31ns_11ns_41_2_1_U30/tmp_product is absorbed into DSP mul_31ns_11ns_41_2_1_U30/tmp_product.
+DSP Report: operator mul_31ns_11ns_41_2_1_U30/tmp_product is absorbed into DSP mul_31ns_11ns_41_2_1_U30/tmp_product.
+DSP Report: Generating DSP mul_31ns_11ns_41_2_1_U30/buff0_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mul_31ns_11ns_41_2_1_U30/buff0_reg is absorbed into DSP mul_31ns_11ns_41_2_1_U30/buff0_reg.
+DSP Report: register smax_reg_224_reg is absorbed into DSP mul_31ns_11ns_41_2_1_U30/buff0_reg.
+DSP Report: register mul_31ns_11ns_41_2_1_U30/buff0_reg is absorbed into DSP mul_31ns_11ns_41_2_1_U30/buff0_reg.
+DSP Report: operator mul_31ns_11ns_41_2_1_U30/tmp_product is absorbed into DSP mul_31ns_11ns_41_2_1_U30/buff0_reg.
+DSP Report: operator mul_31ns_11ns_41_2_1_U30/tmp_product is absorbed into DSP mul_31ns_11ns_41_2_1_U30/buff0_reg.
+WARNING: [Synth 8-7129] Port AWADDR[1] in module sobel_rgb_axis_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AWADDR[0] in module sobel_rgb_axis_CTRL_s_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_axis_TUSER[0] in module sobel_rgb_axis_sobel_rgb_axis_Pipeline_row_loop_col_loop is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_axis_TLAST[0] in module sobel_rgb_axis_sobel_rgb_axis_Pipeline_row_loop_col_loop is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (CTRL_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (CTRL_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (regslice_both_in_axis_V_user_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (regslice_both_in_axis_V_user_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (regslice_both_in_axis_V_last_V_U/FSM_sequential_state_reg[1]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (regslice_both_in_axis_V_last_V_U/FSM_sequential_state_reg[0]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[47]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[46]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[45]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[44]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[43]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[42]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[41]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[40]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[39]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[38]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[37]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[36]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[35]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[34]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[33]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[32]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[31]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[30]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[29]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[28]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[27]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[26]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[25]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[24]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[23]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[22]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[21]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[20]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[19]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[18]) is unused and will be removed from module sobel_rgb_axis.
+WARNING: [Synth 8-3332] Sequential element (mul_31ns_11ns_41_2_1_U30/buff0_reg[17]) is unused and will be removed from module sobel_rgb_axis.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 1368.043 ; gain = 869.707
+---------------------------------------------------------------------------------
+ Sort Area is  mul_31ns_11ns_41_2_1_U30/tmp_product_4 : 0 0 : 2116 4164 : Used 1 time 0
+ Sort Area is  mul_31ns_11ns_41_2_1_U30/tmp_product_4 : 0 1 : 2048 4164 : Used 1 time 0
+ Sort Area is  mac_muladd_8ns_7ns_16ns_16_4_1_U5/sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1_DSP48_0_U/m_reg_reg_2 : 0 0 : 1987 1987 : Used 1 time 0
+ Sort Area is  mac_muladd_8ns_5ns_8ns_13_4_1_U6/sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1_DSP48_0_U/p_reg_reg_0 : 0 0 : 966 966 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++---------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name    | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|sobel_rgb_axis | line0_U/ram_reg | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|sobel_rgb_axis | line1_U/ram_reg | 1 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
++---------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++---------------------------------------------------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                              | DSP Mapping              | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------------------------------------------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1_DSP48_0    | (A2*(B:0x4d)')'          | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 1    | 0    | 
+|sobel_rgb_axis_sobel_rgb_axis_Pipeline_row_loop_col_loop | (C:0x80)+((A:0x1d)'*B2)' | 9      | 13     | 9      | -      | 13     | 1    | 1    | 0    | -    | -     | 1    | 1    | 
+|sobel_rgb_axis                                           | A2*B2                    | 18     | 12     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|sobel_rgb_axis                                           | (PCIN>>17)+A2*B2         | 15     | 12     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
++---------------------------------------------------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 1368.043 ; gain = 869.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++---------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name    | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|sobel_rgb_axis | line0_U/ram_reg | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|sobel_rgb_axis | line1_U/ram_reg | 1 K x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
++---------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance line0_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 1368.043 ; gain = 869.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1537.328 ; gain = 1038.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1537.328 ; gain = 1038.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1537.328 ; gain = 1038.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1537.328 ; gain = 1038.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1538.371 ; gain = 1040.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1538.371 ; gain = 1040.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++---------------+-------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name    | RTL Name                                                                                        | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++---------------+-------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|sobel_rgb_axis | grp_sobel_rgb_axis_Pipeline_row_loop_col_loop_fu_112/cmp134_reg_1073_pp0_iter7_reg_reg[0]       | 6      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|sobel_rgb_axis | grp_sobel_rgb_axis_Pipeline_row_loop_col_loop_fu_112/cmp130_reg_1067_pp0_iter7_reg_reg[0]       | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sobel_rgb_axis | grp_sobel_rgb_axis_Pipeline_row_loop_col_loop_fu_112/dout_last_reg_1131_pp0_iter7_reg_reg[0]    | 6      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|sobel_rgb_axis | grp_sobel_rgb_axis_Pipeline_row_loop_col_loop_fu_112/first_iter_0_reg_1061_pp0_iter7_reg_reg[0] | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sobel_rgb_axis | grp_sobel_rgb_axis_Pipeline_row_loop_col_loop_fu_112/icmp_ln72_reg_1051_pp0_iter4_reg_reg[0]    | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sobel_rgb_axis | grp_sobel_rgb_axis_Pipeline_row_loop_col_loop_fu_112/and_ln102_reg_1124_pp0_iter5_reg_reg[0]    | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sobel_rgb_axis | grp_sobel_rgb_axis_Pipeline_row_loop_col_loop_fu_112/din_keep_reg_1078_pp0_iter7_reg_reg[2]     | 6      | 3     | NO           | NO                 | YES               | 3      | 0       | 
+|sobel_rgb_axis | grp_sobel_rgb_axis_Pipeline_row_loop_col_loop_fu_112/din_strb_reg_1083_pp0_iter7_reg_reg[2]     | 6      | 3     | NO           | NO                 | YES               | 3      | 0       | 
+|sobel_rgb_axis | grp_sobel_rgb_axis_Pipeline_row_loop_col_loop_fu_112/din_id_reg_1088_pp0_iter7_reg_reg[0]       | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sobel_rgb_axis | grp_sobel_rgb_axis_Pipeline_row_loop_col_loop_fu_112/din_dest_reg_1093_pp0_iter7_reg_reg[0]     | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|sobel_rgb_axis | grp_sobel_rgb_axis_Pipeline_row_loop_col_loop_fu_112/line0_addr_reg_1118_pp0_iter5_reg_reg[9]   | 3      | 10    | NO           | NO                 | YES               | 10     | 0       | 
+|sobel_rgb_axis | grp_sobel_rgb_axis_Pipeline_row_loop_col_loop_fu_112/ap_loop_exit_ready_pp0_iter7_reg_reg       | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++---------------+-------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++---------------------------------------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                              | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------------------------------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|sobel_rgb_axis_sobel_rgb_axis_Pipeline_row_loop_col_loop | (C+(A''*B')')'   | 8      | 5      | 8      | -      | 13     | 2    | 1    | 0    | -    | -     | 1    | 1    | 
+|sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1_DSP48_0    | (A''*B')'        | 8      | 7      | -      | -      | 16     | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|sobel_rgb_axis                                           | A'*B'            | 17     | 11     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|sobel_rgb_axis                                           | (PCIN>>17+A'*B)' | 14     | 0      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
++---------------------------------------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |   104|
+|3     |DSP48E1  |     4|
+|4     |LUT1     |    70|
+|5     |LUT2     |   262|
+|6     |LUT3     |   168|
+|7     |LUT4     |   154|
+|8     |LUT5     |    84|
+|9     |LUT6     |   179|
+|10    |RAMB18E1 |     2|
+|11    |SRL16E   |    25|
+|12    |FDRE     |   816|
+|13    |FDSE     |    15|
+|14    |IBUF     |    85|
+|15    |OBUF     |    78|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------------------------------------------------------+---------------------------------------------------------+------+
+|      |Instance                                                      |Module                                                   |Cells |
++------+--------------------------------------------------------------+---------------------------------------------------------+------+
+|1     |top                                                           |                                                         |  2047|
+|2     |  CTRL_s_axi_U                                                |sobel_rgb_axis_CTRL_s_axi                                |   355|
+|3     |  grp_sobel_rgb_axis_Pipeline_init_cols_fu_102                |sobel_rgb_axis_sobel_rgb_axis_Pipeline_init_cols         |    95|
+|4     |    flow_control_loop_pipe_sequential_init_U                  |sobel_rgb_axis_flow_control_loop_pipe_sequential_init_9  |    54|
+|5     |  grp_sobel_rgb_axis_Pipeline_row_loop_col_loop_fu_112        |sobel_rgb_axis_sobel_rgb_axis_Pipeline_row_loop_col_loop |   831|
+|6     |    flow_control_loop_pipe_sequential_init_U                  |sobel_rgb_axis_flow_control_loop_pipe_sequential_init    |     9|
+|7     |    mac_muladd_8ns_5ns_8ns_13_4_1_U6                          |sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1             |     1|
+|8     |      sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1_DSP48_0_U  |sobel_rgb_axis_mac_muladd_8ns_5ns_8ns_13_4_1_DSP48_0     |     1|
+|9     |    mac_muladd_8ns_7ns_16ns_16_4_1_U5                         |sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1            |    39|
+|10    |      sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1_DSP48_0_U |sobel_rgb_axis_mac_muladd_8ns_7ns_16ns_16_4_1_DSP48_0    |    39|
+|11    |    mul_8ns_9ns_16_1_1_U4                                     |sobel_rgb_axis_mul_8ns_9ns_16_1_1                        |    39|
+|12    |  line0_U                                                     |sobel_rgb_axis_line0_RAM_2P_BRAM_1R1W                    |     9|
+|13    |  line1_U                                                     |sobel_rgb_axis_line1_RAM_2P_BRAM_1R1W                    |     1|
+|14    |  mul_31ns_11ns_41_2_1_U30                                    |sobel_rgb_axis_mul_31ns_11ns_41_2_1                      |    19|
+|15    |  regslice_both_in_axis_V_data_V_U                            |sobel_rgb_axis_regslice_both                             |    68|
+|16    |  regslice_both_in_axis_V_dest_V_U                            |sobel_rgb_axis_regslice_both__parameterized1             |    11|
+|17    |  regslice_both_in_axis_V_id_V_U                              |sobel_rgb_axis_regslice_both__parameterized1_0           |    11|
+|18    |  regslice_both_in_axis_V_keep_V_U                            |sobel_rgb_axis_regslice_both__parameterized0             |    17|
+|19    |  regslice_both_in_axis_V_strb_V_U                            |sobel_rgb_axis_regslice_both__parameterized0_1           |    17|
+|20    |  regslice_both_out_axis_V_data_V_U                           |sobel_rgb_axis_regslice_both_2                           |    86|
+|21    |  regslice_both_out_axis_V_dest_V_U                           |sobel_rgb_axis_regslice_both__parameterized1_3           |    10|
+|22    |  regslice_both_out_axis_V_id_V_U                             |sobel_rgb_axis_regslice_both__parameterized1_4           |    10|
+|23    |  regslice_both_out_axis_V_keep_V_U                           |sobel_rgb_axis_regslice_both__parameterized0_5           |    16|
+|24    |  regslice_both_out_axis_V_last_V_U                           |sobel_rgb_axis_regslice_both__parameterized1_6           |    10|
+|25    |  regslice_both_out_axis_V_strb_V_U                           |sobel_rgb_axis_regslice_both__parameterized0_7           |    16|
+|26    |  regslice_both_out_axis_V_user_V_U                           |sobel_rgb_axis_regslice_both__parameterized1_8           |    10|
++------+--------------------------------------------------------------+---------------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1538.371 ; gain = 1040.035
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 60 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1538.371 ; gain = 1040.035
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1538.371 ; gain = 1040.035
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1551.395 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 110 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1662.773 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 475963cd
+INFO: [Common 17-83] Releasing license: Synthesis
+62 Infos, 60 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1662.773 ; gain = 1168.422
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1662.773 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/Lab3/Lab3.runs/synth_1/sobel_rgb_axis.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file sobel_rgb_axis_utilization_synth.rpt -pb sobel_rgb_axis_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 24 12:10:14 2025...

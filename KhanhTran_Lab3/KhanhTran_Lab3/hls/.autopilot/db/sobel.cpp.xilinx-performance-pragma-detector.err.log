@@ -1,0 +1,4 @@
+In file included from C:\Users\ankha\Desktop\FPGA_Design\KhanhTran_Lab3\sobel.cpp:7:
+D:/Xilinx_2025/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:17:10: fatal error: 'cassert' file not found
+#include <cassert>
+         ^~~~~~~~~

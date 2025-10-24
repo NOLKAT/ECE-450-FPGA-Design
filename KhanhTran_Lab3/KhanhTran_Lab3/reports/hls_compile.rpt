@@ -1,0 +1,208 @@
+
+
+================================================================
+== Synthesis Summary Report of 'sobel_rgb_axis'
+================================================================
++ General Information: 
+    * Date:           Fri Oct 24 15:14:35 2025
+    * Version:        2025.1 (Build 6135595 on May 21 2025)
+    * Project:        KhanhTran_Lab3
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: artix7
+    * Target device:  xc7a35t-cpg236-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------------------------------+---------+-------+---------+-----------+----------+---------+------+----------+--------+--------+-----------+------------+-----+
+    |                    Modules                   |  Issue  |       |       Latency       | Iteration|         | Trip |          |        |        |           |            |     |
+    |                    & Loops                   |   Type  | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM  |   DSP  |     FF    |     LUT    | URAM|
+    +----------------------------------------------+---------+-------+---------+-----------+----------+---------+------+----------+--------+--------+-----------+------------+-----+
+    |+ sobel_rgb_axis                              |   Timing|  -0.04|        -|          -|         -|        -|     -|        no|  2 (2%)|  4 (4%)|  1580 (3%)|  2093 (10%)|    -|
+    | + sobel_rgb_axis_Pipeline_init_cols          |        -|   1.38|     1026|  1.026e+04|         -|     1025|     -|    rewind|       -|       -|   25 (~0%)|    95 (~0%)|    -|
+    |  o init_cols                                 |        -|   7.30|     1024|  1.024e+04|         2|        1|  1024|       yes|       -|       -|          -|           -|    -|
+    | + sobel_rgb_axis_Pipeline_row_loop_col_loop  |   Timing|  -0.04|        -|          -|         -|        0|     -|    rewind|       -|  2 (2%)|  1049 (2%)|   1368 (6%)|    -|
+    |  o row_loop_col_loop                         |        -|   7.30|        -|          -|         8|        1|     -|       yes|       -|       -|          -|           -|    -|
+    +----------------------------------------------+---------+-------+---------+-----------+----------+---------+------+----------+--------+--------+-----------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++------------+------------+---------------+--------+----------+
+| Interface  | Data Width | Address Width | Offset | Register |
++------------+------------+---------------+--------+----------+
+| s_axi_CTRL | 32         | 5             | 16     | 0        |
++------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface  | Register | Offset | Width | Access | Description                      | Bit Fields                                                           |
++------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_CTRL | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_CTRL | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_CTRL | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_CTRL | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_CTRL | width    | 0x10   | 32    | W      | Data signal of width             |                                                                      |
+| s_axi_CTRL | height   | 0x18   | 32    | W      | Data signal of height            |                                                                      |
++------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* AXIS
++-----------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| Interface | Direction | Register Mode | TDATA | TDEST | TID | TKEEP | TLAST | TREADY | TSTRB | TUSER | TVALID |
++-----------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| in_axis   | in        | both          | 24    | 1     | 1   | 3     | 1     | 1      | 3     | 1     | 1      |
+| out_axis  | out       | both          | 24    | 1     | 1   | 3     | 1     | 1      | 3     | 1     | 1      |
++-----------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+---------------------------------------------------------+
+| Argument | Direction | Datatype                                                |
++----------+-----------+---------------------------------------------------------+
+| in_axis  | in        | stream<hls::axis<ap_uint<24>, 1, 1, 1, '8', false>, 0>& |
+| out_axis | out       | stream<hls::axis<ap_uint<24>, 1, 1, 1, '8', false>, 0>& |
+| width    | in        | int                                                     |
+| height   | in        | int                                                     |
++----------+-----------+---------------------------------------------------------+
+
+* SW-to-HW Mapping
++----------+--------------+-----------+----------------------------------+
+| Argument | HW Interface | HW Type   | HW Info                          |
++----------+--------------+-----------+----------------------------------+
+| in_axis  | in_axis      | interface |                                  |
+| out_axis | out_axis     | interface |                                  |
+| width    | s_axi_CTRL   | register  | name=width offset=0x10 range=32  |
+| height   | s_axi_CTRL   | register  | name=height offset=0x18 range=32 |
++----------+--------------+-----------+----------------------------------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++----------------------------------------------+-----+--------+---------------+--------+-----------+---------+
+| Name                                         | DSP | Pragma | Variable      | Op     | Impl      | Latency |
++----------------------------------------------+-----+--------+---------------+--------+-----------+---------+
+| + sobel_rgb_axis                             | 4   |        |               |        |           |         |
+|   sub_fu_200_p2                              |     |        | sub           | add    | fabric    | 0       |
+|   sub133_fu_206_p2                           |     |        | sub133        | add    | fabric    | 0       |
+|   empty_fu_164_p2                            |     |        | empty         | setgt  | auto      | 0       |
+|   smax_fu_170_p3                             |     |        | smax          | select | auto_sel  | 0       |
+|   empty_22_fu_178_p2                         |     |        | empty_22      | setgt  | auto      | 0       |
+|   smax1_fu_184_p3                            |     |        | smax1         | select | auto_sel  | 0       |
+|   mul_31ns_11ns_41_2_1_U30                   | 2   |        | bound         | mul    | auto      | 1       |
+|  + sobel_rgb_axis_Pipeline_init_cols         | 0   |        |               |        |           |         |
+|    icmp_ln58_fu_100_p2                       |     |        | icmp_ln58     | setlt  | auto      | 0       |
+|    add_ln58_fu_106_p2                        |     |        | add_ln58      | add    | fabric    | 0       |
+|  + sobel_rgb_axis_Pipeline_row_loop_col_loop | 2   |        |               |        |           |         |
+|    icmp_ln72_fu_350_p2                       |     |        | icmp_ln72     | setlt  | auto      | 0       |
+|    icmp_ln65_fu_327_p2                       |     |        | icmp_ln65     | seteq  | auto      | 0       |
+|    add_ln65_fu_332_p2                        |     |        | add_ln65      | add    | fabric    | 0       |
+|    select_ln65_fu_362_p3                     |     |        | select_ln65   | select | auto_sel  | 0       |
+|    select_ln65_1_fu_551_p3                   |     |        | select_ln65_1 | select | auto_sel  | 0       |
+|    select_ln65_2_fu_558_p3                   |     |        | select_ln65_2 | select | auto_sel  | 0       |
+|    select_ln65_3_fu_690_p3                   |     |        | select_ln65_3 | select | auto_sel  | 0       |
+|    select_ln65_4_fu_565_p3                   |     |        | select_ln65_4 | select | auto_sel  | 0       |
+|    select_ln65_5_fu_572_p3                   |     |        | select_ln65_5 | select | auto_sel  | 0       |
+|    add_ln65_1_fu_370_p2                      |     |        | add_ln65_1    | add    | fabric    | 0       |
+|    select_ln65_6_fu_376_p3                   |     |        | select_ln65_6 | select | auto_sel  | 0       |
+|    select_ln65_7_fu_388_p3                   |     |        | select_ln65_7 | select | auto_sel  | 0       |
+|    first_iter_0_fu_400_p2                    |     |        | first_iter_0  | seteq  | auto      | 0       |
+|    icmp_fu_416_p2                            |     |        | icmp          | setne  | auto      | 0       |
+|    cmp130_fu_422_p2                          |     |        | cmp130        | seteq  | auto      | 0       |
+|    cmp134_fu_428_p2                          |     |        | cmp134        | seteq  | auto      | 0       |
+|    mac_muladd_8ns_7ns_16ns_16_4_1_U5         | 1   |        | mul_ln16      | mul    | dsp_slice | 3       |
+|    mac_muladd_8ns_7ns_16ns_16_4_1_U5         | 1   |        | zext_ln16_1   | zext   | dsp_slice | 3       |
+|    mul_8ns_9ns_16_1_1_U4                     |     |        | mul_ln16_1    | mul    | auto      | 0       |
+|    mac_muladd_8ns_5ns_8ns_13_4_1_U6          | 1   |        | mul_ln16_2    | mul    | dsp_slice | 3       |
+|    mac_muladd_8ns_7ns_16ns_16_4_1_U5         | 1   |        | add_ln16      | add    | dsp_slice | 3       |
+|    mac_muladd_8ns_5ns_8ns_13_4_1_U6          | 1   |        | add_ln16_1    | add    | dsp_slice | 3       |
+|    acc_fu_582_p2                             |     |        | acc           | add    | fabric    | 0       |
+|    icmp_ln102_fu_497_p2                      |     |        | icmp_ln102    | setne  | auto      | 0       |
+|    and_ln102_fu_503_p2                       |     |        | and_ln102     | and    | auto      | 0       |
+|    select_ln65_8_fu_700_p3                   |     |        | select_ln65_8 | select | auto_sel  | 0       |
+|    add_ln104_fu_613_p2                       |     |        | add_ln104     | add    | fabric    | 0       |
+|    add_ln104_1_fu_739_p2                     |     |        | add_ln104_1   | add    | fabric    | 0       |
+|    add_ln105_fu_755_p2                       |     |        | add_ln105     | add    | fabric    | 0       |
+|    add_ln108_fu_643_p2                       |     |        | add_ln108     | add    | fabric    | 0       |
+|    gx_2_fu_782_p3                            |     |        | gx_2          | select | auto_sel  | 0       |
+|    gy_2_fu_789_p3                            |     |        | gy_2          | select | auto_sel  | 0       |
+|    ax_fu_829_p2                              |     |        | ax            | sub    | fabric    | 0       |
+|    ax_1_fu_834_p3                            |     |        | ax_1          | select | auto_sel  | 0       |
+|    ay_fu_844_p2                              |     |        | ay            | sub    | fabric    | 0       |
+|    ay_1_fu_849_p3                            |     |        | ay_1          | select | auto_sel  | 0       |
+|    edge_fu_867_p2                            |     |        | edge          | add    | fabric    | 0       |
+|    mag_fu_873_p2                             |     |        | mag           | add    | fabric    | 0       |
+|    icmp_ln120_fu_889_p2                      |     |        | icmp_ln120    | setne  | auto      | 0       |
+|    edge_1_fu_895_p3                          |     |        | edge_1        | select | auto_sel  | 0       |
+|    edge_2_fu_901_p3                          |     |        | edge_2        | select | auto_sel  | 0       |
+|    dout_last_fu_509_p2                       |     |        | dout_last     | seteq  | auto      | 0       |
+|    or_ln123_fu_908_p2                        |     |        | or_ln123      | or     | auto      | 0       |
+|    or_ln123_1_fu_912_p2                      |     |        | or_ln123_1    | or     | auto      | 0       |
+|    border_fu_916_p2                          |     |        | border        | or     | auto      | 0       |
+|    edge_3_fu_922_p3                          |     |        | edge_3        | select | auto_sel  | 0       |
+|    out_axis_TUSER                            |     |        | dout_user     | and    | auto      | 0       |
+|    add_ln72_fu_514_p2                        |     |        | add_ln72      | add    | fabric    | 0       |
++----------------------------------------------+-----+--------+---------------+--------+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| Name             | Usage     | Type      | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                  |           |           |      |      |        |          |      |         | Banks            |
++------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+| + sobel_rgb_axis |           |           | 2    | 0    |        |          |      |         |                  |
+|   CTRL_s_axi_U   | interface | s_axilite |      |      |        |          |      |         |                  |
+|   line0_U        | ram_2p    |           | 1    |      | pragma | line0    | bram | 1       | 8, 1024, 1       |
+|   line1_U        | ram_2p    |           | 1    |      | pragma | line1    | bram | 1       | 8, 1024, 1       |
++------------------+-----------+-----------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Pragmas with Warnings
++----------+---------------------------------+---------------------------------------+----------------------------------------------------------------------------+
+| Type     | Options                         | Location                              | Messages                                                                   |
++----------+---------------------------------+---------------------------------------+----------------------------------------------------------------------------+
+| RESOURCE | variable=line0 core=RAM_2P_BRAM | sobel.cpp:39 in sobel_rgb_axis, line0 | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
+| RESOURCE | variable=line1 core=RAM_2P_BRAM | sobel.cpp:40 in sobel_rgb_axis, line1 | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
++----------+---------------------------------+---------------------------------------+----------------------------------------------------------------------------+
+
+* Valid Pragma Syntax
++-----------------+-----------------------------------+------------------------------------------+
+| Type            | Options                           | Location                                 |
++-----------------+-----------------------------------+------------------------------------------+
+| INLINE          |                                   | sobel.cpp:14 in rgb_to_gray              |
+| INTERFACE       | axis port=in_axis                 | sobel.cpp:24 in sobel_rgb_axis, in_axis  |
+| INTERFACE       | axis port=out_axis                | sobel.cpp:25 in sobel_rgb_axis, out_axis |
+| INTERFACE       | s_axilite port=width bundle=CTRL  | sobel.cpp:26 in sobel_rgb_axis, width    |
+| INTERFACE       | s_axilite port=height bundle=CTRL | sobel.cpp:27 in sobel_rgb_axis, height   |
+| INTERFACE       | s_axilite port=return bundle=CTRL | sobel.cpp:28 in sobel_rgb_axis, return   |
+| DEPENDENCE      | variable=line0 inter false        | sobel.cpp:42 in sobel_rgb_axis, line0    |
+| DEPENDENCE      | variable=line1 inter false        | sobel.cpp:43 in sobel_rgb_axis, line1    |
+| ARRAY_PARTITION | variable=w0 complete dim=1        | sobel.cpp:49 in sobel_rgb_axis, w0       |
+| ARRAY_PARTITION | variable=w1 complete dim=1        | sobel.cpp:50 in sobel_rgb_axis, w1       |
+| ARRAY_PARTITION | variable=w2 complete dim=1        | sobel.cpp:51 in sobel_rgb_axis, w2       |
+| PIPELINE        | ii=1                              | sobel.cpp:59 in sobel_rgb_axis           |
+| PIPELINE        | ii=1                              | sobel.cpp:73 in sobel_rgb_axis           |
++-----------------+-----------------------------------+------------------------------------------+
+
+

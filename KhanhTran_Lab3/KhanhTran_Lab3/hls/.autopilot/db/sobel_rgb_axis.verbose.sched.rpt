@@ -1,0 +1,192 @@
+
+
+================================================================
+== Vitis HLS Report for 'sobel_rgb_axis'
+================================================================
+* Date:           Fri Oct 24 15:14:33 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        KhanhTran_Lab3
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a35t-cpg236-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.343 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.31>
+ST_1 : Operation 7 [1/1] (1.00ns)   --->   "%height_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %height" [sobel.cpp:21]   --->   Operation 7 'read' 'height_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 8 [1/1] (1.00ns)   --->   "%width_read = read i32 @_ssdm_op_Read.s_axilite.i32, i32 %width" [sobel.cpp:21]   --->   Operation 8 'read' 'width_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 112 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%trunc_ln21 = trunc i32 %width_read" [sobel.cpp:21]   --->   Operation 9 'trunc' 'trunc_ln21' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%trunc_ln21_1 = trunc i32 %height_read" [sobel.cpp:21]   --->   Operation 10 'trunc' 'trunc_ln21_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [2/2] (4.31ns)   --->   "%call_ln21 = call void @sobel_rgb_axis_Pipeline_init_cols, i32 %width_read, i8 %line0, i8 %line1" [sobel.cpp:21]   --->   Operation 11 'call' 'call_ln21' <Predicate = true> <Delay = 4.31> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 12 [1/1] (2.70ns)   --->   "%empty = icmp_sgt  i32 %height_read, i32 0" [sobel.cpp:21]   --->   Operation 12 'icmp' 'empty' <Predicate = true> <Delay = 2.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 13 [1/1] (0.94ns)   --->   "%smax = select i1 %empty, i31 %trunc_ln21_1, i31 0" [sobel.cpp:21]   --->   Operation 13 'select' 'smax' <Predicate = true> <Delay = 0.94> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.94> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (2.70ns)   --->   "%empty_22 = icmp_sgt  i32 %width_read, i32 0" [sobel.cpp:21]   --->   Operation 14 'icmp' 'empty_22' <Predicate = true> <Delay = 2.70> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.70> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 15 [1/1] (0.90ns)   --->   "%smax1 = select i1 %empty_22, i11 %trunc_ln21, i11 0" [sobel.cpp:21]   --->   Operation 15 'select' 'smax1' <Predicate = true> <Delay = 0.90> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.90> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 6.86>
+ST_2 : Operation 16 [1/2] (5.92ns)   --->   "%call_ln21 = call void @sobel_rgb_axis_Pipeline_init_cols, i32 %width_read, i8 %line0, i8 %line1" [sobel.cpp:21]   --->   Operation 16 'call' 'call_ln21' <Predicate = true> <Delay = 5.92> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%smax_cast = zext i31 %smax" [sobel.cpp:21]   --->   Operation 17 'zext' 'smax_cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%smax1_cast = zext i11 %smax1" [sobel.cpp:21]   --->   Operation 18 'zext' 'smax1_cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [2/2] (6.86ns)   --->   "%bound = mul i41 %smax_cast, i41 %smax1_cast" [sobel.cpp:21]   --->   Operation 19 'mul' 'bound' <Predicate = true> <Delay = 6.86> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.86> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 6.86>
+ST_3 : Operation 20 [1/2] (6.86ns)   --->   "%bound = mul i41 %smax_cast, i41 %smax1_cast" [sobel.cpp:21]   --->   Operation 20 'mul' 'bound' <Predicate = true> <Delay = 6.86> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.86> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 4.67>
+ST_4 : Operation 21 [1/1] (2.70ns)   --->   "%sub = add i32 %width_read, i32 4294967295" [sobel.cpp:21]   --->   Operation 21 'add' 'sub' <Predicate = true> <Delay = 2.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 22 [1/1] (2.70ns)   --->   "%sub133 = add i32 %height_read, i32 4294967295" [sobel.cpp:21]   --->   Operation 22 'add' 'sub133' <Predicate = true> <Delay = 2.70> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.70> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 23 [2/2] (1.96ns)   --->   "%call_ln21 = call void @sobel_rgb_axis_Pipeline_row_loop_col_loop, i32 %width_read, i41 %bound, i32 %sub133, i24 %in_axis_V_data_V, i3 %in_axis_V_keep_V, i3 %in_axis_V_strb_V, i1 %in_axis_V_user_V, i1 %in_axis_V_last_V, i1 %in_axis_V_id_V, i1 %in_axis_V_dest_V, i32 %sub, i24 %out_axis_V_data_V, i3 %out_axis_V_keep_V, i3 %out_axis_V_strb_V, i1 %out_axis_V_user_V, i1 %out_axis_V_last_V, i1 %out_axis_V_id_V, i1 %out_axis_V_dest_V, i8 %line1, i8 %line0" [sobel.cpp:21]   --->   Operation 23 'call' 'call_ln21' <Predicate = true> <Delay = 1.96> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 3.63>
+ST_5 : Operation 24 [1/2] (3.63ns)   --->   "%call_ln21 = call void @sobel_rgb_axis_Pipeline_row_loop_col_loop, i32 %width_read, i41 %bound, i32 %sub133, i24 %in_axis_V_data_V, i3 %in_axis_V_keep_V, i3 %in_axis_V_strb_V, i1 %in_axis_V_user_V, i1 %in_axis_V_last_V, i1 %in_axis_V_id_V, i1 %in_axis_V_dest_V, i32 %sub, i24 %out_axis_V_data_V, i3 %out_axis_V_keep_V, i3 %out_axis_V_strb_V, i1 %out_axis_V_user_V, i1 %out_axis_V_last_V, i1 %out_axis_V_id_V, i1 %out_axis_V_dest_V, i8 %line1, i8 %line0" [sobel.cpp:21]   --->   Operation 24 'call' 'call_ln21' <Predicate = true> <Delay = 3.63> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 25 [1/1] (0.00ns)   --->   "%spectopmodule_ln21 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_9" [sobel.cpp:21]   --->   Operation 25 'spectopmodule' 'spectopmodule_ln21' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 26 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %in_axis_V_data_V, i3 %in_axis_V_keep_V, i3 %in_axis_V_strb_V, i1 %in_axis_V_user_V, i1 %in_axis_V_last_V, i1 %in_axis_V_id_V, i1 %in_axis_V_dest_V, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 26 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 27 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i24 %in_axis_V_data_V"   --->   Operation 27 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 28 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i3 %in_axis_V_keep_V"   --->   Operation 28 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 29 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i3 %in_axis_V_strb_V"   --->   Operation 29 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 30 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %in_axis_V_user_V"   --->   Operation 30 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 31 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %in_axis_V_last_V"   --->   Operation 31 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 32 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %in_axis_V_id_V"   --->   Operation 32 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 33 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %in_axis_V_dest_V"   --->   Operation 33 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 34 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %out_axis_V_data_V, i3 %out_axis_V_keep_V, i3 %out_axis_V_strb_V, i1 %out_axis_V_user_V, i1 %out_axis_V_last_V, i1 %out_axis_V_id_V, i1 %out_axis_V_dest_V, void @empty, i32 1, i32 1, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 34 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 35 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i24 %out_axis_V_data_V"   --->   Operation 35 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 36 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i3 %out_axis_V_keep_V"   --->   Operation 36 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 37 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i3 %out_axis_V_strb_V"   --->   Operation 37 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 38 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %out_axis_V_user_V"   --->   Operation 38 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 39 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %out_axis_V_last_V"   --->   Operation 39 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 40 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %out_axis_V_id_V"   --->   Operation 40 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 41 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %out_axis_V_dest_V"   --->   Operation 41 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 42 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %width"   --->   Operation 42 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 43 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %width, void @empty_2, i32 4294967295, i32 4294967295, void @empty_0, i32 0, i32 0, void @empty_3, void @empty_4, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 43 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 44 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %width, void @empty_5, i32 4294967295, i32 4294967295, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 44 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 45 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %height"   --->   Operation 45 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 46 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %height, void @empty_2, i32 4294967295, i32 4294967295, void @empty_0, i32 0, i32 0, void @empty_3, void @empty_6, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 46 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 47 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %height, void @empty_5, i32 4294967295, i32 4294967295, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 47 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 48 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_2, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_3, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0"   --->   Operation 48 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 49 [1/1] (0.00ns)   --->   "%specmemcore_ln39 = specmemcore void @_ssdm_op_SpecMemCore, i8 %line0, i64 666, i64 22, i64 18446744073709551615" [sobel.cpp:39]   --->   Operation 49 'specmemcore' 'specmemcore_ln39' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 50 [1/1] (0.00ns)   --->   "%specmemcore_ln40 = specmemcore void @_ssdm_op_SpecMemCore, i8 %line1, i64 666, i64 22, i64 18446744073709551615" [sobel.cpp:40]   --->   Operation 50 'specmemcore' 'specmemcore_ln40' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 51 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln58 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i24 %out_axis_V_data_V, i3 %out_axis_V_keep_V, i3 %out_axis_V_strb_V, i1 %out_axis_V_user_V, i1 %out_axis_V_last_V, i1 %out_axis_V_id_V, i1 %out_axis_V_dest_V, void @empty_7" [sobel.cpp:58]   --->   Operation 51 'specaxissidechannel' 'specaxissidechannel_ln58' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 52 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln58 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i24 %in_axis_V_data_V, i3 %in_axis_V_keep_V, i3 %in_axis_V_strb_V, i1 %in_axis_V_user_V, i1 %in_axis_V_last_V, i1 %in_axis_V_id_V, i1 %in_axis_V_dest_V, void @empty_8" [sobel.cpp:58]   --->   Operation 52 'specaxissidechannel' 'specaxissidechannel_ln58' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 53 [1/1] (0.00ns)   --->   "%ret_ln141 = ret" [sobel.cpp:141]   --->   Operation 53 'ret' 'ret_ln141' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 5.312ns
+The critical path consists of the following:
+	s_axi read operation ('width_read', sobel.cpp:21) on port 'width' (sobel.cpp:21) [20]  (1.000 ns)
+	'call' operation 0 bit ('call_ln21', sobel.cpp:21) to 'sobel_rgb_axis_Pipeline_init_cols' [51]  (4.312 ns)
+
+ <State 2>: 6.860ns
+The critical path consists of the following:
+	'mul' operation 41 bit ('bound', sobel.cpp:21) [60]  (6.860 ns)
+
+ <State 3>: 6.860ns
+The critical path consists of the following:
+	'mul' operation 41 bit ('bound', sobel.cpp:21) [60]  (6.860 ns)
+
+ <State 4>: 4.670ns
+The critical path consists of the following:
+	'add' operation 32 bit ('sub', sobel.cpp:21) [52]  (2.702 ns)
+	'call' operation 0 bit ('call_ln21', sobel.cpp:21) to 'sobel_rgb_axis_Pipeline_row_loop_col_loop' [61]  (1.968 ns)
+
+ <State 5>: 3.630ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln21', sobel.cpp:21) to 'sobel_rgb_axis_Pipeline_row_loop_col_loop' [61]  (3.630 ns)
+
+ <State 6>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

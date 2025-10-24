@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# xsim v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Fri Oct 24 15:41:00 2025
+# Process ID         : 18852
+# Current directory  : C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/sim/verilog
+# Command line       : xsim.exe -source {xsim.dir/sobel_rgb_axis/xsim_script.tcl}
+# Log file           : C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/sim/verilog/xsim.log
+# Journal file       : C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/sim/verilog\xsim.jou
+# Running On         : katnlot
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 5 7600X 6-Core Processor             
+# CPU Frequency      : 4691 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 67768 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 72063 MB
+# Available Virtual  : 47151 MB
+#-----------------------------------------------------------
+start_gui
+source xsim.dir/sobel_rgb_axis/xsim_script.tcl
+open_wave_config sobel_rgb_axis_dataflow_ana.wcfg
+source sobel_rgb_axis.tcl
+current_wave_config {sobel_rgb_axis_dataflow_ana.wcfg}
+add_wave {{/apatb_sobel_rgb_axis_top/in_axis_TDATA}} 
+restart
+run 10 us
+run all
+current_wave_config {sobel_rgb_axis_dataflow_ana.wcfg}
+add_wave {{/apatb_sobel_rgb_axis_top/out_axis_TDATA}} 
+run all
+restart
+run all
+save_wave_config {C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/hls/sim/verilog/sobel_rgb_axis_dataflow_ana.wcfg}
+close_sim

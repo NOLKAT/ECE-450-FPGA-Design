@@ -1,0 +1,4 @@
+2 warnings and 2 errors generated.
+Error while processing C:\Users\ankha\Desktop\FPGA_Design\KhanhTran_Lab3\KhanhTran_Lab3\hls\.autopilot\db\sobel.pp.0.cpp.
+clang-tidy applied 4 of 4 suggested fixes.
+Suppressed 2 warnings (2 with check filters).

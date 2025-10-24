@@ -1,0 +1,6 @@
+parallelismSelector::WARNG: WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\Users\ankha\Desktop\FPGA_Design\KhanhTran_Lab3\sobel.cpp:49:1)
+parallelismSelector::WARNG: WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\Users\ankha\Desktop\FPGA_Design\KhanhTran_Lab3\sobel.cpp:50:1)
+parallelismSelector::WARNG: WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\Users\ankha\Desktop\FPGA_Design\KhanhTran_Lab3\sobel.cpp:51:1)
+parallelismSelector::WARNG: WARNING: [SIM 211-200] C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3\sobel.cpp:58:5: the dynamic loop had a trip count of min=512 max=512 during C simulation. (#pragma HLS loop_tripcount min=512 max=512)
+parallelismSelector::WARNG: WARNING: [SIM 211-200] C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3\sobel.cpp:65:5: the dynamic loop had a trip count of min=512 max=512 during C simulation. (#pragma HLS loop_tripcount min=512 max=512)
+parallelismSelector::WARNG: WARNING: [SIM 211-200] C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3\sobel.cpp:72:9: the dynamic loop had a trip count of min=512 max=512 during C simulation. (#pragma HLS loop_tripcount min=512 max=512)

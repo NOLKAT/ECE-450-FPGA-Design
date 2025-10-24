@@ -1,0 +1,90 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5539" msg_severity="WARNING" msg_loc="sobel.cpp:39:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5539" msg_severity="WARNING" msg_loc="sobel.cpp:40:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx_2025/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:149:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="get_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx_2025/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:154:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="set_data" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx_2025/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:219:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="keep_all" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx_2025/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:332:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="empty" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx_2025/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:340:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="full" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx_2025/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:349:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx_2025/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:360:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx_2025/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:372:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx_2025/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:383:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="read_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Xilinx_2025/2025.1/Vitis/common/technology/autopilot\ap_axi_sdata.h:400:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="write_nb" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="sobel.cpp:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="rgb_to_gray" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="sobel_rgb_axis" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=sobel_rgb_axis" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="sobel.cpp:24:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sobel_rgb_axis" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=in_axis" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="sobel.cpp:25:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sobel_rgb_axis" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis port=out_axis" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="sobel.cpp:26:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sobel_rgb_axis" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=width bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="sobel.cpp:27:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sobel_rgb_axis" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=height bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="sobel.cpp:28:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sobel_rgb_axis" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=CTRL" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="sobel.cpp:39:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sobel_rgb_axis" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=line0 core=RAM_2P_BRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="sobel.cpp:40:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sobel_rgb_axis" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=line1 core=RAM_2P_BRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="sobel.cpp:42:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sobel_rgb_axis" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=line0 inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="sobel.cpp:43:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sobel_rgb_axis" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=line1 inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="sobel.cpp:49:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sobel_rgb_axis" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=w0 complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="sobel.cpp:50:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sobel_rgb_axis" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=w1 complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="sobel.cpp:51:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sobel_rgb_axis" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=w2 complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="sobel.cpp:59:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sobel_rgb_axis" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="sobel.cpp:73:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sobel_rgb_axis" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="sobel.cpp:80:31" msg_body="Inlining function 'rgb_to_gray(ap_uint&lt;8&gt;, ap_uint&lt;8&gt;, ap_uint&lt;8&gt;)' into 'sobel_rgb_axis(hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 1ul, 1ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 1ul, 1ul, (unsigned char)56, false&gt;, 0&gt;&amp;, int, int)'">
+        <args Callee="rgb_to_gray(ap_uint&lt;8&gt;, ap_uint&lt;8&gt;, ap_uint&lt;8&gt;)" Callee-DebugLoc="File sobel.cpp Line 13 Column 0" Caller="sobel_rgb_axis(hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 1ul, 1ul, (unsigned char)56, false&gt;, 0&gt;&amp;, hls::stream&lt;hls::axis&lt;ap_uint&lt;24&gt;, 1ul, 1ul, 1ul, (unsigned char)56, false&gt;, 0&gt;&amp;, int, int)" Caller-DebugLoc="File sobel.cpp Line 23 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

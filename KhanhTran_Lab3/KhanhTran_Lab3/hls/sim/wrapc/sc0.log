@@ -1,0 +1,7 @@
+   Build using "D:/Xilinx_2025/2025.1/Vitis/win64/tools/vcxx/libexec/clang++"
+   Compiling sobel_testbench.cpp_pre.cpp.tb.cpp
+   Compiling apatb_sobel_rgb_axis_util.cpp
+   Compiling sobel.cpp_pre.cpp.tb.cpp
+   Compiling apatb_sobel_rgb_axis.cpp
+   Compiling apatb_sobel_rgb_axis_ir.ll
+   Generating cosim.tv.exe

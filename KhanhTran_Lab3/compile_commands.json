@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3",
+    "arguments": [
+      "D:\\Xilinx_2025\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=D:\\Xilinx_2025\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=D:\\Xilinx_2025\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=sobel_rgb_axis",
+      "-c",
+      "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3\\sobel.cpp"
+    ],
+    "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3\\sobel.cpp"
+  },
+  {
+    "directory": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3",
+    "arguments": [
+      "D:\\Xilinx_2025\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=D:\\Xilinx_2025\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=D:\\Xilinx_2025\\2025.1\\Vitis\\include",
+      "-c",
+      "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3\\sobel_testbench.cpp"
+    ],
+    "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3\\sobel_testbench.cpp"
+  }
+]

@@ -1,0 +1,215 @@
+
+
+================================================================
+== Vitis HLS Report for 'sobel_rgb_axis'
+================================================================
+* Date:           Fri Oct 24 15:14:35 2025
+
+* Version:        2025.1 (Build 6135595 on May 21 2025)
+* Project:        KhanhTran_Lab3
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a35t-cpg236-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.343 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +------------------------------------------------------+-------------------------------------------+---------+---------+-----------+-----------+-----+------+------------------------------------------------+
+        |                                                      |                                           |  Latency (cycles) |   Latency (absolute)  |  Interval  |                    Pipeline                    |
+        |                       Instance                       |                   Module                  |   min   |   max   |    min    |    max    | min |  max |                      Type                      |
+        +------------------------------------------------------+-------------------------------------------+---------+---------+-----------+-----------+-----+------+------------------------------------------------+
+        |grp_sobel_rgb_axis_Pipeline_init_cols_fu_102          |sobel_rgb_axis_Pipeline_init_cols          |        2|     1026|  20.000 ns|  10.260 us|    1|  1025|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_sobel_rgb_axis_Pipeline_row_loop_col_loop_fu_112  |sobel_rgb_axis_Pipeline_row_loop_col_loop  |        ?|        ?|          ?|          ?|    0|     0|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        +------------------------------------------------------+-------------------------------------------+---------+---------+-----------+-----------+-----+------+------------------------------------------------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+----+-------+-------+-----+
+|       Name      | BRAM_18K| DSP|   FF  |  LUT  | URAM|
++-----------------+---------+----+-------+-------+-----+
+|DSP              |        -|   -|      -|      -|    -|
+|Expression       |        -|   -|      0|    200|    -|
+|FIFO             |        -|   -|      -|      -|    -|
+|Instance         |        0|   4|   1327|   1677|    -|
+|Memory           |        2|   -|      0|      0|    -|
+|Multiplexer      |        -|   -|      0|    214|    -|
+|Register         |        -|   -|    253|      -|    -|
++-----------------+---------+----+-------+-------+-----+
+|Total            |        2|   4|   1580|   2091|    0|
++-----------------+---------+----+-------+-------+-----+
+|Available        |      100|  90|  41600|  20800|    0|
++-----------------+---------+----+-------+-------+-----+
+|Utilization (%)  |        2|   4|      3|     10|    0|
++-----------------+---------+----+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +------------------------------------------------------+-------------------------------------------+---------+----+------+------+-----+
+    |                       Instance                       |                   Module                  | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +------------------------------------------------------+-------------------------------------------+---------+----+------+------+-----+
+    |CTRL_s_axi_U                                          |CTRL_s_axi                                 |        0|   0|   112|   168|    0|
+    |mul_31ns_11ns_41_2_1_U30                              |mul_31ns_11ns_41_2_1                       |        0|   2|   141|    48|    0|
+    |grp_sobel_rgb_axis_Pipeline_init_cols_fu_102          |sobel_rgb_axis_Pipeline_init_cols          |        0|   0|    25|    95|    0|
+    |grp_sobel_rgb_axis_Pipeline_row_loop_col_loop_fu_112  |sobel_rgb_axis_Pipeline_row_loop_col_loop  |        0|   2|  1049|  1366|    0|
+    +------------------------------------------------------+-------------------------------------------+---------+----+------+------+-----+
+    |Total                                                 |                                           |        0|   4|  1327|  1677|    0|
+    +------------------------------------------------------+-------------------------------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +---------+------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |  Memory |         Module         | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +---------+------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |line0_U  |line0_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|  1024|    8|     1|         8192|
+    |line1_U  |line1_RAM_2P_BRAM_1R1W  |        1|  0|   0|    0|  1024|    8|     1|         8192|
+    +---------+------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total    |                        |        2|  0|   0|    0|  2048|   16|     2|        16384|
+    +---------+------------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |                             Variable Name                            | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |sub133_fu_206_p2                                                      |         +|   0|  0|  39|          32|           2|
+    |sub_fu_200_p2                                                         |         +|   0|  0|  39|          32|           2|
+    |grp_sobel_rgb_axis_Pipeline_row_loop_col_loop_fu_112_out_axis_TREADY  |       and|   0|  0|   2|           1|           1|
+    |empty_22_fu_178_p2                                                    |      icmp|   0|  0|  39|          32|           1|
+    |empty_fu_164_p2                                                       |      icmp|   0|  0|  39|          32|           1|
+    |smax1_fu_184_p3                                                       |    select|   0|  0|  11|           1|          11|
+    |smax_fu_170_p3                                                        |    select|   0|  0|  31|           1|          31|
+    +----------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                                                 |          |   0|  0| 200|         131|          49|
+    +----------------------------------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------+----+-----------+-----+-----------+
+    |             Name            | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                    |  29|          7|    1|          7|
+    |in_axis_TREADY_int_regslice  |   9|          2|    1|          2|
+    |line0_address1               |  13|          3|   10|         30|
+    |line0_ce0                    |   9|          2|    1|          2|
+    |line0_ce1                    |  13|          3|    1|          3|
+    |line0_d1                     |  13|          3|    8|         24|
+    |line0_we1                    |  13|          3|    1|          3|
+    |line1_address1               |  13|          3|   10|         30|
+    |line1_ce1                    |  13|          3|    1|          3|
+    |line1_d1                     |  13|          3|    8|         24|
+    |line1_we1                    |  13|          3|    1|          3|
+    |out_axis_TDATA_int_regslice  |   9|          2|   24|         48|
+    |out_axis_TDEST_int_regslice  |   9|          2|    1|          2|
+    |out_axis_TID_int_regslice    |   9|          2|    1|          2|
+    |out_axis_TKEEP_int_regslice  |   9|          2|    3|          6|
+    |out_axis_TLAST_int_regslice  |   9|          2|    1|          2|
+    |out_axis_TSTRB_int_regslice  |   9|          2|    3|          6|
+    |out_axis_TUSER_int_regslice  |   9|          2|    1|          2|
+    +-----------------------------+----+-----------+-----+-----------+
+    |Total                        | 214|         49|   77|        199|
+    +-----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------------------------------+----+----+-----+-----------+
+    |                                Name                               | FF | LUT| Bits| Const Bits|
+    +-------------------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                          |   6|   0|    6|          0|
+    |bound_reg_244                                                      |  41|   0|   41|          0|
+    |grp_sobel_rgb_axis_Pipeline_init_cols_fu_102_ap_start_reg          |   1|   0|    1|          0|
+    |grp_sobel_rgb_axis_Pipeline_row_loop_col_loop_fu_112_ap_start_reg  |   1|   0|    1|          0|
+    |height_read_reg_212                                                |  32|   0|   32|          0|
+    |out_axis_TDATA_reg                                                 |  24|   0|   24|          0|
+    |out_axis_TDEST_reg                                                 |   1|   0|    1|          0|
+    |out_axis_TID_reg                                                   |   1|   0|    1|          0|
+    |out_axis_TKEEP_reg                                                 |   3|   0|    3|          0|
+    |out_axis_TLAST_reg                                                 |   1|   0|    1|          0|
+    |out_axis_TSTRB_reg                                                 |   3|   0|    3|          0|
+    |out_axis_TUSER_reg                                                 |   1|   0|    1|          0|
+    |smax1_reg_229                                                      |  11|   0|   11|          0|
+    |smax_reg_224                                                       |  31|   0|   31|          0|
+    |sub133_reg_254                                                     |  32|   0|   32|          0|
+    |sub_reg_249                                                        |  32|   0|   32|          0|
+    |width_read_reg_217                                                 |  32|   0|   32|          0|
+    +-------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                              | 253|   0|  253|          0|
+    +-------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------+-----+-----+------------+-------------------+--------------+
+|      RTL Ports     | Dir | Bits|  Protocol  |   Source Object   |    C Type    |
++--------------------+-----+-----+------------+-------------------+--------------+
+|s_axi_CTRL_AWVALID  |   in|    1|       s_axi|               CTRL|        scalar|
+|s_axi_CTRL_AWREADY  |  out|    1|       s_axi|               CTRL|        scalar|
+|s_axi_CTRL_AWADDR   |   in|    5|       s_axi|               CTRL|        scalar|
+|s_axi_CTRL_WVALID   |   in|    1|       s_axi|               CTRL|        scalar|
+|s_axi_CTRL_WREADY   |  out|    1|       s_axi|               CTRL|        scalar|
+|s_axi_CTRL_WDATA    |   in|   32|       s_axi|               CTRL|        scalar|
+|s_axi_CTRL_WSTRB    |   in|    4|       s_axi|               CTRL|        scalar|
+|s_axi_CTRL_ARVALID  |   in|    1|       s_axi|               CTRL|        scalar|
+|s_axi_CTRL_ARREADY  |  out|    1|       s_axi|               CTRL|        scalar|
+|s_axi_CTRL_ARADDR   |   in|    5|       s_axi|               CTRL|        scalar|
+|s_axi_CTRL_RVALID   |  out|    1|       s_axi|               CTRL|        scalar|
+|s_axi_CTRL_RREADY   |   in|    1|       s_axi|               CTRL|        scalar|
+|s_axi_CTRL_RDATA    |  out|   32|       s_axi|               CTRL|        scalar|
+|s_axi_CTRL_RRESP    |  out|    2|       s_axi|               CTRL|        scalar|
+|s_axi_CTRL_BVALID   |  out|    1|       s_axi|               CTRL|        scalar|
+|s_axi_CTRL_BREADY   |   in|    1|       s_axi|               CTRL|        scalar|
+|s_axi_CTRL_BRESP    |  out|    2|       s_axi|               CTRL|        scalar|
+|ap_clk              |   in|    1|  ap_ctrl_hs|     sobel_rgb_axis|  return value|
+|ap_rst_n            |   in|    1|  ap_ctrl_hs|     sobel_rgb_axis|  return value|
+|interrupt           |  out|    1|  ap_ctrl_hs|     sobel_rgb_axis|  return value|
+|in_axis_TDATA       |   in|   24|        axis|   in_axis_V_data_V|       pointer|
+|in_axis_TVALID      |   in|    1|        axis|   in_axis_V_dest_V|       pointer|
+|in_axis_TREADY      |  out|    1|        axis|   in_axis_V_dest_V|       pointer|
+|in_axis_TDEST       |   in|    1|        axis|   in_axis_V_dest_V|       pointer|
+|in_axis_TKEEP       |   in|    3|        axis|   in_axis_V_keep_V|       pointer|
+|in_axis_TSTRB       |   in|    3|        axis|   in_axis_V_strb_V|       pointer|
+|in_axis_TUSER       |   in|    1|        axis|   in_axis_V_user_V|       pointer|
+|in_axis_TLAST       |   in|    1|        axis|   in_axis_V_last_V|       pointer|
+|in_axis_TID         |   in|    1|        axis|     in_axis_V_id_V|       pointer|
+|out_axis_TDATA      |  out|   24|        axis|  out_axis_V_data_V|       pointer|
+|out_axis_TVALID     |  out|    1|        axis|  out_axis_V_dest_V|       pointer|
+|out_axis_TREADY     |   in|    1|        axis|  out_axis_V_dest_V|       pointer|
+|out_axis_TDEST      |  out|    1|        axis|  out_axis_V_dest_V|       pointer|
+|out_axis_TKEEP      |  out|    3|        axis|  out_axis_V_keep_V|       pointer|
+|out_axis_TSTRB      |  out|    3|        axis|  out_axis_V_strb_V|       pointer|
+|out_axis_TUSER      |  out|    1|        axis|  out_axis_V_user_V|       pointer|
+|out_axis_TLAST      |  out|    1|        axis|  out_axis_V_last_V|       pointer|
+|out_axis_TID        |  out|    1|        axis|    out_axis_V_id_V|       pointer|
++--------------------+-----+-----+------------+-------------------+--------------+
+

@@ -1,0 +1,7 @@
+sobel.cpp:39:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=line0 core=RAM_2P_BRAM
+        ^
+sobel.cpp:40:9: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=line1 core=RAM_2P_BRAM
+        ^
+2 warnings generated.

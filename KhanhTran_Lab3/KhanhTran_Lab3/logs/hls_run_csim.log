@@ -1,0 +1,66 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=sobel.cpp' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/sobel.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=sobel_testbench.cpp' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/sobel_testbench.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=sobel_rgb_axis' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7a35tcpg236-1' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [HLS 200-1465] Applying config ini 'cosim.wave_debug=1' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying config ini 'csim.code_analyzer=1' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/KhanhTran_Lab3/vitis-comp.json
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [HLS 211-200] Compiling source code sobel.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3/sobel_testbench.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code sobel.cpp as test bench code with instrumentation
+sobel.cpp:14:13: warning: unexpected pragma argument '__attribute__', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS INLINE
+            ^
+d:\xilinx_2025\2025.1\vitis\win64\tools\vcxx\data\autopilot/etc/ap_common.h:139:23: note: expanded from macro 'INLINE'
+#define INLINE inline __attribute__((always_inline))
+                      ^
+sobel.cpp:39:5: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+    #pragma HLS RESOURCE variable=line0 core=RAM_2P_BRAM
+    ^
+sobel.cpp:40:5: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+    #pragma HLS RESOURCE variable=line1 core=RAM_2P_BRAM
+    ^
+3 warnings generated.
+sobel.cpp:39:5: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+    #pragma HLS RESOURCE variable=line0 core=RAM_2P_BRAM
+    ^
+sobel.cpp:40:5: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+    #pragma HLS RESOURCE variable=line1 core=RAM_2P_BRAM
+    ^
+2 warnings generated.
+INFO: [HLS 211-200] Linking hardware code
+INFO: [HLS 211-200] Transforming hardware bitcode
+INFO: [HLS 211-200] Linking executable
+INFO: [HLS 211-200] Computing HLS IR Information
+INFO: [HLS 211-200] Determining source code dependencies
+INFO: [SIM 211-200] Running executable
+Cannot open: lena_512.ppm
+WARN: Could not load 'lena_512.ppm'. Using synthetic 512x512 pattern.
+Sobel stats: min=0 max=255 mean=43.1653
+Wrote 'sobel_out.ppm'. Open with any PPM-capable viewer.
+INFO: [SIM 211-200] Analyzing trace data
+INFO: [SIM 211-208] Running Code Analyzer
+WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\Users\ankha\Desktop\FPGA_Design\KhanhTran_Lab3\sobel.cpp:49:1)
+WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\Users\ankha\Desktop\FPGA_Design\KhanhTran_Lab3\sobel.cpp:50:1)
+WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\Users\ankha\Desktop\FPGA_Design\KhanhTran_Lab3\sobel.cpp:51:1)
+WARNING: [SIM 211-200] C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3\sobel.cpp:58:5: the dynamic loop had a trip count of min=512 max=512 during C simulation. (#pragma HLS loop_tripcount min=512 max=512)
+WARNING: [SIM 211-200] C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3\sobel.cpp:65:5: the dynamic loop had a trip count of min=512 max=512 during C simulation. (#pragma HLS loop_tripcount min=512 max=512)
+WARNING: [SIM 211-200] C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab3\sobel.cpp:72:9: the dynamic loop had a trip count of min=512 max=512 during C simulation. (#pragma HLS loop_tripcount min=512 max=512)
+INFO: [SIM 211-210] Code Analyzer finished
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 57.075 seconds; peak allocated memory: 144.863 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 1m 1s

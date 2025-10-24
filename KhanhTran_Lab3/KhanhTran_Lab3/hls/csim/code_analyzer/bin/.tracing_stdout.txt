@@ -1,0 +1,2 @@
+Sobel stats: min=0 max=255 mean=43.1653
+Wrote 'sobel_out.ppm'. Open with any PPM-capable viewer.

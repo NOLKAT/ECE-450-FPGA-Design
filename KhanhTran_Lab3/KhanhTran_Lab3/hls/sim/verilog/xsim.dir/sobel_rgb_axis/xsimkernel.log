@@ -1,0 +1,7 @@
+Running: xsim.dir/sobel_rgb_axis/xsimk.exe -simmode gui -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=sobel_rgb_axis_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -wdb sobel_rgb_axis.wdb -simrunnum 0 -socket 57222
+Design successfully loaded
+Design Loading Memory Usage: 21704 KB (Peak: 21704 KB)
+Design Loading CPU Usage: 62 ms
+Simulation completed
+Simulation Memory Usage: 15440412 KB (Peak: 15440412 KB)
+Simulation CPU Usage: 230108 ms

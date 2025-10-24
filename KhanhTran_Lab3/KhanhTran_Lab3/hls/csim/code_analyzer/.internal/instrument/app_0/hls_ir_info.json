@@ -1,0 +1,213 @@
+{
+    "top_level_hw_fn_id": 442,
+    "functions": {
+        "200": {
+            "fn_id": 200,
+            "mangled_name": "_GLOBAL__sub_I_sobel_testbench.cpp",
+            "fully_qualified_name": "_GLOBAL__sub_I_sobel_testbench",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3\\sobel_testbench.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "201": {
+            "fn_id": 201,
+            "mangled_name": "__cxx_global_var_init",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3\\sobel_testbench.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "203": {
+            "fn_id": 203,
+            "mangled_name": "__dtor__ZStL8__ioinit",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "D:\\Xilinx_2025\\2025.1\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "436": {
+            "fn_id": 436,
+            "mangled_name": "_GLOBAL__sub_I_sobel.cpp",
+            "fully_qualified_name": "_GLOBAL__sub_I_sobel",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3\\sobel.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "437": {
+            "fn_id": 437,
+            "mangled_name": "__cxx_global_var_init.2",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3\\sobel.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "438": {
+            "fn_id": 438,
+            "mangled_name": "__dtor__ZStL8__ioinit.4",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "D:\\Xilinx_2025\\2025.1\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "439": {
+            "fn_id": 439,
+            "mangled_name": "_GLOBAL__sub_I_sobel.cpp.6",
+            "fully_qualified_name": "_GLOBAL__sub_I_sobel",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3\\sobel.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "440": {
+            "fn_id": 440,
+            "mangled_name": "__cxx_global_var_init.7",
+            "fully_qualified_name": "__cxx_global_var_init",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3\\sobel.cpp",
+                "line": 0,
+                "column": 0
+            }
+        },
+        "441": {
+            "fn_id": 441,
+            "mangled_name": "__dtor__ZStL8__ioinit.9",
+            "fully_qualified_name": "__dtor__ZStL8__ioinit",
+            "is_sys": true,
+            "is_declaration": false,
+            "supports_dataflow": false,
+            "src_loc": {
+                "file": "D:\\Xilinx_2025\\2025.1\\tps\\mingw\\10.0.0\\win64.o\\nt\\include\\c++\\9.5.0\\iostream",
+                "line": 74,
+                "column": 0
+            }
+        },
+        "442": {
+            "fn_id": 442,
+            "mangled_name": "_Z14sobel_rgb_axisRN3hls6streamINS_4axisI7ap_uintILi24EELy1ELy1ELy1ELh56ELb0EEELi0EEES6_ii",
+            "fully_qualified_name": "sobel_rgb_axis",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3\\sobel.cpp",
+                "line": 21,
+                "column": 1
+            }
+        },
+        "443": {
+            "fn_id": 443,
+            "mangled_name": "_ZL11rgb_to_gray7ap_uintILi8EES0_S0_",
+            "fully_qualified_name": "rgb_to_gray",
+            "is_sys": false,
+            "is_declaration": false,
+            "supports_dataflow": true,
+            "src_loc": {
+                "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab3\\sobel.cpp",
+                "line": 13,
+                "column": 1
+            }
+        },
+        "21": {
+            "fn_id": 21,
+            "mangled_name": "llvm.fpga.fifo.push.s_struct.hls::axis.14s.p0s_struct.hls::axis.14s",
+            "fully_qualified_name": "llvm.fpga.fifo.push.s_struct.hls::axis.14s.p0s_struct.hls::axis.14s",
+            "is_sys": true,
+            "is_declaration": true,
+            "supports_dataflow": false
+        },
+        "20": {
+            "fn_id": 20,
+            "mangled_name": "llvm.fpga.fifo.pop.s_struct.hls::axis.14s.p0s_struct.hls::axis.14s",
+            "fully_qualified_name": "llvm.fpga.fifo.pop.s_struct.hls::axis.14s.p0s_struct.hls::axis.14s",
+            "is_sys": true,
+            "is_declaration": true,
+            "supports_dataflow": false
+        }
+    },
+    "loops": {
+        "9": {
+            "fn_id": 442,
+            "lp_id": 9,
+            "label": "row_loop"
+        },
+        "10": {
+            "fn_id": 442,
+            "lp_id": 10,
+            "label": "col_loop"
+        },
+        "11": {
+            "fn_id": 442,
+            "lp_id": 11,
+            "label": "init_cols"
+        }
+    },
+    "used_types": [
+        {
+            "type_name": "Init",
+            "dwarf_tag": "class",
+            "count": 3
+        },
+        {
+            "type_name": "ap_int",
+            "dwarf_tag": "struct",
+            "count": 4
+        },
+        {
+            "type_name": "ap_uint",
+            "dwarf_tag": "struct",
+            "count": 18
+        },
+        {
+            "type_name": "bool",
+            "dwarf_tag": "base",
+            "count": 1
+        },
+        {
+            "type_name": "hls::axis",
+            "dwarf_tag": "struct",
+            "count": 2
+        },
+        {
+            "type_name": "int",
+            "dwarf_tag": "base",
+            "count": 4
+        }
+    ]
+}

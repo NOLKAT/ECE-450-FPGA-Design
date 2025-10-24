@@ -1,0 +1,25 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: sobel.cpp, Line: 80, Column: 31 }
+Function:        _Z14sobel_rgb_axisRN3hls6streamINS_4axisI7ap_uintILi24EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_ii
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'rgb_to_gray(ap_uint<8>, ap_uint<8>, ap_uint<8>)'
+    DebugLoc:        { File: sobel.cpp, Line: 13, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'sobel_rgb_axis(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int)'
+    DebugLoc:        { File: sobel.cpp, Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_sobel_rgb_axis_ir
+Args:            
+  - Callee:          'sobel_rgb_axis(hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<24>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int)'
+    DebugLoc:        { File: sobel.cpp, Line: 23, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_sobel_rgb_axis_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
