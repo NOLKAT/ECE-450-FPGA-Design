@@ -1,0 +1,13 @@
+  CREATE_STREAM @0 {NAME:maxmul2x2_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.maxmul2x2_virtual_sqr STREAM:3344}
+  CREATE_STREAM @125000 {NAME:maxmul2x2_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_master_svr_a00.m_agt.sqr STREAM:3572}
+  CREATE_STREAM @125000 {NAME:maxmul2x2_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_master_svr_a01.m_agt.sqr STREAM:3582}
+  CREATE_STREAM @125000 {NAME:maxmul2x2_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_master_svr_a10.m_agt.sqr STREAM:3592}
+  CREATE_STREAM @125000 {NAME:maxmul2x2_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_master_svr_a11.m_agt.sqr STREAM:3602}
+  CREATE_STREAM @125000 {NAME:maxmul2x2_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_master_svr_b00.m_agt.sqr STREAM:3612}
+  CREATE_STREAM @125000 {NAME:maxmul2x2_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_master_svr_b01.m_agt.sqr STREAM:3622}
+  CREATE_STREAM @125000 {NAME:maxmul2x2_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_master_svr_b10.m_agt.sqr STREAM:3632}
+  CREATE_STREAM @125000 {NAME:maxmul2x2_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_master_svr_b11.m_agt.sqr STREAM:3642}
+  CREATE_STREAM @125000 {NAME:maxmul2x2_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_slave_svr_c00.s_agt.sqr STREAM:3652}
+  CREATE_STREAM @125000 {NAME:maxmul2x2_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_slave_svr_c01.s_agt.sqr STREAM:3662}
+  CREATE_STREAM @125000 {NAME:maxmul2x2_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_slave_svr_c10.s_agt.sqr STREAM:3672}
+  CREATE_STREAM @125000 {NAME:maxmul2x2_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_slave_svr_c11.s_agt.sqr STREAM:3682}

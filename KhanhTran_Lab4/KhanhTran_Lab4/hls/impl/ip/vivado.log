@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sat Nov  8 15:14:11 2025
+# Process ID         : 20536
+# Current directory  : C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/impl/ip
+# Command line       : vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file           : C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/impl/ip/vivado.log
+# Journal file       : C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/impl/ip\vivado.jou
+# Running On         : katnlot
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 5 7600X 6-Core Processor             
+# CPU Frequency      : 4691 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 67768 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 72063 MB
+# Available Virtual  : 35840 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/hls_data.json outdir=C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/impl/ip srcdir=C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls ippack_options_dict= ippack_options_dict=
+INFO: Copied 1 ipmisc file(s) to C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/impl/ip/misc
+INFO: Copied 6 verilog file(s) to C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/impl/ip/hdl/verilog
+INFO: Copied 4 vhdl file(s) to C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/impl/ip/hdl/vhdl
+INFO: Import ports from HDL: C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/impl/ip/hdl/vhdl/maxmul2x2.vhd (maxmul2x2)
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst
+INFO: Add ap_ctrl interface ap_ctrl
+INFO: Add data interface a00
+INFO: Add data interface a01
+INFO: Add data interface a10
+INFO: Add data interface a11
+INFO: Add data interface b00
+INFO: Add data interface b01
+INFO: Add data interface b10
+INFO: Add data interface b11
+INFO: Add data interface c00
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx_2025/2025.1/Vivado/data/ip'.
+INFO: Add data interface c01
+INFO: Add data interface c10
+INFO: Add data interface c11
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/impl/ip/component.xml
+INFO: Created IP archive C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/impl/ip/xilinx_com_hls_maxmul2x2_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  8 15:14:16 2025...

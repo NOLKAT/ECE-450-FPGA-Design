@@ -1,0 +1,119 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xEF0F8C9B83BC556D",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../tmp_edit_project.gen/sources_1/bd/Vivado_IP_Design",
+      "name": "Vivado_IP_Design",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2025.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "maxmul2x2_0": "",
+      "clk_wiz_0": "",
+      "rst_clk_wiz_0_100M": ""
+    },
+    "ports": {
+      "clk_100MHz": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "Vivado_IP_Design_clk_100MHz",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "reset_rtl_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      }
+    },
+    "components": {
+      "maxmul2x2_0": {
+        "vlnv": "xilinx.com:user:maxmul2x2:1.0",
+        "ip_revision": "1",
+        "xci_name": "Vivado_IP_Design_maxmul2x2_0_0",
+        "xci_path": "ip\\Vivado_IP_Design_maxmul2x2_0_0\\Vivado_IP_Design_maxmul2x2_0_0.xci",
+        "inst_hier_path": "maxmul2x2_0",
+        "has_run_ip_tcl": "true"
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "16",
+        "xci_name": "Vivado_IP_Design_clk_wiz_0_0",
+        "xci_path": "ip\\Vivado_IP_Design_clk_wiz_0_0\\Vivado_IP_Design_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "has_run_ip_tcl": "true"
+      },
+      "rst_clk_wiz_0_100M": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "ip_revision": "17",
+        "xci_name": "Vivado_IP_Design_rst_clk_wiz_0_100M_0",
+        "xci_path": "ip\\Vivado_IP_Design_rst_clk_wiz_0_100M_0\\Vivado_IP_Design_rst_clk_wiz_0_100M_0.xci",
+        "inst_hier_path": "rst_clk_wiz_0_100M",
+        "has_run_ip_tcl": "true"
+      }
+    },
+    "nets": {
+      "clk_100MHz_1": {
+        "ports": [
+          "clk_100MHz",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "maxmul2x2_0/ap_clk",
+          "rst_clk_wiz_0_100M/slowest_sync_clk"
+        ]
+      },
+      "clk_wiz_0_locked": {
+        "ports": [
+          "clk_wiz_0/locked",
+          "rst_clk_wiz_0_100M/dcm_locked"
+        ]
+      },
+      "reset_rtl_0_1": {
+        "ports": [
+          "reset_rtl_0",
+          "clk_wiz_0/reset",
+          "rst_clk_wiz_0_100M/ext_reset_in"
+        ]
+      },
+      "rst_clk_wiz_0_100M_peripheral_aresetn": {
+        "ports": [
+          "rst_clk_wiz_0_100M/peripheral_aresetn",
+          "maxmul2x2_0/ap_rst_n"
+        ]
+      }
+    }
+  }
+}

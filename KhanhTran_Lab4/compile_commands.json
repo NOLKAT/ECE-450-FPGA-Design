@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab4",
+    "arguments": [
+      "D:\\Xilinx_2025\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=D:\\Xilinx_2025\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=D:\\Xilinx_2025\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-fhlstoplevel=maxmul2x2",
+      "-c",
+      "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab4\\main.cpp"
+    ],
+    "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab4\\main.cpp"
+  },
+  {
+    "directory": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab4",
+    "arguments": [
+      "D:\\Xilinx_2025\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=D:\\Xilinx_2025\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=D:\\Xilinx_2025\\2025.1\\Vitis\\include",
+      "-c",
+      "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab4\\main_testbench.cpp"
+    ],
+    "file": "C:\\Users\\ankha\\Desktop\\FPGA_Design\\KhanhTran_Lab4\\main_testbench.cpp"
+  }
+]

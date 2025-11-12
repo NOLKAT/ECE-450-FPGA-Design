@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<POWERDATA author="Vivado Power Analysis" dataVersion="2025.1" design="bd_0_wrapper" designState="routed" date="Wed Nov  5 17:13:55 2025" pwrOpt="BRAMPwropt" activityLevel="vectorless">
+	<ENVIRONMENT>
+		<DEVICE part="xc7a35t" grade="commercial" package="cpg236" speed="-1" process="typical" vid="No">
+		</DEVICE>
+		<VOLTAGESOURCES>
+			<SOURCE name="Vccbram" voltage="1.000000" icc="0.000000" iccq="0.000162" power="0.000162">
+			</SOURCE>
+			<SOURCE name="Vccint" voltage="1.000000" icc="0.005703" iccq="0.009544" power="0.015247">
+			</SOURCE>
+			<SOURCE name="Vccaux" voltage="1.800000" icc="0.000000" iccq="0.012615" power="0.022708">
+			</SOURCE>
+			<SOURCE name="Vccadc" voltage="1.800000" icc="0.000000" iccq="0.020000" power="0.036000">
+			</SOURCE>
+		</VOLTAGESOURCES>
+		<THERMAL>
+			<AMBIENT value="25.000000">
+			</AMBIENT>
+			<AIRFLOW value="250.000000">
+			</AIRFLOW>
+			<HEATSINK value="medium (Medium Profile)">
+			</HEATSINK>
+			<BOARDSELECTION value="medium (10&quot;x10&quot;)">
+			</BOARDSELECTION>
+			<BOARDLAYERS value="12to15 (12 to 15 Layers)">
+			</BOARDLAYERS>
+			<TSA value="4.600000">
+			</TSA>
+			<TJB value="7.500000">
+			</TJB>
+			<BOARDTEMP value="25.0 (C)">
+			</BOARDTEMP>
+			<JUNCTION value="25.4 (C)">
+			</JUNCTION>
+		</THERMAL>
+	</ENVIRONMENT>
+	<BLOCKDETAILS>
+		<BYTYPE>
+			<BLOCKTYPE name="Clocks">
+				<CLOCK name="ap_clk" freq="100.000001" belFanout="218" sliceFanout="124" FoPerSite="1.758065" sliceEnableRate="0.457569" leafs="0.000000" hrows="0.000000" power="0.001719">
+				</CLOCK>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="LOGIC">
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="100.000001" clockFreq2="100.000001" toggleRate="25.643828" toggleRate2="15.308899" totalRate="3529.743631" name="ap_clk" hierName="bd_0_wrapper/bd_0_i" writeRate="0.000000" enableRate="0.000000" fanout="1.567568" ru="5.582235" fanout2="1.567568" totalFanout="116.000000" fanoutRate="1337.267070" numNets="215" extNets="74" luts="174" logicCap="96244904" signalCap="27432.000000" power="0.001010" sp="0.000313">
+				</LOGIC>
+				<LOGIC clock="ap_clk" clockFreq="100.000001" clockFreq2="100.000001" toggleRate="10.802721" toggleRate2="16.204081" totalRate="64.816326" name="ap_clk" hierName="bd_0_wrapper/bd_0_i" writeRate="0.000000" enableRate="1.000000" fanout="0.000000" ru="0.000000" fanout2="0.000000" totalFanout="0.000000" fanoutRate="0.000000" numNets="4" extNets="0" SRL="3" logicCap="2544000" signalCap="0.000000" power="0.000010" sp="0.000000">
+				</LOGIC>
+				<LOGIC clock="ap_clk" clockFreq="100.000001" clockFreq2="100.000001" toggleRate="12.966384" toggleRate2="12.966384" totalRate="2697.007876" name="ap_clk" hierName="bd_0_wrapper/bd_0_i" writeRate="0.000000" enableRate="0.460337" fanout="1.400966" ru="6.100491" fanout2="1.400966" totalFanout="290.000000" fanoutRate="2170.008594" numNets="208" extNets="207" ffs="208" logicCap="9360000" signalCap="28944.000000" power="0.000061" sp="0.000201">
+				</LOGIC>
+				<LOGIC clock="Unclocked_or_HFN_instance" clockFreq="100.000001" clockFreq2="15.494858" toggleRate="15.494858" toggleRate2="15.494858" totalRate="61.979434" name="High_Fanout_Nets" hierName="bd_0_wrapper/bd_0_i" writeRate="0.000000" enableRate="1.000000" fanout="128.250000" ru="24.061142" fanout2="128.250000" totalFanout="513.000000" fanoutRate="3970.810380" numNets="4" extNets="4" ffs="4" logicCap="180000" signalCap="24424.000000" power="0.000001" sp="0.000200">
+				</LOGIC>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="DSP">
+				<MODULE name="ap_clk" count="1">
+					<GROUPSUMMARY>
+						<DSP48E1 name="ap_clk" hierName="bd_0_wrapper/bd_0_i" clock="ap_clk" toggleRate="42.173548" clockFreq="100.000001" multUsed="Yes" mregUsed="No" preAdderUsed="No" power="0.000984">
+						</DSP48E1>
+					</GROUPSUMMARY>
+				</MODULE>
+				<MODULE name="ap_clk" count="1">
+					<GROUPSUMMARY>
+						<DSP48E1 name="ap_clk" hierName="bd_0_wrapper/bd_0_i" clock="ap_clk" toggleRate="49.103019" clockFreq="100.000001" multUsed="Yes" mregUsed="Yes" preAdderUsed="No" power="0.000975">
+						</DSP48E1>
+					</GROUPSUMMARY>
+				</MODULE>
+			</BLOCKTYPE>
+			<BLOCKTYPE name="IOBANK">
+				<IOBANK numInternalVref="0" numDelayControl="0" numLVDSBanks="0">
+				</IOBANK>
+			</BLOCKTYPE>
+		</BYTYPE>
+	</BLOCKDETAILS>
+</POWERDATA>
+

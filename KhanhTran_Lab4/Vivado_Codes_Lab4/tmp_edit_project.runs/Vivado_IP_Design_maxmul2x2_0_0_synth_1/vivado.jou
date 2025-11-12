@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sat Nov  8 21:01:34 2025
+# Process ID         : 42848
+# Current directory  : c:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/Vivado_Codes_Lab4/tmp_edit_project.runs/Vivado_IP_Design_maxmul2x2_0_0_synth_1
+# Command line       : vivado.exe -log Vivado_IP_Design_maxmul2x2_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Vivado_IP_Design_maxmul2x2_0_0.tcl
+# Log file           : c:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/Vivado_Codes_Lab4/tmp_edit_project.runs/Vivado_IP_Design_maxmul2x2_0_0_synth_1/Vivado_IP_Design_maxmul2x2_0_0.vds
+# Journal file       : c:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/Vivado_Codes_Lab4/tmp_edit_project.runs/Vivado_IP_Design_maxmul2x2_0_0_synth_1\vivado.jou
+# Running On         : katnlot
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 5 7600X 6-Core Processor             
+# CPU Frequency      : 4691 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 67768 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 72063 MB
+# Available Virtual  : 31043 MB
+#-----------------------------------------------------------
+source Vivado_IP_Design_maxmul2x2_0_0.tcl -notrace

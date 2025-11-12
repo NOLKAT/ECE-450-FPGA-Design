@@ -1,0 +1,161 @@
+
+
+================================================================
+== Synthesis Summary Report of 'maxmul2x2'
+================================================================
++ General Information: 
+    * Date:           Wed Nov  5 00:58:08 2025
+    * Version:        2025.1 (Build 6135595 on May 21 2025)
+    * Project:        KhanhTran_Lab4
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: artix7
+    * Target device:  xc7a35t-cpg236-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------+------+------+---------+--------+----------+---------+------+----------+------+--------+----------+----------+-----+
+    |   Modules   | Issue|      |      Latency     | Iteration|         | Trip |          |      |        |          |          |     |
+    |   & Loops   | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP  |    FF    |    LUT   | URAM|
+    +-------------+------+------+---------+--------+----------+---------+------+----------+------+--------+----------+----------+-----+
+    |+ maxmul2x2  |     -|  0.37|        8|  80.000|         -|        4|     -|    rewind|     -|  2 (2%)|  439 (1%)|  622 (2%)|    -|
+    | o Row_Col   |     -|  7.30|        6|  60.000|         4|        1|     4|       yes|     -|       -|         -|         -|    -|
+    +-------------+------+------+---------+--------+----------+---------+------+----------+------+--------+----------+----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++------+---------+-----------+----------+
+| Port | Mode    | Direction | Bitwidth |
++------+---------+-----------+----------+
+| a00  | ap_none | in        | 16       |
+| a01  | ap_none | in        | 16       |
+| a10  | ap_none | in        | 16       |
+| a11  | ap_none | in        | 16       |
+| b00  | ap_none | in        | 16       |
+| b01  | ap_none | in        | 16       |
+| b10  | ap_none | in        | 16       |
+| b11  | ap_none | in        | 16       |
+| c00  | ap_none | out       | 32       |
+| c01  | ap_none | out       | 32       |
+| c10  | ap_none | out       | 32       |
+| c11  | ap_none | out       | 32       |
++------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| a00      | in        | short    |
+| a01      | in        | short    |
+| a10      | in        | short    |
+| a11      | in        | short    |
+| b00      | in        | short    |
+| b01      | in        | short    |
+| b10      | in        | short    |
+| b11      | in        | short    |
+| c00      | out       | int&     |
+| c01      | out       | int&     |
+| c10      | out       | int&     |
+| c11      | out       | int&     |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+--------------+---------+
+| Argument | HW Interface | HW Type |
++----------+--------------+---------+
+| a00      | a00          | port    |
+| a01      | a01          | port    |
+| a10      | a10          | port    |
+| a11      | a11          | port    |
+| b00      | b00          | port    |
+| b01      | b01          | port    |
+| b10      | b10          | port    |
+| b11      | b11          | port    |
+| c00      | c00          | port    |
+| c01      | c01          | port    |
+| c10      | c10          | port    |
+| c11      | c11          | port    |
++----------+--------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++------------------------------------+-----+--------+---------------+--------+-----------+---------+
+| Name                               | DSP | Pragma | Variable      | Op     | Impl      | Latency |
++------------------------------------+-----+--------+---------------+--------+-----------+---------+
+| + maxmul2x2                        | 2   |        |               |        |           |         |
+|   select_ln14_fu_218_p3            |     |        | select_ln14   | select | auto_sel  | 0       |
+|   i_fu_226_p3                      |     |        | i             | select | auto_sel  | 0       |
+|   first_iter_0_fu_362_p2           |     |        | first_iter_0  | seteq  | auto      | 0       |
+|   icmp_ln20_fu_234_p2              |     |        | icmp_ln20     | seteq  | auto      | 0       |
+|   select_ln20_fu_240_p3            |     |        | select_ln20   | select | auto_sel  | 0       |
+|   select_ln20_1_fu_326_p3          |     |        | select_ln20_1 | select | auto_sel  | 0       |
+|   cond_fu_252_p2                   |     |        | cond          | seteq  | auto      | 0       |
+|   icmp_ln20_1_fu_258_p2            |     |        | icmp_ln20_1   | seteq  | auto      | 0       |
+|   select_ln20_2_fu_264_p3          |     |        | select_ln20_2 | select | auto_sel  | 0       |
+|   select_ln20_3_fu_335_p3          |     |        | select_ln20_3 | select | auto_sel  | 0       |
+|   mul_16s_16s_32_1_1_U1            | 1   |        | mul_ln20      | mul    | auto      | 0       |
+|   mac_muladd_16s_16s_32s_32_4_1_U2 | 1   |        | mul_ln20_1    | mul    | dsp_slice | 3       |
+|   mac_muladd_16s_16s_32s_32_4_1_U2 | 1   |        | sum           | add    | dsp_slice | 3       |
+|   select_ln22_fu_367_p3            |     |        | select_ln22   | select | auto_sel  | 0       |
+|   select_ln22_1_fu_374_p3          |     |        | select_ln22_1 | select | auto_sel  | 0       |
+|   select_ln22_2_fu_381_p3          |     |        | select_ln22_2 | select | auto_sel  | 0       |
+|   select_ln22_3_fu_388_p3          |     |        | select_ln22_3 | select | auto_sel  | 0       |
+|   empty_8_fu_395_p3                |     |        | empty_8       | select | auto_sel  | 0       |
+|   empty_9_fu_403_p3                |     |        | empty_9       | select | auto_sel  | 0       |
+|   empty_10_fu_411_p3               |     |        | empty_10      | select | auto_sel  | 0       |
+|   empty_11_fu_419_p3               |     |        | empty_11      | select | auto_sel  | 0       |
+|   j_fu_276_p2                      |     |        | j             | add    | fabric    | 0       |
+|   add_ln14_1_fu_282_p2             |     |        | add_ln14_1    | add    | fabric    | 0       |
+|   icmp_ln16_fu_288_p2              |     |        | icmp_ln16     | seteq  | auto      | 0       |
+|   add_ln14_fu_294_p2               |     |        | add_ln14      | add    | fabric    | 0       |
+|   icmp_ln14_fu_300_p2              |     |        | icmp_ln14     | seteq  | auto      | 0       |
++------------------------------------+-----+--------+---------------+--------+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+------------------------+----------------------------------+
+| Type      | Options                | Location                         |
++-----------+------------------------+----------------------------------+
+| INTERFACE | ap_ctrl_hs port=return | main.cpp:18 in maxmul2x2, return |
+| INTERFACE | ap_none port=a00       | main.cpp:19 in maxmul2x2, a00    |
+| INTERFACE | ap_none port=a01       | main.cpp:20 in maxmul2x2, a01    |
+| INTERFACE | ap_none port=a10       | main.cpp:21 in maxmul2x2, a10    |
+| INTERFACE | ap_none port=a11       | main.cpp:22 in maxmul2x2, a11    |
+| INTERFACE | ap_none port=b00       | main.cpp:23 in maxmul2x2, b00    |
+| INTERFACE | ap_none port=b01       | main.cpp:24 in maxmul2x2, b01    |
+| INTERFACE | ap_none port=b10       | main.cpp:25 in maxmul2x2, b10    |
+| INTERFACE | ap_none port=b11       | main.cpp:26 in maxmul2x2, b11    |
+| INTERFACE | ap_none port=c00       | main.cpp:27 in maxmul2x2, c00    |
+| INTERFACE | ap_none port=c01       | main.cpp:28 in maxmul2x2, c01    |
+| INTERFACE | ap_none port=c10       | main.cpp:29 in maxmul2x2, c10    |
+| INTERFACE | ap_none port=c11       | main.cpp:30 in maxmul2x2, c11    |
++-----------+------------------------+----------------------------------+
+
+

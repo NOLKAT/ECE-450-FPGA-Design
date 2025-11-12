@@ -1,0 +1,39 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "1",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "main.cpp",
+    "fileloc": 4,
+    "instructions": 49,
+    "loads": {
+      "L": 4
+    },
+    "memory_accesses": 0,
+    "name": "maxmul2x2",
+    "stores": {
+      "L": 8,
+      "T": 4
+    },
+    "total_instructions": 85
+  },
+  "1": {
+    "basicblocks": 9,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "maxmul.h",
+    "fileloc": 10,
+    "instructions": 36,
+    "loads": {
+      "L": 2
+    },
+    "memory_accesses": 2,
+    "name": "maxmul_core<2, 2, 2>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 36
+  }
+}

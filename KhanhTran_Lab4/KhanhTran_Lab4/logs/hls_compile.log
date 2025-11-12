@@ -1,0 +1,119 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=main.cpp' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/main.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=maxmul.h' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/maxmul.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=main_testbench.cpp' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/main_testbench.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=maxmul2x2' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7a35tcpg236-1' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.538 seconds; current allocated memory: 145.156 MB.
+INFO: [HLS 200-10] Analyzing design file 'main.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.946 seconds; current allocated memory: 147.125 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 117 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 85 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 79 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 74 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 71 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 71 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 71 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 71 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 71 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 72 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 72 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 72 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 90 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 64 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 74 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 82 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/KhanhTran_Lab4/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-178] Inlining function 'void maxmul_core<2, 2, 2>(short const (*) [2], short const (*) [2], int (*) [2])' into 'maxmul2x2' (main.cpp:17:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< Col> at ./maxmul.h:16:5 
+INFO: [HLS 214-291] Loop 'Product' is marked as complete unroll implied by the pipeline pragma (./maxmul.h:19:7)
+INFO: [HLS 214-186] Unrolling loop 'Product' (./maxmul.h:19:7) in function 'maxmul2x2' completely with a factor of 2 (main.cpp:17:0)
+INFO: [HLS 214-421] Automatically partitioning small array 'A' completely based on array size. (main.cpp:32:9)
+INFO: [HLS 214-421] Automatically partitioning small array 'B' completely based on array size. (main.cpp:33:10)
+INFO: [HLS 214-421] Automatically partitioning small array 'Cmat' completely based on array size. (main.cpp:34:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'A' due to pipeline pragma (main.cpp:32:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=2' for array 'A' due to pipeline pragma (main.cpp:32:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'B' due to pipeline pragma (main.cpp:33:10)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=2' for array 'B' due to pipeline pragma (main.cpp:33:10)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'C' due to pipeline pragma (main.cpp:34:9)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=2' for array 'C' due to pipeline pragma (main.cpp:34:9)
+INFO: [HLS 214-248] Applying array_partition to 'A': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (main.cpp:32:9)
+INFO: [HLS 214-248] Applying array_partition to 'B': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (main.cpp:33:10)
+INFO: [HLS 214-248] Applying array_partition to 'C': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (main.cpp:34:9)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.405 seconds; current allocated memory: 149.445 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 149.445 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.165 seconds; current allocated memory: 153.691 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.031 seconds; current allocated memory: 155.062 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (./maxmul.h:16:14) to (./maxmul.h:16:5) in function 'maxmul2x2'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.065 seconds; current allocated memory: 176.293 MB.
+INFO: [HLS 200-2061] Successfully converted nested loops 'Row'(./maxmul.h:14:3) and 'Col'(./maxmul.h:16:5) in function 'maxmul2x2' into perfectly nested loops.
+INFO: [XFORM 203-541] Flattening a loop nest 'Row' (./maxmul.h:14:3) in function 'maxmul2x2'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.064 seconds; current allocated memory: 176.301 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'maxmul2x2' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'maxmul2x2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=sum) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'Row_Col'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'Row_Col'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.697 seconds; current allocated memory: 176.301 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.058 seconds; current allocated memory: 176.301 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'maxmul2x2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'maxmul2x2/a00' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'maxmul2x2/a01' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'maxmul2x2/a10' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'maxmul2x2/a11' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'maxmul2x2/b00' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'maxmul2x2/b01' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'maxmul2x2/b10' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'maxmul2x2/b11' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'maxmul2x2/c00' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'c00' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'maxmul2x2/c01' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'c01' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'maxmul2x2/c10' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'c10' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on port 'maxmul2x2/c11' to 'ap_none'.
+WARNING: [RTGEN 206-101] Port 'c11' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port.
+INFO: [RTGEN 206-500] Setting interface mode on function 'maxmul2x2' to 'ap_ctrl_hs'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'maxmul2x2' pipeline 'Row_Col' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_32s_32_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16s_16s_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'maxmul2x2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.117 seconds; current allocated memory: 177.359 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.296 seconds; current allocated memory: 182.641 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.399 seconds; current allocated memory: 184.398 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for maxmul2x2.
+INFO: [VLOG 209-307] Generating Verilog RTL for maxmul2x2.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 144.30 MHz
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 2 seconds. Total elapsed time: 15.826 seconds; peak allocated memory: 184.477 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 19s

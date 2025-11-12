@@ -1,0 +1,108 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="maxmul2x2" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=maxmul2x2" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="maxmul2x2" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_hs port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="maxmul2x2" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=a00" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main.cpp:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="maxmul2x2" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=a01" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main.cpp:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="maxmul2x2" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=a10" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main.cpp:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="maxmul2x2" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=a11" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main.cpp:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="maxmul2x2" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=b00" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main.cpp:24:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="maxmul2x2" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=b01" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main.cpp:25:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="maxmul2x2" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=b10" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main.cpp:26:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="maxmul2x2" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=b11" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main.cpp:27:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="maxmul2x2" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=c00" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main.cpp:28:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="maxmul2x2" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=c01" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main.cpp:29:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="maxmul2x2" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=c10" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="main.cpp:30:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="maxmul2x2" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=c11" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="main.cpp:17:0" msg_body="Inlining function 'void maxmul_core&lt;2, 2, 2&gt;(short const (*) [2], short const (*) [2], int (*) [2])' into 'maxmul2x2'">
+        <args Callee="void maxmul_core&lt;2, 2, 2&gt;(short const (*) [2], short const (*) [2], int (*) [2])" Callee-DebugLoc="File ./maxmul.h Line 12 Column 0" Caller="maxmul2x2" Caller-DebugLoc="File main.cpp Line 17 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="./maxmul.h:19:7" msg_body="Loop 'Product' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="Product"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="main.cpp:17:0" msg_body="Unrolling loop 'Product' (./maxmul.h:19:7) in function 'maxmul2x2' completely with a factor of 2">
+        <args Factor="2" LoopLoc="./maxmul.h:19:7" LoopName="Product"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-421" msg_severity="INFO" msg_loc="main.cpp:32:9" msg_body="Automatically partitioning small array 'A' completely based on array size.">
+        <args Value="A" Value-DebugLoc="File ./maxmul.h Line 10 Column 31"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-421" msg_severity="INFO" msg_loc="main.cpp:33:10" msg_body="Automatically partitioning small array 'B' completely based on array size.">
+        <args Value="B" Value-DebugLoc="File ./maxmul.h Line 11 Column 31"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-421" msg_severity="INFO" msg_loc="main.cpp:34:9" msg_body="Automatically partitioning small array 'Cmat' completely based on array size.">
+        <args Value="Cmat" Value-DebugLoc="File ./maxmul.h Line 12 Column 24"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="main.cpp:32:9" msg_body="array_partition dim=1 type=complete  variable=A 1 maxmul2x2 main.cpp:32:9 A">
+        <args PragmaFunction="maxmul2x2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=A" PragmaType="array_partition" VarName="A" varLoc="main.cpp:32:9"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="main.cpp:32:9" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'A' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="A" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="main.cpp:32:9" msg_body="array_partition dim=2 type=complete  variable=A 1 maxmul2x2 main.cpp:32:9 A">
+        <args PragmaFunction="maxmul2x2" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=A" PragmaType="array_partition" VarName="A" varLoc="main.cpp:32:9"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="main.cpp:32:9" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'A' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="A" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="main.cpp:33:10" msg_body="array_partition dim=1 type=complete  variable=B 1 maxmul2x2 main.cpp:33:10 B">
+        <args PragmaFunction="maxmul2x2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=B" PragmaType="array_partition" VarName="B" varLoc="main.cpp:33:10"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="main.cpp:33:10" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'B' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="B" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="main.cpp:33:10" msg_body="array_partition dim=2 type=complete  variable=B 1 maxmul2x2 main.cpp:33:10 B">
+        <args PragmaFunction="maxmul2x2" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=B" PragmaType="array_partition" VarName="B" varLoc="main.cpp:33:10"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="main.cpp:33:10" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'B' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="B" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="main.cpp:34:9" msg_body="array_partition dim=1 type=complete  variable=C 1 maxmul2x2 main.cpp:34:9 C">
+        <args PragmaFunction="maxmul2x2" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=C" PragmaType="array_partition" VarName="C" varLoc="main.cpp:34:9"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="main.cpp:34:9" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'C' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="C" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="main.cpp:34:9" msg_body="array_partition dim=2 type=complete  variable=C 1 maxmul2x2 main.cpp:34:9 C">
+        <args PragmaFunction="maxmul2x2" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=C" PragmaType="array_partition" VarName="C" varLoc="main.cpp:34:9"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="main.cpp:34:9" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'C' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="C" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="main.cpp:32:9" msg_body="Applying array_partition to 'A': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="A"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="main.cpp:33:10" msg_body="Applying array_partition to 'B': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="B"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="main.cpp:34:9" msg_body="Applying array_partition to 'C': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="C"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

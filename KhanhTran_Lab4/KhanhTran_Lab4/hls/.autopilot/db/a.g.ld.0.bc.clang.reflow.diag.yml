@@ -1,0 +1,420 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: main.cpp, Line: 36, Column: 3 }
+Function:        maxmul2x2
+Args:            
+  - Callee:          'void maxmul_core<2, 2, 2>(short const (*) [2], short const (*) [2], int (*) [2])'
+    DebugLoc:        { File: ./maxmul.h, Line: 12, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          maxmul2x2
+    DebugLoc:        { File: main.cpp, Line: 17, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: main.cpp, Line: 36, Column: 3 }
+Function:        maxmul2x2
+Args:            
+  - Callee:          'void maxmul_core<2, 2, 2>(short const (*) [2], short const (*) [2], int (*) [2])'
+    DebugLoc:        { File: ./maxmul.h, Line: 12, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          maxmul2x2
+    DebugLoc:        { File: main.cpp, Line: 17, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_maxmul2x2_ir
+Args:            
+  - Callee:          maxmul2x2
+    DebugLoc:        { File: main.cpp, Line: 17, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_maxmul2x2_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: main.cpp, Line: 17, Column: 0 }
+Function:        maxmul2x2
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void maxmul_core<2, 2, 2>(short const (*) [2], short const (*) [2], int (*) [2])'
+    DebugLoc:        { File: ./maxmul.h, Line: 12, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          maxmul2x2
+    DebugLoc:        { File: main.cpp, Line: 17, Column: 0 }
+  - String:          ''''
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Col
+  - String:          '> at '
+  - LoopLoc:         './maxmul.h:16:5'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ./maxmul.h, Line: 19, Column: 7 }
+Function:        maxmul2x2
+Args:            
+  - String:          'Loop '''
+  - LoopName:        Product
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: main.cpp, Line: 17, Column: 0 }
+Function:        maxmul2x2
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Product
+  - String:          ''' ('
+  - LoopLoc:         './maxmul.h:19:7'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          maxmul2x2
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: main.cpp, Line: 32, Column: 9 }
+Function:        maxmul2x2
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           A
+    DebugLoc:        { File: ./maxmul.h, Line: 10, Column: 31 }
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: main.cpp, Line: 33, Column: 10 }
+Function:        maxmul2x2
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           B
+    DebugLoc:        { File: ./maxmul.h, Line: 11, Column: 31 }
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: main.cpp, Line: 34, Column: 9 }
+Function:        maxmul2x2
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           Cmat
+    DebugLoc:        { File: ./maxmul.h, Line: 12, Column: 24 }
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: main.cpp, Line: 32, Column: 9 }
+Function:        maxmul2x2
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=A'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  maxmul2x2
+  - String:          ' '
+  - varLoc:          'main.cpp:32:9'
+  - String:          ' '
+  - VarName:         A
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: main.cpp, Line: 32, Column: 9 }
+Function:        maxmul2x2
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            A
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: main.cpp, Line: 32, Column: 9 }
+Function:        maxmul2x2
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=complete  variable=A'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  maxmul2x2
+  - String:          ' '
+  - varLoc:          'main.cpp:32:9'
+  - String:          ' '
+  - VarName:         A
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: main.cpp, Line: 32, Column: 9 }
+Function:        maxmul2x2
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            A
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: main.cpp, Line: 33, Column: 10 }
+Function:        maxmul2x2
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=B'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  maxmul2x2
+  - String:          ' '
+  - varLoc:          'main.cpp:33:10'
+  - String:          ' '
+  - VarName:         B
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: main.cpp, Line: 33, Column: 10 }
+Function:        maxmul2x2
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            B
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: main.cpp, Line: 33, Column: 10 }
+Function:        maxmul2x2
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=complete  variable=B'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  maxmul2x2
+  - String:          ' '
+  - varLoc:          'main.cpp:33:10'
+  - String:          ' '
+  - VarName:         B
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: main.cpp, Line: 33, Column: 10 }
+Function:        maxmul2x2
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            B
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: main.cpp, Line: 34, Column: 9 }
+Function:        maxmul2x2
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=C'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  maxmul2x2
+  - String:          ' '
+  - varLoc:          'main.cpp:34:9'
+  - String:          ' '
+  - VarName:         C
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: main.cpp, Line: 34, Column: 9 }
+Function:        maxmul2x2
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            C
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: main.cpp, Line: 34, Column: 9 }
+Function:        maxmul2x2
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=complete  variable=C'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  maxmul2x2
+  - String:          ' '
+  - varLoc:          'main.cpp:34:9'
+  - String:          ' '
+  - VarName:         C
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: main.cpp, Line: 34, Column: 9 }
+Function:        maxmul2x2
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            C
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: main.cpp, Line: 32, Column: 9 }
+Function:        maxmul2x2
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          A
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: main.cpp, Line: 33, Column: 10 }
+Function:        maxmul2x2
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          B
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: main.cpp, Line: 34, Column: 9 }
+Function:        maxmul2x2
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          C
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...

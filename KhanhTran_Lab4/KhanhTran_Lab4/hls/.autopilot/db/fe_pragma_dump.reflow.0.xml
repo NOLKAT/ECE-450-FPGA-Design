@@ -1,0 +1,15 @@
+<pragmas>
+<pragma file="main.cpp" line="18" pragmaType="interface" parentfunction="maxmul2x2" mode="ap_ctrl_hs" port="return" name=""/>
+<pragma file="main.cpp" line="19" pragmaType="interface" parentfunction="maxmul2x2" mode="ap_none" port="a00" name="" register="0"/>
+<pragma file="main.cpp" line="20" pragmaType="interface" parentfunction="maxmul2x2" mode="ap_none" port="a01" name="" register="0"/>
+<pragma file="main.cpp" line="21" pragmaType="interface" parentfunction="maxmul2x2" mode="ap_none" port="a10" name="" register="0"/>
+<pragma file="main.cpp" line="22" pragmaType="interface" parentfunction="maxmul2x2" mode="ap_none" port="a11" name="" register="0"/>
+<pragma file="main.cpp" line="23" pragmaType="interface" parentfunction="maxmul2x2" mode="ap_none" port="b00" name="" register="0"/>
+<pragma file="main.cpp" line="24" pragmaType="interface" parentfunction="maxmul2x2" mode="ap_none" port="b01" name="" register="0"/>
+<pragma file="main.cpp" line="25" pragmaType="interface" parentfunction="maxmul2x2" mode="ap_none" port="b10" name="" register="0"/>
+<pragma file="main.cpp" line="26" pragmaType="interface" parentfunction="maxmul2x2" mode="ap_none" port="b11" name="" register="0"/>
+<pragma file="main.cpp" line="27" pragmaType="interface" parentfunction="maxmul2x2" mode="ap_none" port="c00" name="" register="0"/>
+<pragma file="main.cpp" line="28" pragmaType="interface" parentfunction="maxmul2x2" mode="ap_none" port="c01" name="" register="0"/>
+<pragma file="main.cpp" line="29" pragmaType="interface" parentfunction="maxmul2x2" mode="ap_none" port="c10" name="" register="0"/>
+<pragma file="main.cpp" line="30" pragmaType="interface" parentfunction="maxmul2x2" mode="ap_none" port="c11" name="" register="0"/>
+</pragmas>

@@ -1,0 +1,23 @@
+{
+    "0": {
+        "name": "maxmul2x2",
+        "file": "main.cpp",
+        "fileloc": "4",
+        "instructions": "103",
+        "total_instructions": "103",
+        "calls": "",
+        "basicblocks": "3",
+        "memory_accesses": "16",
+        "control_depth": "0",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "8"
+        },
+        "stores": {
+            "L": "12"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

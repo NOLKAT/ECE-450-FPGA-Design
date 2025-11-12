@@ -1,0 +1,4 @@
+maxmul2x2_mul_16s_16s_32_1_1
+maxmul2x2_mac_muladd_16s_16s_32s_32_4_1
+maxmul2x2_flow_control_loop_pipe
+maxmul2x2

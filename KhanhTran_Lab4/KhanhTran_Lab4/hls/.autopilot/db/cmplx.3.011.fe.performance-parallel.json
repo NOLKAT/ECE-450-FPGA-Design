@@ -1,0 +1,21 @@
+{
+  "0": {
+    "basicblocks": 5,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "main.cpp",
+    "fileloc": 4,
+    "instructions": 72,
+    "loads": {
+      "L": 8
+    },
+    "memory_accesses": 5,
+    "name": "maxmul2x2",
+    "stores": {
+      "L": 9,
+      "T": 4
+    },
+    "total_instructions": 72
+  }
+}

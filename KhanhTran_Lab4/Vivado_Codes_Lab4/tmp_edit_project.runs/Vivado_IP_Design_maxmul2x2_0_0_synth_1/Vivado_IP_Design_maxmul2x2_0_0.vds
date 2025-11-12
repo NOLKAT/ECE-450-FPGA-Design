@@ -1,0 +1,300 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sat Nov  8 21:01:34 2025
+# Process ID         : 42848
+# Current directory  : c:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/Vivado_Codes_Lab4/tmp_edit_project.runs/Vivado_IP_Design_maxmul2x2_0_0_synth_1
+# Command line       : vivado.exe -log Vivado_IP_Design_maxmul2x2_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Vivado_IP_Design_maxmul2x2_0_0.tcl
+# Log file           : c:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/Vivado_Codes_Lab4/tmp_edit_project.runs/Vivado_IP_Design_maxmul2x2_0_0_synth_1/Vivado_IP_Design_maxmul2x2_0_0.vds
+# Journal file       : c:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/Vivado_Codes_Lab4/tmp_edit_project.runs/Vivado_IP_Design_maxmul2x2_0_0_synth_1\vivado.jou
+# Running On         : katnlot
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 5 7600X 6-Core Processor             
+# CPU Frequency      : 4691 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 67768 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 72063 MB
+# Available Virtual  : 31043 MB
+#-----------------------------------------------------------
+source Vivado_IP_Design_maxmul2x2_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/Vivado_Codes_Lab4'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/Vivado_Codes_Lab4' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/Vivado_Codes_Lab4/tmp_edit_project.runs/Vivado_IP_Design_maxmul2x2_0_0_synth_1'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx_2025/2025.1/Vivado/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/users/ankha/desktop/fpga_design/khanhtran_lab4/vivado_codes_lab4/tmp_edit_project.cache/ip 
+Command: synth_design -top Vivado_IP_Design_maxmul2x2_0_0 -part xc7a35tcpg236-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 22756
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1183.234 ; gain = 493.375
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Vivado_IP_Design_maxmul2x2_0_0' [c:/users/ankha/desktop/fpga_design/khanhtran_lab4/vivado_codes_lab4/tmp_edit_project.gen/sources_1/bd/Vivado_IP_Design/ip/Vivado_IP_Design_maxmul2x2_0_0/synth/Vivado_IP_Design_maxmul2x2_0_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'maxmul2x2' [c:/users/ankha/desktop/fpga_design/khanhtran_lab4/vivado_codes_lab4/tmp_edit_project.gen/sources_1/bd/Vivado_IP_Design/ipshared/93dd/project_1/project_1.srcs/sources_1/new/maxmul2x2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'maxmul2x2' (0#1) [c:/users/ankha/desktop/fpga_design/khanhtran_lab4/vivado_codes_lab4/tmp_edit_project.gen/sources_1/bd/Vivado_IP_Design/ipshared/93dd/project_1/project_1.srcs/sources_1/new/maxmul2x2.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Vivado_IP_Design_maxmul2x2_0_0' (0#1) [c:/users/ankha/desktop/fpga_design/khanhtran_lab4/vivado_codes_lab4/tmp_edit_project.gen/sources_1/bd/Vivado_IP_Design/ip/Vivado_IP_Design_maxmul2x2_0_0/synth/Vivado_IP_Design_maxmul2x2_0_0.sv:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1290.887 ; gain = 601.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1290.887 ; gain = 601.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1290.887 ; gain = 601.027
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1290.887 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1366.062 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1366.555 ; gain = 0.492
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1366.555 ; gain = 676.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1366.555 ; gain = 676.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1366.555 ; gain = 676.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1366.555 ; gain = 676.695
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                1 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP inst/c001, operation Mode is: A*B.
+DSP Report: operator inst/c001 is absorbed into DSP inst/c001.
+DSP Report: Generating DSP inst/c00_reg, operation Mode is: (PCIN+A*B)'.
+DSP Report: register inst/c00_reg is absorbed into DSP inst/c00_reg.
+DSP Report: operator inst/c000 is absorbed into DSP inst/c00_reg.
+DSP Report: operator inst/c001 is absorbed into DSP inst/c00_reg.
+DSP Report: Generating DSP inst/c011, operation Mode is: A*B.
+DSP Report: operator inst/c011 is absorbed into DSP inst/c011.
+DSP Report: Generating DSP inst/c01_reg, operation Mode is: (PCIN+A*B)'.
+DSP Report: register inst/c01_reg is absorbed into DSP inst/c01_reg.
+DSP Report: operator inst/c010 is absorbed into DSP inst/c01_reg.
+DSP Report: operator inst/c011 is absorbed into DSP inst/c01_reg.
+DSP Report: Generating DSP inst/c101, operation Mode is: A*B.
+DSP Report: operator inst/c101 is absorbed into DSP inst/c101.
+DSP Report: Generating DSP inst/c10_reg, operation Mode is: (PCIN+A*B)'.
+DSP Report: register inst/c10_reg is absorbed into DSP inst/c10_reg.
+DSP Report: operator inst/c100 is absorbed into DSP inst/c10_reg.
+DSP Report: operator inst/c101 is absorbed into DSP inst/c10_reg.
+DSP Report: Generating DSP inst/c111, operation Mode is: A*B.
+DSP Report: operator inst/c111 is absorbed into DSP inst/c111.
+DSP Report: Generating DSP inst/c11_reg, operation Mode is: (PCIN+A*B)'.
+DSP Report: register inst/c11_reg is absorbed into DSP inst/c11_reg.
+DSP Report: operator inst/c110 is absorbed into DSP inst/c11_reg.
+DSP Report: operator inst/c111 is absorbed into DSP inst/c11_reg.
+INFO: [Synth 8-3917] design Vivado_IP_Design_maxmul2x2_0_0 has port ap_idle driven by constant 1
+INFO: [Synth 8-3917] design Vivado_IP_Design_maxmul2x2_0_0 has port ap_ready driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1366.555 ; gain = 676.695
+---------------------------------------------------------------------------------
+ Sort Area is  inst/c001_0 : 0 0 : 1937 4001 : Used 1 time 0
+ Sort Area is  inst/c001_0 : 0 1 : 2064 4001 : Used 1 time 0
+ Sort Area is  inst/c011_3 : 0 0 : 1937 4001 : Used 1 time 0
+ Sort Area is  inst/c011_3 : 0 1 : 2064 4001 : Used 1 time 0
+ Sort Area is  inst/c101_4 : 0 0 : 1937 4001 : Used 1 time 0
+ Sort Area is  inst/c101_4 : 0 1 : 2064 4001 : Used 1 time 0
+ Sort Area is  inst/c111_5 : 0 0 : 1937 4001 : Used 1 time 0
+ Sort Area is  inst/c111_5 : 0 1 : 2064 4001 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|maxmul2x2   | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maxmul2x2   | (PCIN+A*B)' | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|maxmul2x2   | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maxmul2x2   | (PCIN+A*B)' | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|maxmul2x2   | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maxmul2x2   | (PCIN+A*B)' | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|maxmul2x2   | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maxmul2x2   | (PCIN+A*B)' | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1544.762 ; gain = 854.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1544.910 ; gain = 855.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1554.977 ; gain = 865.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1789.570 ; gain = 1099.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1789.570 ; gain = 1099.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1789.570 ; gain = 1099.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1789.570 ; gain = 1099.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1789.570 ; gain = 1099.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1789.570 ; gain = 1099.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|maxmul2x2   | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maxmul2x2   | (PCIN+A*B)' | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|maxmul2x2   | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maxmul2x2   | (PCIN+A*B)' | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|maxmul2x2   | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maxmul2x2   | (PCIN+A*B)' | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|maxmul2x2   | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|maxmul2x2   | (PCIN+A*B)' | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |DSP48E1 |     8|
+|3     |LUT1    |     1|
+|4     |LUT2    |     2|
+|5     |LUT3    |     1|
+|6     |FDRE    |     2|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1789.570 ; gain = 1099.711
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1789.570 ; gain = 1024.043
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1789.570 ; gain = 1099.711
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1791.836 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1795.438 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: f7735c6a
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1795.438 ; gain = 1284.160
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1795.438 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'c:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/Vivado_Codes_Lab4/tmp_edit_project.runs/Vivado_IP_Design_maxmul2x2_0_0_synth_1/Vivado_IP_Design_maxmul2x2_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP Vivado_IP_Design_maxmul2x2_0_0, cache-ID = 8e4a3b39841a007a
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1795.438 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'c:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/Vivado_Codes_Lab4/tmp_edit_project.runs/Vivado_IP_Design_maxmul2x2_0_0_synth_1/Vivado_IP_Design_maxmul2x2_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Vivado_IP_Design_maxmul2x2_0_0_utilization_synth.rpt -pb Vivado_IP_Design_maxmul2x2_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  8 21:02:05 2025...

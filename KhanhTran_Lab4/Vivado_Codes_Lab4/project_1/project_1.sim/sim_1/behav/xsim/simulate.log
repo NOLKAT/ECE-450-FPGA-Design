@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+C = [[19,22],[43,50]]
+C = [[-2,9],[8,-11]]
+PASS
+$finish called at time : 105 ns : File "C:/Users/ankha/Desktop/FPGA_Design/KhanhTran_Lab4/Vivado_Codes_Lab4/project_1/project_1.srcs/sim_1/new/tb_maxmul2x2.sv" Line 89
